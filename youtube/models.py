@@ -3,52 +3,53 @@ __author__ = 'mcherkassky'
 import datetime
 
 from youtube import db
+from mongoengine import *
 
 
-class Artist(db.Document):
-    created_at = db.DateTimeField(default=datetime.datetime.now, required=True)
-    name = db.StringField()
-    img = db.StringField()
-    tags = db.ListField()
-    similar = db.ListField()
-
-    #stats
-    plays = db.IntField()
-    listeners = db.IntField()
-
-
-class Album(db.Document):
-    created_at = db.DateTimeField(default=datetime.datetime.now, required=True)
-
-    ########hierarchy#########
-    #artist_id = db.ObjectIdField()
-    ##########################
-    title = db.StringField()
-    artist = db.ReferenceField('Artist') #db.StringField()
-    img = db.StringField()
-
-    tags = db.ListField()
-    similar = db.ListField()
+class Artist(Document):
+    created_at = DateTimeField(default=datetime.datetime.now, required=True)
+    name = StringField()
+    img = StringField()
+    tags = ListField()
+    similar = ListField()
 
     #stats
-    plays = db.IntField()
-    listeners = db.IntField()
+    plays = IntField()
+    listeners = IntField()
 
 
-class Song(db.Document):
-    created_at = db.DateTimeField(default=datetime.datetime.now, required=True)
+class Album(Document):
+    created_at = DateTimeField(default=datetime.datetime.now, required=True)
 
     ########hierarchy#########
-    #artist_id = db.ObjectIdField()
-    #album_id = db.ObjectIdField()
+    #artist_id = ObjectIdField()
+    ##########################
+    title = StringField()
+    artist = ReferenceField('Artist') #StringField()
+    img = StringField()
+
+    tags = ListField()
+    similar = ListField()
+
+    #stats
+    plays = IntField()
+    listeners = IntField()
+
+
+class Song(Document):
+    created_at = DateTimeField(default=datetime.datetime.now, required=True)
+
+    ########hierarchy#########
+    #artist_id = ObjectIdField()
+    #album_id = ObjectIdField()
     ##########################
 
-    title = db.StringField()
-    album = db.ReferenceField('Album')#db.StringField()
-    album_index = db.IntField()
-    artist = db.ReferenceField('Artist')#db.StringField()
+    title = StringField()
+    album = ReferenceField('Album')#StringField()
+    album_index = IntField()
+    artist = ReferenceField('Artist')#StringField()
 
-    duration = db.IntField()
-    listeners = db.IntField()
+    duration = IntField()
+    listeners = IntField()
 
-    youtube_url = db.StringField()
+    youtube_url = StringField()
