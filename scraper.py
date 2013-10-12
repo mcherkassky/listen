@@ -67,7 +67,8 @@ def scrape_album_page(url, artist):
     album_listeners = landing.find('li', {'class','listeners'}).find('b').string.replace(',', '')
 
     album = Album(title=album_title,
-                  artist=artist,
+                  artist=artist.name,
+                  artist_id=artist.id,
                   img=album_img,
                   plays=album_plays,
                   listeners=album_listeners)
@@ -88,12 +89,14 @@ def scrape_album_page(url, artist):
 
         song_listeners = song.find('td', {'class', 'reachCell'}).string.strip().replace(',', '')
 
-        if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
-            continue
+        # if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
+        #     continue
 
         song = Song(title=song_title,
-                    artist=artist,
-                    album=album,
+                    artist=artist.name,
+                    artist_id=artist.id,
+                    album=album.title,
+                    album_id=album.id,
                     album_index=i,
                     duration=song_duration,
                     listeners=song_listeners)

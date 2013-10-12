@@ -37,7 +37,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         $rootScope.getTime = null;
         $rootScope.PLAYER_TIME = 0;
 
-
         load_video_to_container(songs[index], "ytplayer");
 
         $rootScope.PLAYER_STATUS = 'loaded';

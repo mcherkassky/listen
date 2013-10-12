@@ -27,8 +27,8 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             var youtube_url = $q.defer(); //q promise callback dis some fancy ass shit
             $http({
                 url:'/find/title/' + formatURL(song.title) +
-                    '/album/' + formatURL(song.album.title) +
-                    '/artist/' + formatURL(song.artist.name) +
+                    '/album/' + formatURL(song.album) +
+                    '/artist/' + formatURL(song.artist) +
                     '/duration/' + song.duration,
                 method: 'GET'
             }).success(function(data){
