@@ -13,14 +13,14 @@ from youtube import app
 def make_response(songs):
     response = [{
             'title': song.title,
-            'artist': song.artist.name,
-            'album': song.album.title,
-            'img': song.album.img,
+            'artist': song.artist,
+            'album': song.album,
+            'img': song.img,
             'album_index': song.album_index,
             'duration': song.duration,
             'youtube_url': song.youtube_url,
-            'album_id': str(song.album.id),
-            'artist_id': str(song.artist.id)
+            'album_id': str(song.album_id),
+            'artist_id': str(song.artist_id)
         } for song in songs]
     return json.dumps(response)
 
@@ -31,7 +31,7 @@ def index():
 @app.route('/albums/<album_id>', methods=['GET'])
 def albums(album_id):
     album = Album.objects.get(id=album_id)
-    songs = Song.objects.filter(album=album).order_by('album_index')
+    songs = Song.objects.filter(album_id=album.id).order_by('album_index')
     return make_response(songs)
     #pdb.set_trace()
 
@@ -56,23 +56,18 @@ def search(query):
     response = {
         'songs': [{
             'title': song.title,
-            'artist': song.artist.name,
-            'album': song.album.title,
-            'img': song.album.img,
+            'artist': song.artist,
+            'album': song.album,
+            'img': song.img,
             'album_index': song.album_index,
             'duration': song.duration,
             'youtube_url': song.youtube_url,
-            'album_id': str(song.album.id),
-            'artist_id': str(song.artist.id)
+            'album_id': str(song.album_id),
+            'artist_id': str(song.artist_id)
         } for song in songs],
         'albums': [{
             'title': album.title,
-            'artist': {
-                'name': album.artist.name,
-                'img': album.artist.img,
-                'id': str(album.artist.id),
-                'listeners': album.artist.listeners
-            },
+            'artist': album.artist,
             'img': album.img,
             'id': str(album.id)
         } for album in albums],

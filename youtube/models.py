@@ -46,6 +46,8 @@ class Song(Document):
 
     title = StringField()
     album = StringField()
+    img = StringField()
+
     album_index = IntField()
     artist = StringField()
 
