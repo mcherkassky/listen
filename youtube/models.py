@@ -22,10 +22,10 @@ class Album(Document):
     created_at = DateTimeField(default=datetime.datetime.now, required=True)
 
     ########hierarchy#########
-    #artist_id = ObjectIdField()
+    artist_id = ObjectIdField()
     ##########################
     title = StringField()
-    artist = ReferenceField('Artist') #StringField()
+    artist = StringField()
     img = StringField()
 
     tags = ListField()
@@ -40,14 +40,14 @@ class Song(Document):
     created_at = DateTimeField(default=datetime.datetime.now, required=True)
 
     ########hierarchy#########
-    #artist_id = ObjectIdField()
-    #album_id = ObjectIdField()
+    artist_id = ObjectIdField()
+    album_id = ObjectIdField()
     ##########################
 
     title = StringField()
-    album = ReferenceField('Album')#StringField()
+    album = StringField()
     album_index = IntField()
-    artist = ReferenceField('Artist')#StringField()
+    artist = StringField()
 
     duration = IntField()
     listeners = IntField()

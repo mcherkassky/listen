@@ -13,13 +13,10 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     });
 
-
-
     $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
-        var time_left = $rootScope.PLAYER_LENGTH - newVal;
+        var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
         console.log(time_left)
-        if(time_left == 3){
-            console.log('im switching')
+        if(time_left <= 3){
             $scope.play_next_auto()
         }
     });
