@@ -2,15 +2,18 @@
     [[ytVideoTime]]
     <div class="span6">
         <div ng-switch on="PLAYER_STATUS" class="btn-group pull-right">
-            <button ng-click="play_previous()" class="btn btn-inverse btn-large"><i class="icon-white icon-fast-backward icon-large"></i></button>
+            <button ng-click="play_previous()" class="player-button btn btn-inverse btn-large"><i class="icon-white icon-fast-backward icon-large"></i></button>
 
-            <button ng-switch-when="pause" ng-click="play()" class="btn btn-inverse btn-large"><i class="icon-white icon-play icon-large"></i></button>
-            <button ng-switch-when="play" ng-click="pause()" class="btn btn-inverse btn-large"><i class="icon-white icon-pause icon-large"></i></button>
-            <button ng-switch-default ng-click="play()" class="btn btn-inverse btn-large"><i class="icon-white icon-play icon-large"></i></button>
+            <button ng-switch-when="pause" ng-click="play()" 
+                class="player-button btn btn-inverse btn-large"><i class="icon-white icon-play icon-large"></i></button>
+            <button ng-switch-when="play" ng-click="pause()" 
+                class="player-button btn btn-inverse btn-large"><i class="icon-white icon-pause icon-large"></i></button>
+            <button ng-switch-default ng-click="play()" class="player-button btn btn-inverse btn-large"><i class="icon-white icon-play icon-large"></i></button>
 
-            <button ng-click="play_next()" class="btn btn-inverse btn-large"><i class="icon-white icon-fast-forward icon-large"></i></button>
-            <a href=# style='padding:3px' class="btn btn-inverse btn-large"><i class="icon-white icon-youtube-sign icon-2x"></i></a>
-            <button style="width:200px;height:44px;padding:0" class="btn btn-inverse btn-large">
+            <button ng-click="play_next()" class="player-button btn btn-inverse btn-large"><i class="icon-white icon-fast-forward icon-large"></i></button>
+            <a href=# style='' class="player-button btn btn-inverse btn-large"><i class="icon-white icon-youtube-sign icon-2x"></i></a>
+            <button style="width:200px;height:44px;padding:0" 
+                class="player-button btn btn-inverse btn-large">
                 <div style="font-size:90%;margin:2px">[[currently_playing.title]]</div>
                 <div style="font-size:65%;align:center">[[currently_playing.artist]]</div>
             </button>

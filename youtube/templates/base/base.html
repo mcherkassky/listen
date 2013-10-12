@@ -11,8 +11,10 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
     <!-- Le styles -->
-    <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 
     {% block styles %}
@@ -54,23 +56,30 @@
 
   {% set active_page = active_page|default('index') -%}
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top top-navbar" role="banner">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="{{url_for('index')}}">Top Secret</a>
+
+          <a class="navbar-brand" href="{{url_for('index')}}">
+              <i class="icon-large icon-play-circle"> </i>
+              Listen App
+          </a>
+
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="{{url_for('index')}}">Home</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-          <form class="navbar-search pull-right">
-                <input type="text" class="search-query span3">
-                <div class="icon-search"></div>
+
+
+    <div class="navbar-form navbar-right">
+        <div class="form-group">
+            <input type="text" class="form-control" 
+            placeholder="Search"></input>
+        </div>
+    </div>
+
+
             </form>
         </div>
       </div>
@@ -100,6 +109,7 @@
     </script>
 
     <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/marquee.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/angular-1.1.4/angular.min.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/bootstrap-ui/ui-bootstrap-0.6.0.min.js') }}"></script>

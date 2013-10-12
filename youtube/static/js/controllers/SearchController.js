@@ -68,6 +68,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     var searchText = " ", searchTimeout;
     $scope.$watch('search_query', function(newVal, oldVal){
         if(newVal != undefined){
+
+
             if(newVal!=""){
                 $scope.loading = true;
                 $scope.comments_show = false;
@@ -108,8 +110,15 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                         $scope.loading = false;
                         $scope.results = true;
                         console.log(data);
+
                     })
-                }
+                };
+
+                var marqueeFunction = $timeout(function() {
+                        $('.marqueed').hover(startMarquee, stopMarquee);
+                }, 2000);
+                marqueeFunction();
+
             },1000);
         }
 
