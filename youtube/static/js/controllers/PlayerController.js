@@ -14,10 +14,11 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     });
 
     $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
-        var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
-        console.log(time_left)
-        if(time_left <= 3){
-            $scope.play_next_auto()
+        if($(ytplayer).html() != ''){
+            var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
+            if(time_left <= 3){
+                $scope.play_next_auto()
+            }
         }
     });
 
@@ -59,11 +60,17 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             $rootScope.next_playing = $rootScope.SONGS[$rootScope.SONG_INDEX + 1]
 
             if($rootScope.SONG_INDEX + 1 < $rootScope.SONGS.length){
-                var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
-                promise.then(function(url){
-                    var youtube_url = url;
+                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX + 1].youtube_url;
+                if(youtube_url != undefined){
                     MusicPlayer.loadVideo(youtube_url, "nextplayer")
-                });
+                }
+                else{
+                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
+                    promise.then(function(url){
+                        var youtube_url = url;
+                        MusicPlayer.loadVideo(youtube_url, "nextplayer")
+                    });
+                }
             }
         }
     };
@@ -91,11 +98,17 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             $rootScope.previous_playing = $rootScope.SONGS[$rootScope.SONG_INDEX - 1];
 
             if($rootScope.SONG_INDEX > 0){
-                var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX - 1]);
-                promise.then(function(url){
-                    var youtube_url = url;
+                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX - 1].youtube_url;
+                if(youtube_url != undefined){
                     MusicPlayer.loadVideo(youtube_url, "prevplayer")
-                });
+                }
+                else{
+                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX - 1]);
+                    promise.then(function(url){
+                        var youtube_url = url;
+                        MusicPlayer.loadVideo(youtube_url, "prevplayer")
+                    });
+                }
             }
         }
     };

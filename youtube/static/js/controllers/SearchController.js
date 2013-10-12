@@ -10,6 +10,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.results = false;
     $rootScope.currently_playing = undefined;
     $scope.playlist_songs = [];
+    $scope.youtube_results = [];
 
     var load_video_to_container = function(song, player_id){
         if(song.youtube_url != undefined){
