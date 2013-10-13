@@ -23,5 +23,4 @@ musicModule.run(function($rootScope){
         var seconds = Math.floor(value % 3600 % 60);
         return ((hours>0?hours+":":"")+(minutes>0?(hours>0&&minutes<10?"0":"")+minutes + ":":"0:")+(seconds<10?"0":"")+seconds);
     };
-
 });

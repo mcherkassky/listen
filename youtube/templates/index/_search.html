@@ -10,6 +10,59 @@
                  ng-model="playlist_songs" jqyoui-droppable="{index: [[$index]],animate:false}"/>
         </span>
     </div>
+    YOUO
+    <div id="player"></div>
+    <script src="{{ url_for('static', filename='lib/coverflow/coverflow.js') }}"></script>
+		<!--<script src="http://luwes.co/js-cover-flow/coverflow.js"></script>-->
+		<script>
+			coverflow('player').setup({
+				//mode: "flash",
+				flash: "http://luwes.co/js-cover-flow/coverflow.swf",
+				playlist: [
+                    {
+                        "title": "snow-motion",
+                        "description": "what a massive and unbelievable winter we're having!",
+                        "image": "http://d3el35u4qe4frz.cloudfront.net/eawtAP1q-720.jpg",
+                        "link": "http://www.google.com/",
+                        "duration": "183"
+                    },
+                    {
+                        "title": "driving rain",
+                        "description": "",
+                        "image": "http://d3el35u4qe4frz.cloudfront.net/njZMLMwy-720.jpg",
+                        "duration": "782"
+                    },
+                    {
+                        "title": "winter brook",
+                        "description": "",
+                        "image": "http://d3el35u4qe4frz.cloudfront.net/Vg7cPUdl-720.jpg"
+                    }
+                ],
+				width: '100%',
+				height: 250,
+				y: -20,
+				backgroundcolor: "ffffff",
+				coverwidth: 180,
+				coverheight: 150,
+				fixedsize: true,
+				textoffset: 50,
+				textstyle: ".coverflow-text{color:#000000;text-align:center;font-family:Arial Rounded MT Bold,Arial;} .coverflow-text h1{font-size:14px;font-weight:normal;line-height:21px;} .coverflow-text h2{font-size:11px;font-weight:normal;} .coverflow-text a{color:#0000EE;}"
+
+			})
+		</script>
+    <!--<div id="myContentFlow">-->
+        <!--<div class="loadIndicator"><div class="indicator"></div></div>-->
+        <!--<div class="flow">-->
+            <!--<img ng-repeat="item in playlist_songs track by $index" class="item" src='[[item.img]]' title="Your_Image_Title"/>-->
+            <!--&lt;!&ndash;<img class="item" src="http://3.bp.blogspot.com/-ZVcd-FC9uJA/UjR6lgeMLTI/AAAAAAAAOlc/7QPjGxmHu7U/s400/google-.jpg" title="Your_Image_Title"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="item" src="http://www.ninahale.com/wp-content/uploads/2013/08/Google.jpg" title="Your_Image_Title"/>&ndash;&gt;-->
+
+
+            <!--&lt;!&ndash; Add as many items as you like. &ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="globalCaption"></div>-->
+        <!--<div class="scrollbar"><div class="slider"><div class="position"></div></div></div>-->
+    <!--</div>-->
 
     <!--<div class="form-search text-center">-->
         <!--<div class="input-append">-->
