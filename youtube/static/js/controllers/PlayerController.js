@@ -1,15 +1,19 @@
 musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, MusicPlayer){
     $rootScope.PLAYER_SEEK = false;
-    $('.pointer').mousedown(function(){
+    $('.pointer').mousedown(function(event){
         $rootScope.PLAYER_SEEK = true;
         $scope.pause();
+//        event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
+//        event.stopImmediatePropagation()
     });
 
-    $('#music-player').mouseup(function(){
+    $('#music-player').mouseup(function(event){
         if($rootScope.PLAYER_SEEK){
             $scope.seekTo($rootScope.PLAYER_TIME);
             $scope.play();
             $rootScope.PLAYER_SEEK = false;
+//            event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
+//            event.stopImmediatePropagation()
         }
     });
 
