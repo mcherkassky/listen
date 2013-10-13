@@ -36,7 +36,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             return;
         if($rootScope.PLAYER_STATUS == 'play')
             MusicPlayer.pause(ytplayer);
-
+        $rootScope.coverflow();
+        coverflow('albumflow').to(index);
         //update song index for all controllers
         $rootScope.SONGS = songs;
         $rootScope.SONG_INDEX = index;
@@ -61,13 +62,15 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     };
 
     $scope.get_album_contents = function(album_id){
-        console.log(album_id);
+
         $http({
             method: 'GET',
             url: '/albums/' + album_id
         }).success(function(data){
                 console.log(data);
                 $scope.songs = data;
+                $scope.all_songs.playlist = data;
+//                $rootScope.coverflow()
             })
     };
 
@@ -93,24 +96,11 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 else{
                     $http.get('/search/' + searchText).success(function(data){
                         if(data != undefined){
+                            $rootScope.all_songs.playlist = data['songs'];
+//                            $rootScope.coverflow();
                             $scope.songs = data['songs'];
                             $scope.albums = data['albums'];
                             $scope.artists = data['artists'];
-
-                            if($scope.albums.length<5){
-                                var song_albums = $scope.songs.map(function(element){return element.album})
-                                song_albums = getUniques(song_albums).sort(compareListeners).reverse();
-                                song_albums.slice(0,Math.min(5-$scope.albums.length,song_albums.length)).map(function(element){
-                                    $scope.albums.push(element)
-                                });
-                            }
-                            if($scope.artists.length<5){
-                                var song_artists = $scope.songs.map(function(element){return element.artist})
-                                song_artists = getUniques(song_artists).sort(compareListeners).reverse();
-                                song_artists.slice(0,Math.min(5-$scope.artists.length,song_artists.length)).map(function(element){
-                                    $scope.artists.push(element)
-                                });
-                            }
                         }
                         $scope.loading = false;
                         $scope.results = true;

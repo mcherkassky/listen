@@ -42,6 +42,8 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     $scope.play_next = function(){
         if($rootScope.NEXT_READY){
             $rootScope.SONG_INDEX += 1;
+
+            coverflow('albumflow').to($rootScope.SONG_INDEX);
             MusicPlayer.pause(ytplayer);
 
             //some bomb ass logic
@@ -81,6 +83,7 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     $scope.play_previous = function(){
         if($rootScope.PREV_READY){
             $rootScope.SONG_INDEX -= 1;
+            coverflow('albumflow').to($rootScope.SONG_INDEX);
             MusicPlayer.pause(ytplayer);
 
             //some bomb ass logic

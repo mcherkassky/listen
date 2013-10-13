@@ -30,29 +30,10 @@ musicModule.run(function($rootScope){
 
     $rootScope.coverflow = function(){
         coverflow('albumflow').remove();
-        console.log('hello');
-        console.log($rootScope.all_songs.playlist);
         coverflow('albumflow').setup({
             //mode: "flash",
             flash: "http://luwes.co/js-cover-flow/coverflow.swf",
             playlist: $rootScope.all_songs.playlist,
-//                [
-//                {
-//                    "title": "snow-motion",
-//                    "artist": "what a massive and unbelievable winter we're having!",
-//                    "img": "http://d3el35u4qe4frz.cloudfront.net/eawtAP1q-720.jpg",
-//                },
-//                {
-//                    "title": "driving rain",
-//                    "artist": "",
-//                    "img": "http://d3el35u4qe4frz.cloudfront.net/njZMLMwy-720.jpg",
-//                },
-//                {
-//                    "title": "winter brook",
-//                    "artist": "",
-//                    "img": "http://d3el35u4qe4frz.cloudfront.net/Vg7cPUdl-720.jpg"
-//                }
-//            ],
             width: '100%',
             height: 250,
             y: -20,
