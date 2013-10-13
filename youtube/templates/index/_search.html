@@ -1,4 +1,7 @@
 <div ng-controller='SearchCtrl' class='container'>
+    <br>
+    <br>
+    <br>
     <div ng-model="playlist_songs" data-drop="true" jqyoui-droppable="{multiple:true}" style="border:2px solid black; height:60px">
         <span>
             <img ng-cloak ng-click="load_videos(playlist_songs,$index);" style="margin:4px" width=50 height=50
@@ -8,17 +11,18 @@
         </span>
     </div>
 
-    <div class="form-search text-center">
-        <div class="input-append">
-            <input type="search" ng-model="search_query" class="span7 search-query" placeholder="Search..." tabindex="1">
-            <button type="submit" class="btn unclickable"><i class="icon-search icon-large"></i>
-            </button>
-        </div>
-    </div>
+    <!--<div class="form-search text-center">-->
+        <!--<div class="input-append">-->
+            <!--<input type="search" ng-model="search_query" class="span7 search-query" placeholder="Search..." tabindex="1">-->
+            <!--<button type="submit" class="btn unclickable"><i class="icon-search icon-large"></i>-->
+            <!--</button>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
 
     <br>
+
     <div ng-show='results' class='row-fluid'>
         <div class='span12'>
             <table class='table table-striped table-hover table-condensed'>

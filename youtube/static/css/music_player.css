@@ -60,13 +60,20 @@
     position: relative;
 }
 
-.navbar-search .search-query {
-    padding-left: 29px !important;
+.navbar-search .search {
+    padding-left: 20px !important;
 }
 
 .navbar-search .icon-search {
     position: absolute;
-    top: 7px;
-    left: 11px;
-    background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");
+    top: 13px;
+    left: 27px;
+    /*background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");*/
+}
+
+.navbar-search .icon-youtube-sign {
+    position: absolute;
+    top: 13px;
+    left: 27px;
+    /*background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");*/
 }

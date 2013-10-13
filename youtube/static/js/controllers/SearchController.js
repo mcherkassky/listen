@@ -6,6 +6,12 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         return ((hours>0?hours+":":"")+(minutes>0?(hours>0&&minutes<10?"0":"")+minutes + ":":"0:")+(seconds<10?"0":"")+seconds);
     };
 
+    $scope.search_toggle = function(){
+        $scope.search_toggle_bool = !$scope.search_toggle_bool;
+        $scope.search_query = '';
+        $scope.youtube_query = '';
+    };
+
     $scope.loading = false;
     $scope.results = false;
     $rootScope.currently_playing = undefined;

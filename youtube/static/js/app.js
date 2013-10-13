@@ -15,6 +15,8 @@ musicModule.run(function($rootScope){
     $rootScope.SONGS = null;
     $rootScope.SONG_INDEX = 0;
 
+    $rootScope.search_toggle_bool = true;
+
     $rootScope.format_to_time = function(value){
         var hours = Math.floor(value / 3600);
         var minutes = Math.floor(value % 3600 / 60);

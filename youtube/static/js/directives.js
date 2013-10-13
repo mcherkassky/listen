@@ -22,14 +22,16 @@ musicModule.directive('dropdown', function($document, $timeout, $http) {
       transclude: true,
       template: '<span ng-init="show_menu = false">' +
                   '<form class="navbar-search pull-right">' +
-                  '<input ng-model="search_query" type="text" class="search-query span3">' +
-                  '<div class="icon-search"></div>' +
+                  '<input ng-show="search_toggle_bool" style="height:10px" ng-model="search_query" type="text" class="search span3">' +
+                  '<input ng-show="!search_toggle_bool" style="height:10px" ng-model="youtube_query" type="text" class="search span3">' +
+                  '<span ng-click="search_toggle()" ng-show="search_toggle_bool"><div class="icon-search"></div></span>' +
+                  '<span ng-click="search_toggle()" ng-show="!search_toggle_bool"><div class="icon-youtube-sign"></div></span>' +
                   '</form>' +
                   '<span ng-show="show_menu" class="dropdownMenu" ng-style="menuStyle" ng-transclude></span>' +
                   '</span>',
       link: function(scope, elm, attrs) {
         var searchText = " ", searchTimeout;
-        scope.$watch('search_query', function(newVal, oldVal){
+        scope.$watch('youtube_query', function(newVal, oldVal){
             console.log(newVal)
             if(newVal != undefined){
                 if(newVal!=""){
@@ -41,7 +43,7 @@ musicModule.directive('dropdown', function($document, $timeout, $http) {
                 if (searchTimeout) $timeout.cancel(searchTimeout);
                 searchText = newVal;
                 searchTimeout = $timeout(function(){
-                    if(scope.search_query==""){
+                    if(scope.youtube_query==""){
                         console.log('yo')
                         scope.loading=false;
                         scope.results=false;
