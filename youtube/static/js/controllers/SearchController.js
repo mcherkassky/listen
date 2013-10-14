@@ -36,8 +36,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             return;
         if($rootScope.PLAYER_STATUS == 'play')
             MusicPlayer.pause(ytplayer);
-        $rootScope.coverflow();
-        coverflow('albumflow').to(index);
+
+
         //update song index for all controllers
         $rootScope.SONGS = songs;
         $rootScope.SONG_INDEX = index;
@@ -58,6 +58,21 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             load_video_to_container(songs[index-1], "prevplayer")
             $rootScope.previous_playing = songs[index-1]
         }
+
+        if(coverflow('albumflow').config == null){
+            $rootScope.coverflow();
+            $timeout(function(){
+                coverflow('albumflow').to(index);
+            },100)
+        }
+        else{
+            coverflow('albumflow').to(index);
+        }
+
+
+
+
+
 
     };
 

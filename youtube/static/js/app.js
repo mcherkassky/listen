@@ -38,8 +38,8 @@ musicModule.run(function($rootScope){
             height: 250,
             y: -20,
             backgroundcolor: "ffffff",
-            coverwidth: 180,
-            coverheight: 150,
+            coverwidth: 150,
+            coverheight: 130,
             fixedsize: true,
             textoffset: 50,
             textstyle: ".coverflow-text{color:#000000;text-align:center;font-family:Arial Rounded MT Bold,Arial;} .coverflow-text h1{font-size:14px;font-weight:normal;line-height:21px;} .coverflow-text h2{font-size:11px;font-weight:normal;} .coverflow-text a{color:#0000EE;}"

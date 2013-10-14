@@ -61,7 +61,12 @@
       <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="navbar-inner">
               <div class="container">
-          <a style="border:0" class="brand" href="{{url_for('index')}}">Listen.fm</a>
+                  <a style="border:0" class="brand" href="{{url_for('index')}}">Listen.fm</a>
+                  <span class='pull-right' style="visibility:hidden">
+                        <span id="prevplayer"></span>
+                        <span id="ytplayer"></span>
+                        <span id="nextplayer"></span>
+                  </span>
               </div>
           </div>
           {% include "/base/_player_bar.html" %}
@@ -111,15 +116,11 @@
     <br>
     <br>
     <br>
-    <div class="navbar navbar-fixed-bottom footer" style="background-color:#f5f5f5">
-        <!--{% include "/base/_player.html" %}-->
-        <!--{% include "/base/_player_bar.html" %}-->
-        <span style="visibility:hidden">
-            <span id="prevplayer"></span>
-            <span id="ytplayer"></span>
-            <span id="nextplayer"></span>
-        </span>
-    </div>
+    <!--<div class="navbar navbar-fixed-bottom footer" style="background-color:#f5f5f5">-->
+        <!--&lt;!&ndash;{% include "/base/_player.html" %}&ndash;&gt;-->
+        <!--&lt;!&ndash;{% include "/base/_player_bar.html" %}&ndash;&gt;-->
+        <!---->
+    <!--</div>-->
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
