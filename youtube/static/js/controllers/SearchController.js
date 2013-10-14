@@ -59,13 +59,16 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             $rootScope.previous_playing = songs[index-1]
         }
 
-        if(coverflow('albumflow').config == null){
+        if($rootScope.all_songs.playlist != songs){
+            console.log('im here')
+            $rootScope.all_songs.playlist = songs
             $rootScope.coverflow();
             $timeout(function(){
                 coverflow('albumflow').to(index);
             },100)
         }
         else{
+//            debugger;
             coverflow('albumflow').to(index);
         }
     };
@@ -78,7 +81,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         }).success(function(data){
                 console.log(data);
                 $scope.songs = data;
-                $scope.all_songs.playlist = data;
+//                $scope.all_songs.playlist = data;
 //                $rootScope.coverflow()
             })
     };
@@ -105,7 +108,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 else{
                     $http.get('/search/' + searchText).success(function(data){
                         if(data != undefined){
-                            $rootScope.all_songs.playlist = data['songs'];
+//                            $rootScope.all_songs.playlist = data['songs'];
 //                            $rootScope.coverflow();
                             $scope.songs = data['songs'];
                             $scope.albums = data['albums'];
