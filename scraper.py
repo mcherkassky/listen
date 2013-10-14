@@ -32,9 +32,12 @@ def scrape_album_landing_page(url, artist):
         # except:
         #     pdb.set_trace()
 
-        links = [album.find('a').get('href') for album in landing.findAll('div', {'class', 'album-item-detail-wrapper'})]
-        #scrape all album pages
-        albums = [scrape_album_page('http://www.lastfm.com' + link, artist) for link in links]
+        try:
+            links = [album.find('a').get('href') for album in landing.findAll('div', {'class', 'album-item-detail-wrapper'})]
+            #scrape all album pages
+            albums = [scrape_album_page('http://www.lastfm.com' + link, artist) for link in links]
+        except:
+            continue
 
         if None in albums:
             break
@@ -63,8 +66,10 @@ def scrape_album_page(url, artist):
     album_title = landing.find('div', {'class','crumb-wrapper'}).find('h1').string.strip()
     print album_title
     album_img = landing.find('div', {'class','album-cover-wrapper'}).find('img').get('src')
-
-    album_listeners = landing.find('li', {'class','listeners'}).find('b').string.replace(',', '')
+    try:
+        album_listeners = landing.find('li', {'class','listeners'}).find('b').string.replace(',', '')
+    except:
+        album_listeners = ""
 
     album = Album(title=album_title,
                   artist=artist.name,
@@ -86,11 +91,13 @@ def scrape_album_page(url, artist):
         except:
             song_duration = time_to_seconds(re.findall('[0-9]*:[0-9]*', str(song.find('td', {'class', 'durationCell'})))[0])
             #song_duration = -1
+        try:
+            song_listeners = song.find('td', {'class', 'reachCell'}).string.strip().replace(',', '')
+        except:
+            song_listeners = ""
 
-        song_listeners = song.find('td', {'class', 'reachCell'}).string.strip().replace(',', '')
-
-        if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
-            continue
+        # if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
+        #     continue
 
         song = Song(title=song_title,
                     artist=artist.name,
@@ -110,16 +117,26 @@ def scrape_landing_page(url):
     artist_list = landing.find('ul', {'class', 'artistList'}).findAll('li')
 
     for artist in artist_list:
-        link = artist.find('a').get('href')
+        try:
+            link = artist.find('a').get('href')
 
-        img = artist.find('span', {'class', 'image'}).find('img').get('src')
-        name = artist.find('strong', {'class', 'name'}).string
+            img = artist.find('span', {'class', 'image'}).find('img').get('src')
+            name = artist.find('strong', {'class', 'name'}).string
+        except:
+            continue
         print name
-        similar_artists = [element.string for element in artist.find('p', {'class', 'similar'}).findAll('a')]
+        try:
+            similar_artists = [element.string for element in artist.find('p', {'class', 'similar'}).findAll('a')]
+        except:
+            similar_artists = []
 
-        stats = re.findall(r'\d+', artist.find('p', {'class','stats'}).string.replace(',',''))
-        plays = stats[0]
-        listeners = stats[1]
+        try:
+            stats = re.findall(r'\d+', artist.find('p', {'class','stats'}).string.replace(',',''))
+            plays = stats[0]
+            listeners = stats[1]
+        except:
+            plays = ""
+            listeners = ""
 
         artistdb = Artist(name=name,
                           img=img,
@@ -132,6 +149,12 @@ def scrape_landing_page(url):
 
 
 #scrape_landing_page(LASTFM_URL)
+# songs = Song.objects.all()
+# [song.delete() for song in songs]
+# albums = Album.objects.all()
+# [album.delete() for album in albums]
+# artists = Artist.objects.all()
+# [artist.delete() for artist in artists]
 
 for i in xrange(1, 100):
     scrape_landing_page('http://www.last.fm/music?page=' + str(i))

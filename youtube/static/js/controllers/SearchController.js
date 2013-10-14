@@ -68,12 +68,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         else{
             coverflow('albumflow').to(index);
         }
-
-
-
-
-
-
     };
 
     $scope.get_album_contents = function(album_id){
@@ -119,7 +113,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                         }
                         $scope.loading = false;
                         $scope.results = true;
-                        console.log(data);
                     })
                 }
             },1000);
