@@ -6,10 +6,17 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         return ((hours>0?hours+":":"")+(minutes>0?(hours>0&&minutes<10?"0":"")+minutes + ":":"0:")+(seconds<10?"0":"")+seconds);
     };
 
+    $scope.search_toggle = function(){
+        $scope.search_toggle_bool = !$scope.search_toggle_bool;
+        $scope.search_query = '';
+        $scope.youtube_query = '';
+    };
+
     $scope.loading = false;
     $scope.results = false;
     $rootScope.currently_playing = undefined;
     $scope.playlist_songs = [];
+    $scope.youtube_results = [];
 
     var load_video_to_container = function(song, player_id){
         if(song.youtube_url != undefined){
@@ -29,6 +36,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             return;
         if($rootScope.PLAYER_STATUS == 'play')
             MusicPlayer.pause(ytplayer);
+
 
         //update song index for all controllers
         $rootScope.SONGS = songs;
@@ -51,16 +59,30 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             $rootScope.previous_playing = songs[index-1]
         }
 
+        if($rootScope.all_songs.playlist != songs){
+            console.log('im here')
+            $rootScope.all_songs.playlist = songs
+            $rootScope.coverflow();
+            $timeout(function(){
+                coverflow('albumflow').to(index);
+            },100)
+        }
+        else{
+//            debugger;
+            coverflow('albumflow').to(index);
+        }
     };
 
     $scope.get_album_contents = function(album_id){
-        console.log(album_id);
+
         $http({
             method: 'GET',
             url: '/albums/' + album_id
         }).success(function(data){
                 console.log(data);
                 $scope.songs = data;
+//                $scope.all_songs.playlist = data;
+//                $rootScope.coverflow()
             })
     };
 
@@ -86,28 +108,14 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 else{
                     $http.get('/search/' + searchText).success(function(data){
                         if(data != undefined){
+//                            $rootScope.all_songs.playlist = data['songs'];
+//                            $rootScope.coverflow();
                             $scope.songs = data['songs'];
                             $scope.albums = data['albums'];
                             $scope.artists = data['artists'];
-
-                            if($scope.albums.length<5){
-                                var song_albums = $scope.songs.map(function(element){return element.album})
-                                song_albums = getUniques(song_albums).sort(compareListeners).reverse();
-                                song_albums.slice(0,Math.min(5-$scope.albums.length,song_albums.length)).map(function(element){
-                                    $scope.albums.push(element)
-                                });
-                            }
-                            if($scope.artists.length<5){
-                                var song_artists = $scope.songs.map(function(element){return element.artist})
-                                song_artists = getUniques(song_artists).sort(compareListeners).reverse();
-                                song_artists.slice(0,Math.min(5-$scope.artists.length,song_artists.length)).map(function(element){
-                                    $scope.artists.push(element)
-                                });
-                            }
                         }
                         $scope.loading = false;
                         $scope.results = true;
-                        console.log(data);
                     })
                 }
             },1000);

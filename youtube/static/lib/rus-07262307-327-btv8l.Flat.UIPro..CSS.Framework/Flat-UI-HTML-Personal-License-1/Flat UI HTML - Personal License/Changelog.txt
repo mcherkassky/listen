@@ -1,0 +1,21 @@
+*** Flat UI Pro Changelog ***
+
+2013.05.22 - version 1.1
+HTML/Bootstrap
+    Fixed Less compiler bugs
+    Resolved Photoshop Glyphs issue
+    Fixed small typography issues
+    Checkbox/radio JS refactoring and styling bugfixes (new change event added)
+    Resolved Slider JS issue
+    Added .row-fluid support
+    Added Photoshop Swatches
+    Added documentation on how to start using Flat UI
+    Typehead bugfix
+    Added template.html for those who want to start blazin' fast
+    Bootstrap updated to 2.3.2
+
+PSD
+    Added Auto-complete element
+    Added Modal Popup element
+    Added Carousel Photo Slider element
+    Various small bug fixes.

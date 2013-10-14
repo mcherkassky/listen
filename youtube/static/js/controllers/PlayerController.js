@@ -1,23 +1,28 @@
 musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, MusicPlayer){
     $rootScope.PLAYER_SEEK = false;
-    $('.pointer').mousedown(function(){
+    $('.pointer').mousedown(function(event){
         $rootScope.PLAYER_SEEK = true;
         $scope.pause();
+//        event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
+//        event.stopImmediatePropagation()
     });
 
-    $('#music-player').mouseup(function(){
+    $('#music-player').mouseup(function(event){
         if($rootScope.PLAYER_SEEK){
             $scope.seekTo($rootScope.PLAYER_TIME);
             $scope.play();
             $rootScope.PLAYER_SEEK = false;
+//            event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
+//            event.stopImmediatePropagation()
         }
     });
 
     $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
-        var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
-        console.log(time_left)
-        if(time_left <= 3){
-            $scope.play_next_auto()
+        if($(ytplayer).html() != ''){
+            var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
+            if(time_left <= 3){
+                $scope.play_next_auto()
+            }
         }
     });
 
@@ -37,6 +42,8 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     $scope.play_next = function(){
         if($rootScope.NEXT_READY){
             $rootScope.SONG_INDEX += 1;
+
+            coverflow('albumflow').to($rootScope.SONG_INDEX);
             MusicPlayer.pause(ytplayer);
 
             //some bomb ass logic
@@ -59,17 +66,24 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             $rootScope.next_playing = $rootScope.SONGS[$rootScope.SONG_INDEX + 1]
 
             if($rootScope.SONG_INDEX + 1 < $rootScope.SONGS.length){
-                var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
-                promise.then(function(url){
-                    var youtube_url = url;
+                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX + 1].youtube_url;
+                if(youtube_url != undefined){
                     MusicPlayer.loadVideo(youtube_url, "nextplayer")
-                });
+                }
+                else{
+                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
+                    promise.then(function(url){
+                        var youtube_url = url;
+                        MusicPlayer.loadVideo(youtube_url, "nextplayer")
+                    });
+                }
             }
         }
     };
     $scope.play_previous = function(){
         if($rootScope.PREV_READY){
             $rootScope.SONG_INDEX -= 1;
+            coverflow('albumflow').to($rootScope.SONG_INDEX);
             MusicPlayer.pause(ytplayer);
 
             //some bomb ass logic
@@ -91,11 +105,17 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             $rootScope.previous_playing = $rootScope.SONGS[$rootScope.SONG_INDEX - 1];
 
             if($rootScope.SONG_INDEX > 0){
-                var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX - 1]);
-                promise.then(function(url){
-                    var youtube_url = url;
+                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX - 1].youtube_url;
+                if(youtube_url != undefined){
                     MusicPlayer.loadVideo(youtube_url, "prevplayer")
-                });
+                }
+                else{
+                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX - 1]);
+                    promise.then(function(url){
+                        var youtube_url = url;
+                        MusicPlayer.loadVideo(youtube_url, "prevplayer")
+                    });
+                }
             }
         }
     };
