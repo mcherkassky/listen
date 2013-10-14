@@ -3,6 +3,7 @@ __author__ = 'mcherkassky'
 import pdb
 import json
 
+from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
 from flask import render_template
 from mongoengine import *
@@ -25,6 +26,7 @@ def make_response(songs):
     return json.dumps(response)
 
 @app.route('/')
+@requires_auth
 def index():
     return render_template('/index/index.html')
 
