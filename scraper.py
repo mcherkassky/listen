@@ -4,6 +4,7 @@ import urllib2
 import pdb
 import lxml
 import re
+from unidecode import unidecode
 
 from youtube.models import Artist, Album, Song
 from bs4 import BeautifulSoup
@@ -71,8 +72,8 @@ def scrape_album_page(url, artist):
     except:
         album_listeners = ""
 
-    album = Album(title=album_title,
-                  artist=artist.name,
+    album = Album(title=unidecode(album_title),
+                  artist=unidecode(artist.name),
                   artist_id=artist.id,
                   img=album_img,
                   plays=album_plays,
@@ -99,10 +100,10 @@ def scrape_album_page(url, artist):
         # if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
         #     continue
 
-        song = Song(title=song_title,
-                    artist=artist.name,
+        song = Song(title=unidecode(song_title),
+                    artist=unidecode(artist.name),
                     artist_id=artist.id,
-                    album=album.title,
+                    album=unidecode(album.title),
                     album_id=album.id,
                     img=album_img,
                     album_index=i,
@@ -138,7 +139,7 @@ def scrape_landing_page(url):
             plays = ""
             listeners = ""
 
-        artistdb = Artist(name=name,
+        artistdb = Artist(name=unidecode(name),
                           img=img,
                           similar=similar_artists,
                           plays=plays,
