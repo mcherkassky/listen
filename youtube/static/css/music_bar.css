@@ -1,0 +1,38 @@
+.navbar .btn {
+    margin-top:0;
+    border-radius:0;
+    line-height:10px;
+}
+
+.navbar .song-detail{
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:0;
+    padding-right:0;
+    width:175px
+}
+
+.slider span.bar{
+    background:white;
+    box-shadow:inset 0px 0px 0px;
+}
+
+.slider span.pointer{
+    width:8px;
+    height:11px;
+    top:-2px;
+    background-color:#34495e;
+    border-radius:0;
+    border:0;
+}
+
+.slider span.pointer:after {
+    opacity:0;
+}
+
+.slider span.bubble.limit {
+    color: white;
+}
+.slider span.bubble {
+    color: white;
+}

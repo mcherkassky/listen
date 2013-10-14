@@ -1,0 +1,45 @@
+<div class="navbar-inner" style="background-color:#bdc3c7">
+  <div id="music-player" class='container'>
+      <span ng-controller="PlayerCtrl">
+          <span ng-switch on="PLAYER_STATUS">
+              <a ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
+              <a ng-switch-when="pause" ng-click="play()" class="player-btn btn btn-large"><i class="icon-white icon-play icon-large"></i></a>
+              <a ng-switch-when="play" ng-click="pause()" class="player-btn btn btn-large"><i class="icon-white icon-pause icon-large"></i></a>
+              <a ng-switch-default ng-click="play()" class="player-btn btn btn-large"><i class="icon-white icon-play icon-large"></i></a>
+              <a ng-click="play_next()" class="player-btn btn btn-large"><i class="icon-white icon-fast-forward icon-large"></i></a>
+          </span>
+          <button disabled class="btn song-detail">
+              <div style="font-size:100%;color:#34495e">[[currently_playing.title]]</div>
+              <br>
+              <div style="font-size:80%;color:#34495e"> [[currently_playing.artist]]</div>
+          </button>
+      </span>
+
+      <div dropdown class="pull-right">
+          <div class='yt-thumbnail row-fluid' ng-repeat="video in youtube_results" data-drag="true"
+           data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="youtube_results"
+           jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+              <div class="span3">
+                  <img alt="Thumbnail" src=[[video.img]] width=100>
+              </div>
+              <div class="span9">
+                  <div style="font-size:120%">
+                      <a target="_blank" href="http://www.youtube.com/watch?v=[[video.youtube_url]]">[[video.title]]</a>
+                  </div>
+                  <div>
+                      by <b>[[video.author]]</b> <span style='color:grey'>●</span> [[video.view_count]] views
+                  </div>
+                  <div>
+                      [[video.description]]
+                  </div>
+              </div>
+          </div>
+      </div>
+      <span ng-controller="PlayerCtrl">
+          <div class='span4 pull-right' style='width:300px;margin:0;margin-top:18px;'>
+              <slider class='slider' floor="0" ceiling=[[$root.PLAYER_LENGTH]] step="1" ng-model='$root.PLAYER_TIME' translate="format_to_time" precision="2"></slider>
+          </div>
+      </span>
+
+  </div>
+</div>
