@@ -22,6 +22,24 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                 player_id,
                 "1", "1", "8",
                 null, null, params, null, null);
+
+
+            //load slider
+            $('#slider').slider({
+                min: 0,
+                max: $rootScope.PLAYER_LENGTH
+            });
+            $rootScope.$watch('PLAYER_TIME', function(){
+                if($(ytplayer).html() != ''){
+                    $('#slider').slider('value',$rootScope.PLAYER_TIME);
+                    var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
+                    if(time_left <= 3){
+                        $rootScope.play_next_auto()
+                    }
+                }
+            })
+
+
         },
         search: function(song){
             var youtube_url = $q.defer(); //q promise callback dis some fancy ass shit

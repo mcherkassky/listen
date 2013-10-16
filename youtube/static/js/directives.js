@@ -13,6 +13,18 @@ musicModule.directive('timeify', function($timeout,$http){
     }
 });
 
+musicModule.directive('ngRightClick', function($parse) {
+    return function(scope, element, attrs) {
+        var fn = $parse(attrs.ngRightClick);
+        element.bind('contextmenu', function(event) {
+            scope.$apply(function() {
+                event.preventDefault();
+                fn(scope, {$event:event});
+            });
+        });
+    };
+});
+
 musicModule.directive('dropdown', function($document, $timeout, $http) {
     return {
       restrict: 'A',

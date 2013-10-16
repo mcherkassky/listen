@@ -36,8 +36,15 @@
           </div>
       </div>
       <span ng-controller="PlayerCtrl">
-          <div class='span4 pull-right' style='width:300px;margin:0;margin-top:18px;'>
-              <slider class='slider' floor="0" ceiling=[[$root.PLAYER_LENGTH]] step="1" ng-model='$root.PLAYER_TIME' translate="format_to_time" precision="2"></slider>
+          <div class='pull-right row-fluid' style='position:relative;width:350px;margin:0;top:18px;'>
+              <!--<slider ng-show="false" class='slider' floor="0" ceiling=[[$root.PLAYER_LENGTH]] step="1" ng-model='$root.PLAYER_TIME' translate="format_to_time" precision="2"></slider>-->
+              <div class="span3">
+                  <span style="position:relative;top:-6px;font-size:80%;color:#ebedef"> [[format_to_time(PLAYER_TIME)]] / [[format_to_time(PLAYER_LENGTH)]]</span>
+              </div>
+              <div class="span9">
+                  <div id="slider" class="ui-slider slider"></div>
+              </div>
+
           </div>
       </span>
 

@@ -1,6 +1,14 @@
 musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, MusicPlayer){
     $rootScope.PLAYER_SEEK = false;
-    $('.pointer').mousedown(function(event){
+
+    //initialize slider
+    $('#slider').slider({
+        max:0,
+        min:0
+    });
+
+
+    $('.ui-slider-handle').mousedown(function(event){
         $rootScope.PLAYER_SEEK = true;
         $scope.pause();
 //        event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
@@ -9,7 +17,7 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
 
     $('#music-player').mouseup(function(event){
         if($rootScope.PLAYER_SEEK){
-            $scope.seekTo($rootScope.PLAYER_TIME);
+            $scope.seekTo($('#slider').slider('value'));
             $scope.play();
             $rootScope.PLAYER_SEEK = false;
 //            event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
