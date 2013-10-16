@@ -81,8 +81,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         }).success(function(data){
                 console.log(data);
                 $scope.songs = data;
-//                $scope.all_songs.playlist = data;
-//                $rootScope.coverflow()
             })
     };
 
