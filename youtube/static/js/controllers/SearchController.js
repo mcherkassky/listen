@@ -86,10 +86,13 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 
     $scope.play_album_contents = function(album){
         $scope.get_album_contents(album.id);
-        $timeout(function(){
-            $scope.load_videos($scope.songs,0);
-            $('#songs-tab').trigger('click')
-        },1000);
+        var listener = $scope.$watch('songs', function(newVal, oldVal){
+            if(newVal != oldVal){
+                $scope.load_videos($scope.songs,0);
+                $('#songs-tab').trigger('click')
+                listener()
+            }
+        })
 
     };
 

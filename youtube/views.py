@@ -48,6 +48,8 @@ def artist():
 @app.route('/search/<query>')
 def search(query):
     query = query.replace('+', ' ')
+    # songs = list(Song.objects(Q(title__icontains=query) | Q(album__icontains=query) | Q(artist__icontains=query)).order_by('listeners'))
+
     songs = list(Song.objects(Q(title__icontains=query) | Q(album__icontains=query) | Q(artist__icontains=query)).order_by('-listeners')[:20]) #fix this
     albums = list(Album.objects.order_by('-listeners').filter(Q(title__icontains=query) | Q(artist__icontains=query))[:25])
     artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:25])
