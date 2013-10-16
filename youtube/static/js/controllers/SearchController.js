@@ -17,6 +17,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $rootScope.currently_playing = undefined;
     $scope.playlist_songs = [];
     $scope.youtube_results = [];
+    $scope.testtest = true;
 
     var load_video_to_container = function(song, player_id){
         if(song.youtube_url != undefined){
@@ -74,7 +75,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     };
 
     $scope.get_album_contents = function(album_id){
-
         $http({
             method: 'GET',
             url: '/albums/' + album_id
@@ -84,6 +84,37 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 //                $scope.all_songs.playlist = data;
 //                $rootScope.coverflow()
             })
+    };
+
+    $scope.play_album_contents = function(album){
+        $scope.get_album_contents(album.id);
+        $timeout(function(){
+            $scope.load_videos($scope.songs,0);
+            $('#songs-tab').trigger('click')
+        },1000);
+
+    };
+
+    $scope.refreshTiles = function(container_id){
+        console.log(container_id);
+        $timeout(function(){
+            $(container_id).masonry({
+                'gutter':10
+            })
+        },10)
+
+    };
+
+    var tile_images = function(container_id){
+        $timeout(function(){
+                $(container_id).masonry({
+                    'gutter': 10
+                });
+        },10)
+
+    };
+    $scope.test = function(element){
+        console.log(element)
     };
 
     //watching search bar
@@ -110,12 +141,17 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                         if(data != undefined){
 //                            $rootScope.all_songs.playlist = data['songs'];
 //                            $rootScope.coverflow();
+//                            $('#albums').masonry('destroy')
+                            if($('#albums').css('position') == 'relative'){
+                                $('#albums').masonry('destroy')
+                            }
                             $scope.songs = data['songs'];
                             $scope.albums = data['albums'];
                             $scope.artists = data['artists'];
                         }
                         $scope.loading = false;
                         $scope.results = true;
+                        tile_images('#albums')
                     })
                 }
             },1000);

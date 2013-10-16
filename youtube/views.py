@@ -49,8 +49,8 @@ def artist():
 def search(query):
     query = query.replace('+', ' ')
     songs = list(Song.objects(Q(title__icontains=query) | Q(album__icontains=query) | Q(artist__icontains=query)).order_by('-listeners')[:20]) #fix this
-    albums = list(Album.objects.order_by('-listeners').filter(title__icontains=query)[:5])
-    artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:5])
+    albums = list(Album.objects.order_by('-listeners').filter(Q(title__icontains=query) | Q(artist__icontains=query))[:25])
+    artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:25])
 
     #make response
     response = {

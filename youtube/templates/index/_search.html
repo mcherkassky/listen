@@ -14,47 +14,91 @@
 
 
     <br>
+
     <div class='row-fluid'>
-        <tabset>
-            <tab heading="Songs">
-                <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
-                <table ng-show='results' class='table table-striped table-hover table-condensed'>
-                    <thead>
-                        <tr>
-                            <td width='20px'>
-                            </td>
-                            <td width='200px'>
-                                Title
-                            </td>
-                            <td width='100px'>
-                                Time
-                            </td>
-                            <td width='150px'>
-                                Artist
-                            </td>
-                            <td width='200px' style="overflow: hidden">
-                                Album
-                            </td>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" id="songs-tab" data-toggle="tab">Songs</a></li>
+                <li><a ng-click="refreshTiles('#albums')" href="#tab2" id="albums-tab" data-toggle="tab">Albums</a></li>
+                <li><a href="#tab3" id="artists-tab" data-toggle="tab">Artists</a></li>
+                <li><a href="#tab4" id="playlists-tab" data-toggle="tab">Playlists</a></li>
+                <li><a href="#tab5" id="radio-tab" data-toggle="tab">Radio</a></li>
+            </ul>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-click="load_videos(songs,$index);" ng-repeat="song in songs" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
-                            <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
-                            <td> [[song.title]] </td>
-                            <td timeify> [[song.duration]] </td>
-                            <td> [[song.artist]] </td>
-                            <td ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
+            <div class="tab-content" style="margin: 0 auto;">
+                <div class="tab-pane active" id="tab1">
+                    <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
+                    <table ng-show='results' class='table table-striped table-hover table-condensed'>
+                        <thead>
+                            <tr>
+                                <td width='15px'>
+                                </td>
+                                <td width='200px'>
+                                    Title
+                                </td>
+                                <td width='100px'>
+                                    Time
+                                </td>
+                                <td width='150px'>
+                                    Artist
+                                </td>
+                                <td width='200px' style="overflow: hidden">
+                                    Album
+                                </td>
 
-                        </tr>
-                    </tbody>
-                </table>
-            </tab>
-            <tab heading="Albums">Feature in progress</tab>
-            <tab heading="Artists">Feature in progress</tab>
-            <tab heading="Playlists">Feature in progress</tab>
-            <tab heading="Radio">Feature in progress</tab>
-        </tabset>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-click="load_videos(songs,$index);" ng-repeat="song in songs" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+                                <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
+                                <td> [[song.title]] </td>
+                                <td timeify> [[song.duration]] </td>
+                                <td> [[song.artist]] </td>
+                                <td ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
+                    <div ng-show='results' id="albums">
+                        <div class="item" ng-repeat="album in albums">
+                            <div ng-click ="play_album_contents(album)" class="album-art-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="album-art">
+                                    <div class="front">
+                                        <!--<img src="http://userserve-ak.last.fm/serve/500/27784721/Let+It+Be+Naked.png" height="150px" width="150px">-->
+                                        <img src=[[album.img]] height="150px" width="150px">
+                                    </div>
+                                    <div class="back" style="position:relative">
+                                        <img src='/static/img/vinyl.png' height="150px" width="150px">
+                                        <div class='album-detail' style='top:30px'>
+                                            <div class='album-detail-title'>
+                                                [[album.title]]
+                                            </div>
+                                        </div>
+                                        <div class='album-detail' style='top:100px'>
+                                            <div class='album-detail-artist'>
+                                                [[album.artist]]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <p>Howdy, I'm in Section 4.</p>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <p>Howdy, I'm in Section 2.</p>
+                </div>
+                <div class="tab-pane" id="tab5">
+                    <p>Howdy, I'm in Section 2.</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
