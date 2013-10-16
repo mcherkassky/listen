@@ -25,11 +25,6 @@ def make_response(songs):
         } for song in songs]
     return json.dumps(response)
 
-@app.route('/')
-@requires_auth
-def index():
-    return render_template('/index/index.html')
-
 @app.route('/albums/<album_id>', methods=['GET'])
 def albums(album_id):
     album = Album.objects.get(id=album_id)
