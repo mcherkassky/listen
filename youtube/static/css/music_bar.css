@@ -1,10 +1,20 @@
-.navbar .btn {
+#music-player {
+    position: fixed;
+    margin-top: 0px;
+    opacity: 1;
+    background-color: #bdc3c7;
+    z-index: 100;
+    padding-left: 30px;
+    padding-right: 100px;
+}
+
+.btn.song-detail {
     margin-top:0;
     border-radius:0;
     line-height:10px;
 }
 
-.navbar .song-detail{
+.btn.song-detail{
     padding-top:0;
     padding-bottom:0;
     padding-left:0;

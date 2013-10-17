@@ -66,14 +66,14 @@
 
 .navbar-search .icon-search {
     position: absolute;
-    top: 13px;
-    left: 27px;
+    top: 8px;
+    left: 10px;
     /*background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");*/
 }
 
 .navbar-search .icon-youtube-sign {
     position: absolute;
-    top: 13px;
-    left: 27px;
+    top: 8px;
+    left: 10px;
     /*background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");*/
 }

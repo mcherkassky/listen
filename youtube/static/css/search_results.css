@@ -112,3 +112,11 @@
 #albums .item {
   margin-bottom: 10px;
 }
+
+.tab-content {
+    overflow:visible;
+}
+
+.nav-tabs > li.active {
+    z-index: 1;
+}

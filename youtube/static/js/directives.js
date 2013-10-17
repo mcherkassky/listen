@@ -32,8 +32,8 @@ musicModule.directive('dropdown', function($document, $timeout, $http) {
       transclude: true,
       template: '<span ng-init="show_menu = false">' +
                   '<form style="border:0" class="navbar-search pull-right">' +
-                  '<input ng-show="search_toggle_bool" style="height:10px;margin-bottom:0" ng-model="search_query" type="text" class="search span3">' +
-                  '<input ng-show="!search_toggle_bool" style="height:10px;margin-bottom:0" ng-model="youtube_query" type="text" class="search span3">' +
+                  '<input ng-show="search_toggle_bool" placeholder="Search Listen.fm" style="width:200px;height:10px;margin-bottom:0" ng-model="search_query" type="text" class="search span3">' +
+                  '<input ng-show="!search_toggle_bool" placeholder="Search Youtube" style="width:200px;height:10px;margin-bottom:0" ng-model="youtube_query" type="text" class="search span3">' +
                   '<span ng-click="search_toggle()" ng-show="search_toggle_bool"><div class="icon-search"></div></span>' +
                   '<span ng-click="search_toggle()" ng-show="!search_toggle_bool"><div class="icon-youtube-sign"></div></span>' +
                   '</form>' +

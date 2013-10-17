@@ -15,9 +15,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.loading = false;
     $scope.results = false;
     $rootScope.currently_playing = undefined;
-    $scope.playlist_songs = [];
+
     $scope.youtube_results = [];
-    $scope.testtest = true;
 
     var load_video_to_container = function(song, player_id){
         if(song.youtube_url != undefined){
@@ -60,9 +59,9 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             $rootScope.previous_playing = songs[index-1]
         }
 
-        if($rootScope.all_songs.playlist != songs){
+        if($rootScope.playlist.contents != songs){
             console.log('im here')
-            $rootScope.all_songs.playlist = songs
+            $rootScope.playlist.contents = songs
             $rootScope.coverflow();
             $timeout(function(){
                 coverflow('albumflow').to(index);

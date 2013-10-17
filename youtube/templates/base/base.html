@@ -61,7 +61,7 @@
   <div ng-controller='SearchCtrl'>
       <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="navbar-inner">
-              <div class="container">
+              <div class="container" style="height:60px">
                   <a style="border:0" class="brand" href="{{url_for('index')}}">Listen.fm</a>
                   <span class='pull-right' style="visibility:hidden">
                         <span id="prevplayer"></span>
@@ -70,8 +70,9 @@
                   </span>
               </div>
           </div>
-          {% include "/base/_player_bar.html" %}
+
       </div>
+      {% include "/base/_player_bar.html" %}
 
     {%block content%}{%endblock%}
     </div>

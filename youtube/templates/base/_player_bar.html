@@ -1,5 +1,5 @@
-<div class="navbar-inner" style="background-color:#bdc3c7">
-  <div id="music-player" class='container'>
+<div style="background-color:#bdc3c7">
+  <div ng-model="playlist.contents" data-drop="true" jqyoui-droppable="{multiple:true,onDrop:'coverflow'}" id="music-player" class='container'>
       <span ng-controller="PlayerCtrl">
           <span ng-switch on="PLAYER_STATUS">
               <a ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
@@ -36,10 +36,10 @@
           </div>
       </div>
       <span ng-controller="PlayerCtrl">
-          <div class='pull-right row-fluid' style='position:relative;width:350px;margin:0;top:18px;'>
+          <div class='pull-right row-fluid' style='position:relative;width:350px;margin:0;margin-right:40px;top:18px;'>
               <!--<slider ng-show="false" class='slider' floor="0" ceiling=[[$root.PLAYER_LENGTH]] step="1" ng-model='$root.PLAYER_TIME' translate="format_to_time" precision="2"></slider>-->
               <div class="span3">
-                  <span style="position:relative;top:-6px;font-size:80%;color:#ebedef"> [[format_to_time(PLAYER_TIME)]] / [[format_to_time(PLAYER_LENGTH)]]</span>
+                  <span style="position:relative;top:-6px;font-size:90%;color:#ebedef"> [[format_to_time(PLAYER_TIME)]] / [[format_to_time(PLAYER_LENGTH)]]</span>
               </div>
               <div class="span9">
                   <div id="slider" class="ui-slider slider"></div>

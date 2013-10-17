@@ -7,12 +7,10 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         min:0
     });
 
-
+    //handle slider events
     $('.ui-slider-handle').mousedown(function(event){
         $rootScope.PLAYER_SEEK = true;
         $scope.pause();
-//        event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
-//        event.stopImmediatePropagation()
     });
 
     $('#music-player').mouseup(function(event){
@@ -20,11 +18,10 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             $scope.seekTo($('#slider').slider('value'));
             $scope.play();
             $rootScope.PLAYER_SEEK = false;
-//            event.preventDefault(); // this prevents only a default action but previously assigned listeners will be called
-//            event.stopImmediatePropagation()
         }
     });
 
+    //player time watcher to auto play next song
     $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
         if($(ytplayer).html() != ''){
             var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
@@ -34,7 +31,7 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     });
 
-    //CONTROLS//
+    //MUSIC CONTROLS//
     //play video
     $scope.play = function(){
         MusicPlayer.play(ytplayer);
