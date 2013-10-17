@@ -6,7 +6,9 @@ from flask import Flask, url_for, request, session, redirect, render_template
 from flask.ext.mongoengine import MongoEngine
 from functools import wraps
 import logging
+import requests
 import db
+from db import User
 
 import settings
 
@@ -17,17 +19,9 @@ app.debug = True
 app.secret_key = 'zefr'
 app.config.from_object(settings)
 
-
 from youtube import models
-
 from youtube import views
-
-
-
-
-
 from flask_oauth import OAuth
-
 
 oauth = OAuth()
 
@@ -38,7 +32,7 @@ facebook = oauth.remote_app('facebook',
     authorize_url='https://www.facebook.com/dialog/oauth',
     consumer_key="529423813793656",
     consumer_secret="e3535cd1ebc8d29b712fc853b670ff9e",
-    request_token_params={'scope': 'email'}
+    request_token_params={'scope': 'email, user_birthday'}
 )
 
 
@@ -87,6 +81,15 @@ def facebook_required(f):
             return facebook.authorize(callback=url_for('facebook_authorized',\
                         next=request.args.get('next'), _external=True))
         else:
+            fb_response = requests.get('https://graph.facebook.com/me?access_token=' + session['facebook_token'][0])
+            text = fb_response.text
+            from StringIO import StringIO
+            import json
+            io = StringIO(text)
+            js = json.load(io)
+            email = js['email']
+            session['email'] = email
+
             return f(*args, **kwargs)
     return decorator
 
@@ -95,7 +98,17 @@ def facebook_required(f):
 @app.route('/')
 @facebook_required
 def index():
-    return render_template('/index/index.html')
+    user = User.get_by_email(session['email'])
+
+    if user is None:
+        user = User(email=session['email'])
+        user.save()
+
+    playlists = user.playlists
+
+    return render_template('/index/index.html',
+            playlists=playlists)
+
 
 
 @app.route('/home')

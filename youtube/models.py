@@ -8,16 +8,25 @@ from mongoengine import *
 
 class Playlist(EmbeddedDocument):
 
+    user_id = ObjectIdField()
     name = StringField()
     songs = ListField(ObjectIdField)
 
+    tags = ListField(StringField)
 
 
 class User(Document):
 
     name = StringField()
     email = EmailField()
-    playlists = ListField(EmbeddedDocumentField(Playlist))
+    playlist_ids = ListField(ObjectIdField())
+
+
+    @property
+    def playlists(self):
+        playlists = Playlist.objects.filter(email=self.email)
+        return playlists.to_json()
+
 
     @classmethod
     def exists(cls, email):
