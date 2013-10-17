@@ -59,18 +59,30 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             $rootScope.previous_playing = songs[index-1]
         }
 
-        if($rootScope.playlist.contents != songs){
-            console.log('im here')
-            $rootScope.playlist.contents = songs
-            $rootScope.coverflow();
-            $timeout(function(){
-                coverflow('albumflow').to(index);
-            },100)
+
+        if(coverflow('albumflow').config == null){
+            $rootScope.coverflow(songs, index)
+
         }
         else{
-//            debugger;
-            coverflow('albumflow').to(index);
+            if(songs == coverflow('albumflow').config.playlist){
+                coverflow('albumflow').to(index);
+            }
+            else{
+                $rootScope.coverflow(songs, index)
+            }
         }
+
+//        if($rootScope.music.up_next != songs){
+//            console.log('im here')
+//            $rootScope.music.up_next = songs;
+//            $rootScope.coverflow('songs');
+//
+//        }
+//        else{
+////            debugger;
+//            coverflow('albumflow').to(index);
+//        }
     };
 
     $scope.get_album_contents = function(album_id){
@@ -78,25 +90,25 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             method: 'GET',
             url: '/albums/' + album_id
         }).success(function(data){
-                console.log(data);
-                $scope.songs = data;
+//                console.log(data);
+                $scope.music.songs = data;
             })
     };
 
     $scope.play_album_contents = function(album){
-        $scope.get_album_contents(album.id);
-        var listener = $scope.$watch('songs', function(newVal, oldVal){
+        var listener = $scope.$watch('music.songs', function(newVal, oldVal){
             if(newVal != oldVal){
-                $scope.load_videos($scope.songs,0);
-                $('#songs-tab').trigger('click')
+                $scope.load_videos($scope.music.songs,0);
+                $('#songs-tab').trigger('click');
                 listener()
             }
         })
+        $scope.get_album_contents(album.id);
 
     };
 
     $scope.refreshTiles = function(container_id){
-        console.log(container_id);
+//        console.log(container_id);
         $timeout(function(){
             $(container_id).masonry({
                 'gutter':10
@@ -145,9 +157,9 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                             if($('#albums').css('position') == 'relative'){
                                 $('#albums').masonry('destroy')
                             }
-                            $scope.songs = data['songs'];
-                            $scope.albums = data['albums'];
-                            $scope.artists = data['artists'];
+                            $scope.music.songs = data['songs'];
+                            $scope.music.albums = data['albums'];
+                            $scope.music.artists = data['artists'];
                         }
                         $scope.loading = false;
                         $scope.results = true;

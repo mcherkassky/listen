@@ -49,7 +49,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-click="load_videos(songs,$index);" ng-repeat="song in songs" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+                            <tr ng-click="load_videos(music.songs,$index);" ng-repeat="song in music.songs" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
                                 <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
                                 <td> [[song.title]] </td>
                                 <td timeify> [[song.duration]] </td>
@@ -63,7 +63,7 @@
                 <div class="tab-pane" id="tab2">
                     <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
                     <div ng-show='results' id="albums">
-                        <div class="item" ng-repeat="album in albums">
+                        <div class="item" ng-repeat="album in music.albums">
                             <div ng-click ="play_album_contents(album)" class="album-art-container" ontouchstart="this.classList.toggle('hover');">
                                 <div class="album-art">
                                     <div class="front">

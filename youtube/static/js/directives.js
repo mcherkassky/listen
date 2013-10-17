@@ -2,7 +2,6 @@ musicModule.directive('timeify', function($timeout,$http){
     return{
         link: function(scope, element){
             $timeout(function(){
-                console.log(element.html())
                 var value = element.html();
                 var hours = Math.floor(value / 3600);
                 var minutes = Math.floor(value % 3600 / 60);
