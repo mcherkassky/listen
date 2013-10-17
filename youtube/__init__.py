@@ -2,13 +2,13 @@ __author__ = 'mcherkassky'
 
 import pdb
 
-from flask import Flask, url_for, request, session, redirect, render_template
+from flask import Flask, url_for, request, session, redirect, render_template, g
 from flask.ext.mongoengine import MongoEngine
 from functools import wraps
 import logging
 import requests
 import db
-from db import User
+
 
 import settings
 
@@ -98,11 +98,14 @@ def facebook_required(f):
 @app.route('/')
 @facebook_required
 def index():
-    user = User.get_by_email(session['email'])
+    user = db.User.get_by_email(session['email'])
 
     if user is None:
-        user = User(email=session['email'])
+        user = db.User(email=session['email'])
         user.save()
+
+    session['user_id'] = user.id
+    g.user = user
 
     playlists = user.playlists
 
@@ -114,5 +117,45 @@ def index():
 @app.route('/home')
 def home():
     return render_template('home.html')
+
+
+
+@app.route('/playlist', methods=["PUT"])
+def add_to_playlist():
+    return "adding to playlist"
+
+
+@app.route('/user/playlists/', methods=["POST"])
+def create_playlist():
+    playlist_json = request.json
+    playlist = db.Playlist(request.json['name'])
+    playlist.user_id = session['user_id']
+    playlist.save()
+    
+    g.user.add_playlist(playlist)
+
+    return ""
+
+@app.route('/user/playlists/<playlist_id>', methods=["DELETE"])
+def delete_playlist(playlist_id):
+
+    g.user.remove_playlist(playlist_id)
+
+    return ""
+
+@app.route('/user/playlists/<playlist_id>', methods=["PUT"])
+def edit_playlist(playlist_id):
+
+    playlist_json = request.json
+    song_id = request.json['song_id']
+
+    playlist = db.Playlist.objects.get(id=playlist_id)
+    playlist.song_ids.append(song_id)
+    playlist.save()
+
+    return ""
+
+
+
 
 

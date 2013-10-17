@@ -10,7 +10,7 @@ class Playlist(EmbeddedDocument):
 
     user_id = ObjectIdField()
     name = StringField()
-    songs = ListField(ObjectIdField)
+    song_ids = ListField(ObjectIdField)
 
     tags = ListField(StringField)
 
@@ -26,6 +26,29 @@ class User(Document):
     def playlists(self):
         playlists = Playlist.objects.filter(email=self.email)
         return playlists.to_json()
+
+
+    @property
+    def add_playlist(self, playlist):
+        playlist_ids.append(playlist.id)
+
+
+    @property
+    def remove_playlist(self, playlist_id):
+        playlist_ids.remove(playlist_id)
+        try:
+            Playlist.objects.get(id=playlist_id).delete()
+        except:
+            return
+
+
+
+    @property
+    def delete_playlist(self, playlist_id):
+        try:
+            Playlist.objects.get(id=playlist_id).delete()
+        except:
+            return
 
 
     @classmethod
