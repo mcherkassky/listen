@@ -8,6 +8,7 @@ from functools import wraps
 import logging
 import requests
 import db
+from models import User, Playlist
 
 
 import settings
@@ -98,19 +99,19 @@ def facebook_required(f):
 @app.route('/')
 @facebook_required
 def index():
-    user = db.User.get_by_email(session['email'])
+    user = User.get_by_email(session['email'])
 
     if user is None:
-        user = db.User(email=session['email'])
+        user = User(email=session['email'])
         user.save()
 
-    session['user_id'] = user.id
+    # session['user_id'] = user.id
     g.user = user
 
-    playlists = user.playlists
+    # playlists = user.playlists
 
-    return render_template('/index/index.html',
-            playlists=playlists)
+    return render_template('/index/index.html')
+            # playlists=playlists)
 
 
 
@@ -128,7 +129,7 @@ def add_to_playlist():
 @app.route('/user/playlists/', methods=["POST"])
 def create_playlist():
     playlist_json = request.json
-    playlist = db.Playlist(request.json['name'])
+    playlist = Playlist(request.json['name'])
     playlist.user_id = session['user_id']
     playlist.save()
     
@@ -149,7 +150,7 @@ def edit_playlist(playlist_id):
     playlist_json = request.json
     song_id = request.json['song_id']
 
-    playlist = db.Playlist.objects.get(id=playlist_id)
+    playlist = Playlist.objects.get(id=playlist_id)
     playlist.song_ids.append(song_id)
     playlist.save()
 
