@@ -18,6 +18,24 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 
     $scope.youtube_results = [];
 
+    // handles up next droppable
+    $rootScope.up_next = function(){
+        if($rootScope.is_up_next_playing == undefined){
+            $scope.load_videos($rootScope.music.up_next, 0);
+            $rootScope.is_up_next_playing = true;
+        }
+        else if($rootScope.is_up_next_playing){
+            $rootScope.coverflow();
+            $scope.dynamic_load_videos($rootScope.music.up_next, $rootScope.SONG_INDEX)
+        }
+        else{
+            $rootScope.music.up_next = [$rootScope.music.up_next[$rootScope.music.up_next.length-1]]; //replace with last element
+//            $rootScope.is_up_next_playing = true;
+            $scope.load_videos($rootScope.music.up_next, 0);
+            $rootScope.is_up_next_playing = true;
+        }
+    }
+
     var load_video_to_container = function(song, player_id){
         if(song.youtube_url != undefined){
             MusicPlayer.loadVideo(song.youtube_url, player_id);
@@ -28,6 +46,22 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 var youtube_url = url;
                 MusicPlayer.loadVideo(youtube_url, player_id)
             });
+        }
+    };
+
+    //loading for up next
+    $scope.dynamic_load_videos = function(songs, index){
+        //update song index for all controllers
+        $rootScope.SONGS = songs;
+        $rootScope.SONG_INDEX = index;
+
+        if(index != songs.length - 1){
+            load_video_to_container(songs[index+1], "nextplayer")
+            $rootScope.next_playing = songs[index+1]
+        }
+        if(index != 0){
+            load_video_to_container(songs[index-1], "prevplayer")
+            $rootScope.previous_playing = songs[index-1]
         }
     };
 
@@ -59,9 +93,11 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             $rootScope.previous_playing = songs[index-1]
         }
 
+        $rootScope.music.up_next = songs;
+        $rootScope.is_up_next_playing = false;
 
         if(coverflow('albumflow').config == null){
-            $rootScope.coverflow(songs, index)
+            $rootScope.coverflow()
 
         }
         else{
@@ -69,20 +105,9 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 coverflow('albumflow').to(index);
             }
             else{
-                $rootScope.coverflow(songs, index)
+                $rootScope.coverflow()
             }
         }
-
-//        if($rootScope.music.up_next != songs){
-//            console.log('im here')
-//            $rootScope.music.up_next = songs;
-//            $rootScope.coverflow('songs');
-//
-//        }
-//        else{
-////            debugger;
-//            coverflow('albumflow').to(index);
-//        }
     };
 
     $scope.get_album_contents = function(album_id){
@@ -90,7 +115,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             method: 'GET',
             url: '/albums/' + album_id
         }).success(function(data){
-//                console.log(data);
                 $scope.music.songs = data;
             })
     };
@@ -98,7 +122,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.play_album_contents = function(album){
         var listener = $scope.$watch('music.songs', function(newVal, oldVal){
             if(newVal != oldVal){
-                $scope.load_videos($scope.music.songs,0);
+                $scope.load_videos($scope.music.up_next,0);
                 $('#songs-tab').trigger('click');
                 listener()
             }
@@ -108,7 +132,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     };
 
     $scope.refreshTiles = function(container_id){
-//        console.log(container_id);
         $timeout(function(){
             $(container_id).masonry({
                 'gutter':10
@@ -124,9 +147,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 });
         },10)
 
-    };
-    $scope.test = function(element){
-        console.log(element)
     };
 
     //watching search bar

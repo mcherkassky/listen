@@ -40,11 +40,11 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/api/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381430846380" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380572474177" ignored="false" />
     <file path="/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380572355785" ignored="false" />
-    <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381981525701" ignored="false" />
+    <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382055308076" ignored="false" />
     <file path="/_player.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380743406334" ignored="false" />
-    <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382050549355" ignored="false" />
+    <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382055635418" ignored="false" />
     <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381961456319" ignored="false" />
-    <file path="/SearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381980854765" ignored="false" />
+    <file path="/SearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382055267108" ignored="false" />
     <file path="/MusicPlayer.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381960103201" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/custom_input.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640049144" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/view.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380633873941" ignored="false" />
@@ -128,7 +128,7 @@
     <file path="/dropdown.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381604853719" ignored="false" />
     <file path="/coverflow.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381678402608" ignored="false" />
     <file path="/music_bar.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381968367130" ignored="false" />
-    <file path="/_player_bar.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382050817438" ignored="false" />
+    <file path="/_player_bar.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382053206457" ignored="false" />
     <file path="/search_results.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381965987651" ignored="false" />
     <file path="/auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381724420737" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/html/admin/accounts.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381943902664" ignored="false" />
@@ -163,10 +163,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SearchController.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SearchController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="20" selection-start="2078" selection-end="2087" vertical-scroll-proportion="-33.846153">
+            <state line="21" column="36" selection-start="821" selection-end="821" vertical-scroll-proportion="0.40140846">
               <folding />
             </state>
           </provider>
@@ -175,7 +175,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="45" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+            <state line="18" column="46" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -184,15 +184,16 @@
       <file leaf-file-name="_search.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="122" selection-start="2713" selection-end="2713" vertical-scroll-proportion="-17.944445">
+            <state line="138" column="43" selection-start="8279" selection-end="8279" vertical-scroll-proportion="-10.222222">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -229,10 +230,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_player_bar.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_player_bar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="0.01940756">
+            <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="-0.6785714">
               <folding />
             </state>
           </provider>
@@ -260,10 +261,10 @@
         <option value="$PROJECT_DIR$/youtube/static/css/search_results.css" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js" />
         <option value="$PROJECT_DIR$/youtube/static/js/directives.js" />
-        <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
-        <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
-        <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
         <option value="$PROJECT_DIR$/youtube/templates/base/_player_bar.html" />
+        <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
+        <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
+        <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
       </list>
     </option>
   </component>
@@ -721,7 +722,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="15" selection-start="1126" selection-end="1126" vertical-scroll-proportion="-20.461538" />
+        <state line="30" column="15" selection-start="1126" selection-end="1126" vertical-scroll-proportion="-20.461538">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/css/music_bar.css">
@@ -753,36 +756,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="58" selection-start="3911" selection-end="3916" vertical-scroll-proportion="0.8596059" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="122" selection-start="2713" selection-end="2713" vertical-scroll-proportion="-17.944445">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="109" column="58" selection-start="3911" selection-end="3916" vertical-scroll-proportion="0.8596059">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="6" selection-start="2912" selection-end="2950" vertical-scroll-proportion="-1.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="-0.6785714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -798,23 +793,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
+    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="45" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="138" column="43" selection-start="8279" selection-end="8279" vertical-scroll-proportion="-10.222222">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="20" selection-start="2078" selection-end="2087" vertical-scroll-proportion="-33.846153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="0.01940756">
+        <state line="21" column="36" selection-start="821" selection-end="821" vertical-scroll-proportion="0.40140846">
           <folding />
         </state>
       </provider>

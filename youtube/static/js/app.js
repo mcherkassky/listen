@@ -16,6 +16,7 @@ musicModule.run(function($rootScope){
     $rootScope.SONG_INDEX = 0;
 
     $rootScope.search_toggle_bool = true;
+    $rootScope.is_up_next_playing = undefined;
 
     $rootScope.format_to_time = function(value){
         var hours = Math.floor(value / 3600);
@@ -31,14 +32,14 @@ musicModule.run(function($rootScope){
         artists:[]
     };
 
-    $rootScope.coverflow = function(playlist,item){
+    $rootScope.coverflow = function(){
         coverflow('albumflow').remove();
         coverflow('albumflow').setup({
             //mode: "flash",
             flash: "http://luwes.co/js-cover-flow/coverflow.swf",
-            playlist: playlist,
+            playlist: $rootScope.music.up_next,
             width: '100%',
-            item:item,
+            item:$rootScope.SONG_INDEX,
             height: 250,
             y: -20,
             backgroundcolor: "ffffff",
@@ -49,11 +50,8 @@ musicModule.run(function($rootScope){
             textstyle: ".coverflow-text{color:#000000;text-align:center;font-family:Arial Rounded MT Bold,Arial;} .coverflow-text h1{font-size:14px;font-weight:normal;line-height:21px;} .coverflow-text h2{font-size:11px;font-weight:normal;} .coverflow-text a{color:#0000EE;}"
 
         })
-    }
+    };
 
-    // handles up next droppable
-    $rootScope.up_next = function(){
-        console.log($rootScope.music.songs)
-    }
+
 
 });
