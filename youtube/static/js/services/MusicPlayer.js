@@ -23,7 +23,6 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                 "1", "1", "8",
                 null, null, params, null, null);
 
-
             //load slider
             $('#slider').slider({
                 min: 0,
@@ -55,13 +54,14 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             return youtube_url.promise;
         },
         play: function(player){
+
             $rootScope.PLAYER_STATUS = 'play';
             player.setVolume($rootScope.PLAYER_VOLUME);
             player.playVideo();
 
             $rootScope.PLAYER_TIME = Math.round(player.getCurrentTime());
             $rootScope.PLAYER_LENGTH = player.getDuration();
-
+            debugger;
             //poll time in seconds
             $rootScope.getTime = setInterval(function(){
                 $rootScope.$apply(function(){

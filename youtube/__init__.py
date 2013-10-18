@@ -22,6 +22,7 @@ app.config.from_object(settings)
 
 from youtube import models
 from youtube import views
+from auth import requires_auth
 from flask_oauth import OAuth
 
 
@@ -98,6 +99,7 @@ def facebook_required(f):
 
 
 @app.route('/')
+@requires_auth
 @facebook_required
 def index():
     user = User.get_by_email(session['email'])

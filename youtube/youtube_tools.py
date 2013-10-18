@@ -34,14 +34,14 @@ def getVideoFeed(search_text):
             description = entry.media.description.text[0:50] + '...'
         except:
             description = "No description available"
-        feed_out.append({'title': title,
-                         'img': img,
-                         'view_count': view_count,
-                         'author': author,
-                         'youtube_url': youtube_url,
+        feed_out.append({'title': unicode(title, errors='replace'),
+                         'img': unicode(img, errors='replace'),
+                         'view_count': unicode(view_count, errors='replace'),
+                         'author': unicode(author, errors='replace'),
+                         'youtube_url': unicode(youtube_url, errors='replace'),
                          'artist': 'YouTube',
-                         'duration': duration,
-                         'description': description})
+                         'duration': unicode(duration, errors='replace'),
+                         'description': unicode(description, errors='replace')})
     return feed_out
 
 #get actual youtube objects from feed

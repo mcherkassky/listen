@@ -71,7 +71,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         if($rootScope.PLAYER_STATUS == 'play')
             MusicPlayer.pause(ytplayer);
 
-
         //update song index for all controllers
         $rootScope.SONGS = songs;
         $rootScope.SONG_INDEX = index;
