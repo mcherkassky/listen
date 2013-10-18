@@ -163,10 +163,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SearchController.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SearchController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="821" selection-end="821" vertical-scroll-proportion="0.40140846">
+            <state line="21" column="36" selection-start="821" selection-end="821" vertical-scroll-proportion="-15.346154">
               <folding />
             </state>
           </provider>
@@ -181,10 +181,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="43" selection-start="8279" selection-end="8279" vertical-scroll-proportion="-10.222222">
+            <state line="114" column="35" selection-start="6681" selection-end="6681" vertical-scroll-proportion="0.45960125">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -233,7 +233,7 @@
       <file leaf-file-name="_player_bar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="-0.6785714">
+            <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="3.0357144">
               <folding />
             </state>
           </provider>
@@ -768,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="-0.6785714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="46" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
@@ -793,9 +786,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="36" selection-start="821" selection-end="821" vertical-scroll-proportion="-15.346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="97" selection-start="136" selection-end="136" vertical-scroll-proportion="3.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="43" selection-start="8279" selection-end="8279" vertical-scroll-proportion="-10.222222">
+        <state line="114" column="35" selection-start="6681" selection-end="6681" vertical-scroll-proportion="0.45960125">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -815,13 +822,6 @@
             <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="821" selection-end="821" vertical-scroll-proportion="0.40140846">
-          <folding />
         </state>
       </provider>
     </entry>
