@@ -133,7 +133,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr ng-click="load_videos(music.songs,$index);" ng-repeat="song in music.up_next track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+                                    <!--<tr ng-click="load_videos(music.up_next,$index);$rootScope.is_up_next_playing = true;" ng-repeat="song in music.up_next track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">-->
+                                    <tr ng-repeat="song in music.up_next track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
                                         <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
                                         <td> [[song.title]] </td>
                                         <td> [[format_to_time(song.duration)]] </td>
