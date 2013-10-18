@@ -24,6 +24,7 @@ from youtube import models
 from youtube import views
 from flask_oauth import OAuth
 
+
 oauth = OAuth()
 
 facebook = oauth.remote_app('facebook',
@@ -31,8 +32,8 @@ facebook = oauth.remote_app('facebook',
     request_token_url=None,
     access_token_url='/oauth/access_token',
     authorize_url='https://www.facebook.com/dialog/oauth',
-    consumer_key="529423813793656",
-    consumer_secret="e3535cd1ebc8d29b712fc853b670ff9e",
+    consumer_key=settings.FACEBOOK_APP_ID,
+    consumer_secret=settings.FACEBOOK_SECRET_KEY,
     request_token_params={'scope': 'email, user_birthday'}
 )
 
