@@ -42,7 +42,7 @@
     <file path="/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380572355785" ignored="false" />
     <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382145309791" ignored="false" />
     <file path="/_player.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380743406334" ignored="false" />
-    <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382143435897" ignored="false" />
+    <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382146217171" ignored="false" />
     <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381961456319" ignored="false" />
     <file path="/SearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382142766766" ignored="false" />
     <file path="/MusicPlayer.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382058334841" ignored="false" />
@@ -191,10 +191,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.4853273">
+            <state line="66" column="0" selection-start="2360" selection-end="2360" vertical-scroll-proportion="-8.269231">
               <folding />
             </state>
           </provider>
@@ -212,10 +212,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="95" selection-start="2182" selection-end="2182" vertical-scroll-proportion="-29.857143">
+            <state line="59" column="51" selection-start="3229" selection-end="3229" vertical-scroll-proportion="0.9047619">
               <folding />
             </state>
           </provider>
@@ -283,8 +283,8 @@
         <option value="$PROJECT_DIR$/youtube/static/lib/jquery-context-menu/jquery.contextMenu.js" />
         <option value="$PROJECT_DIR$/youtube/static/lib/jquery-context-menu/jquery.contextMenu.css" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
-        <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
+        <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
       </list>
     </option>
   </component>
@@ -889,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="95" selection-start="2182" selection-end="2182" vertical-scroll-proportion="-29.857143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/lib/jquery-context-menu/jquery.contextMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1045" column="87" selection-start="41036" selection-end="41056" vertical-scroll-proportion="-5.9615383">
@@ -908,7 +901,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.4853273">
+        <state line="66" column="0" selection-start="2360" selection-end="2360" vertical-scroll-proportion="-8.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="51" selection-start="3229" selection-end="3229" vertical-scroll-proportion="0.9047619">
           <folding />
         </state>
       </provider>
