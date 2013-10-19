@@ -47,7 +47,7 @@
                                 data-index=[[$index]]>
                                 <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
                                 <td> [[song.title]] </td>
-                                <td timeify> [[format_to_time(song.duration)]] </td>
+                                <td> [[format_to_time(song.duration)]] </td>
                                 <td> [[song.artist]] </td>
                                 <td ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
 

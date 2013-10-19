@@ -215,7 +215,7 @@
       <file leaf-file-name="_search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="51" selection-start="3229" selection-end="3229" vertical-scroll-proportion="0.9047619">
+            <state line="49" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.430839">
               <folding />
             </state>
           </provider>
@@ -908,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="51" selection-start="3229" selection-end="3229" vertical-scroll-proportion="0.9047619">
+        <state line="49" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.430839">
           <folding />
         </state>
       </provider>
