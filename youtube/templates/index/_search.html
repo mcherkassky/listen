@@ -2,14 +2,6 @@
     <br>
     <br>
     <br>
-    <!--<div ng-model="playlist.contents" data-drop="true" jqyoui-droppable="{multiple:true,onDrop:'coverflow'}" style="border:2px solid black; height:60px">-->
-        <!--<span>-->
-            <!--<img ng-cloak ng-click="load_videos(playlist_songs,$index);" style="margin:4px" width=50 height=50-->
-                 <!--src='[[item.img]]' ng-repeat='item in playlist_songs track by $index'-->
-                 <!--ng-show="item.title" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}"-->
-                 <!--ng-model="all_songs.playlist" jqyoui-droppable="{index: [[$index]],animate:false}"/>-->
-        <!--</span>-->
-    <!--</div>-->
     <div id="albumflow"></div>
 
 
@@ -49,7 +41,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-click="load_videos(music.songs,$index);" ng-repeat="song in music.songs track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+                            <tr class="context-menu" ng-click="load_videos(music.songs,$index);" ng-repeat="song in music.songs track by $index"
+                                data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}"
+                                ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}"
+                                data-index=[[$index]]>
                                 <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
                                 <td> [[song.title]] </td>
                                 <td timeify> [[song.duration]] </td>

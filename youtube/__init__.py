@@ -100,16 +100,16 @@ def facebook_required(f):
 
 @app.route('/')
 @requires_auth
-@facebook_required
+# @facebook_required
 def index():
-    user = User.get_by_email(session['email'])
-
-    if user is None:
-        user = User(email=session['email'])
-        user.save()
+    # user = User.get_by_email(session['email'])
+    #
+    # if user is None:
+    #     user = User(email=session['email'])
+    #     user.save()
 
     # session['user_id'] = user.id
-    g.user = user
+    # g.user = user
 
     # playlists = user.playlists
 

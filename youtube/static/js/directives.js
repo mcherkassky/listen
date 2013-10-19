@@ -12,18 +12,6 @@ musicModule.directive('timeify', function($timeout,$http){
     }
 });
 
-musicModule.directive('ngRightClick', function($parse) {
-    return function(scope, element, attrs) {
-        var fn = $parse(attrs.ngRightClick);
-        element.bind('contextmenu', function(event) {
-            scope.$apply(function() {
-                event.preventDefault();
-                fn(scope, {$event:event});
-            });
-        });
-    };
-});
-
 musicModule.directive('dropdown', function($document, $timeout, $http) {
     return {
       restrict: 'A',
@@ -53,7 +41,6 @@ musicModule.directive('dropdown', function($document, $timeout, $http) {
                 searchText = newVal;
                 searchTimeout = $timeout(function(){
                     if(scope.youtube_query==""){
-                        console.log('yo')
                         scope.loading=false;
                         scope.results=false;
                         scope.results = false;

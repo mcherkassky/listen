@@ -65,7 +65,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         }
     };
 
-    $scope.load_videos = function(songs, index){
+    $rootScope.load_videos = function(songs, index){
         if($rootScope.currently_playing == songs[index])
             return;
         if($rootScope.PLAYER_STATUS == 'play')
@@ -182,7 +182,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                         }
                         $scope.loading = false;
                         $scope.results = true;
-                        tile_images('#albums')
+                        tile_images('#albums');
+                        $scope.contextMenu()
                     })
                 }
             },1000);

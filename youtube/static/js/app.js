@@ -5,7 +5,7 @@ var musicModule = angular.module('musicModule',['ui.bootstrap','uiSlider','ngDra
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope){
+musicModule.run(function($rootScope, MusicPlayer){
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 50;
     $rootScope.PLAYER_TIME = 0;
@@ -51,6 +51,40 @@ musicModule.run(function($rootScope){
 
         })
     };
+
+    $rootScope.contextMenu = function(){
+        $(function(){
+            $.contextMenu({
+                selector: '.context-menu',
+                callback: function(key, options) {
+                    console.log(key)
+                    if(key == 'play'){
+                        $rootScope.load_videos($rootScope.music.songs,options.$trigger.data('index'));
+                    }
+                    else if(key == "queue"){
+                        debugger;
+                    }
+
+//
+//                    debugger;
+//                    var m = "clicked: " + key;
+//                    window.console && console.log(m) || alert(m);
+                },
+                items: {
+                    "play": {name: "Play", icon:'play'},
+                    "next": {name: "Play Up Next"},
+                    "queue": {name: "Add To Queue"},
+                    "paste": {
+                        name:"Add To Playlist",
+                        items:{
+                            'p1': {name: "Playlist 1"},
+                            'p2': {name: "Playlist 2"}
+                        }
+                    }
+                }
+            });
+        });
+    }
 
 
 

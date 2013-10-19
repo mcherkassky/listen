@@ -95,10 +95,11 @@ def scrape_album_page(url, artist):
         try:
             song_listeners = song.find('td', {'class', 'reachCell'}).string.strip().replace(',', '')
         except:
-            song_listeners = ""
+            song_listeners = "0"
 
         # if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
         #     continue
+
 
         song = Song(title=unidecode(song_title),
                     artist=unidecode(artist.name),
@@ -109,7 +110,8 @@ def scrape_album_page(url, artist):
                     album_index=i,
                     duration=song_duration,
                     listeners=song_listeners)
-        song.save()
+        if int(song_listeners) >= .1 * int(album_listeners):
+            song.save()
     return 'success'
 
 
