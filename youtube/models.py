@@ -91,6 +91,8 @@ class Album(Document):
     artist = StringField()
     img = StringField()
 
+    songs = ListField()
+
     tags = ListField()
     similar = ListField()
 
