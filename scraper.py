@@ -27,11 +27,9 @@ def time_to_seconds(time):
 def scrape_album_landing_page(url, artist):
     while True:
         # try:
-        landing = open_landing(url) #BeautifulSoup(urllib2.urlopen(url, timeout=30).read(), 'lxml')
+        landing = open_landing(url)
         if landing is None:
             continue
-        # except:
-        #     pdb.set_trace()
 
         try:
             links = [album.find('a').get('href') for album in landing.findAll('div', {'class', 'album-item-detail-wrapper'})]
@@ -52,7 +50,7 @@ def scrape_album_landing_page(url, artist):
 
 
 def scrape_album_page(url, artist):
-    landing = open_landing(url)#BeautifulSoup(urllib2.urlopen(url).read(),'lxml')
+    landing = open_landing(url)
     if landing is None:
         return None
 
@@ -64,17 +62,19 @@ def scrape_album_page(url, artist):
     if int(album_plays) < 10000:
         return None
 
-    album_title = landing.find('div', {'class','crumb-wrapper'}).find('h1').string.strip()
+    album_title = landing.find('div', {'class', 'crumb-wrapper'}).find('h1').string.strip()
     print album_title
-    album_img = landing.find('div', {'class','album-cover-wrapper'}).find('img').get('src')
+
+    album_img = landing.find('div', {'class', 'album-cover-wrapper'}).find('img').get('src')
     try:
-        album_listeners = landing.find('li', {'class','listeners'}).find('b').string.replace(',', '')
+        album_listeners = landing.find('li', {'class', 'listeners'}).find('b').string.replace(',', '')
     except:
         album_listeners = ""
 
     album = Album(title=unidecode(album_title),
                   artist=unidecode(artist.name),
                   artist_id=artist.id,
+                  songs=[],
                   img=album_img,
                   plays=album_plays,
                   listeners=album_listeners)
@@ -97,21 +97,28 @@ def scrape_album_page(url, artist):
         except:
             song_listeners = "0"
 
-        # if Song.objects.filter(title=song_title, artist=artist, duration=song_duration):
-        #     continue
+        if int(song_listeners) < .05 * int(album_listeners):
+            continue
 
-
-        song = Song(title=unidecode(song_title),
-                    artist=unidecode(artist.name),
-                    artist_id=artist.id,
-                    album=unidecode(album.title),
-                    album_id=album.id,
-                    img=album_img,
-                    album_index=i,
-                    duration=song_duration,
-                    listeners=song_listeners)
-        if int(song_listeners) >= .1 * int(album_listeners):
+        try:
+            song = Song.objects().get(Q(title=unidecode(song_title)) & Q(artist=artist.name) & Q(duration=song_duration))
+            album = Album.objects.get(id=album.id)
+            album.songs.append(song.id)
+            album.save()
+        except:
+            song = Song(title=unidecode(song_title),
+                        artist=unidecode(artist.name),
+                        artist_id=artist.id,
+                        album=unidecode(album.title),
+                        album_id=album.id,
+                        img=album_img,
+                        album_index=i,
+                        duration=song_duration,
+                        listeners=song_listeners)
             song.save()
+            album = Album.objects.get(id=album.id)
+            album.songs.append(song.id)
+            album.save()
     return 'success'
 
 
@@ -140,6 +147,10 @@ def scrape_landing_page(url):
         except:
             plays = ""
             listeners = ""
+
+        artist_exist = Artist.objects().filter(name=unidecode(name))
+        if len(artist_exist) > 0:
+            continue
 
         artistdb = Artist(name=unidecode(name),
                           img=img,
