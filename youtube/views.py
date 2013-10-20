@@ -29,6 +29,7 @@ def make_response(songs):
 @app.route('/albums/<album_id>', methods=['GET'])
 def albums(album_id):
     album = Album.objects.get(id=album_id)
+    pdb.set_trace()
     songs = Song.objects.filter(album_id=album.id).order_by('album_index')
     return make_response(songs)
     #pdb.set_trace()

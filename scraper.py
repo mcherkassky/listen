@@ -8,6 +8,7 @@ from unidecode import unidecode
 
 from youtube.models import Artist, Album, Song
 from bs4 import BeautifulSoup
+from mongoengine import Q
 LASTFM_URL = 'http://www.last.fm/music'
 def open_landing(url, counter=1):
     try:
@@ -147,7 +148,7 @@ def scrape_landing_page(url):
         except:
             plays = ""
             listeners = ""
-
+        pdb.set_trace()
         artist_exist = Artist.objects().filter(name=unidecode(name))
         if len(artist_exist) > 0:
             continue
