@@ -7,10 +7,11 @@ var musicModule = angular.module('musicModule',['ui.bootstrap','uiSlider','ngDra
 
 musicModule.run(function($rootScope, MusicPlayer){
     $rootScope.PLAYER_STATUS = null;
-    $rootScope.PLAYER_VOLUME = 50;
+    $rootScope.PLAYER_VOLUME = 100;
     $rootScope.PLAYER_TIME = 0;
     $rootScope.PLAYER_LENGTH = 0;
     $rootScope.PLAYER_SEEK = null;
+    $rootScope.PLAYER_MUTE = false;
 
     $rootScope.SONGS = null;
     $rootScope.SONG_INDEX = 0;

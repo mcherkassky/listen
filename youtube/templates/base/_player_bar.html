@@ -1,13 +1,23 @@
 <div style="background-color:#bdc3c7">
   <div ng-model="music.up_next" data-drop="true" jqyoui-droppable="{multiple:true,onDrop:'up_next'}" id="music-player" class='container'>
       <span ng-controller="PlayerCtrl">
+          <a ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
           <span ng-switch on="PLAYER_STATUS">
-              <a ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
               <a ng-switch-when="pause" ng-click="play()" class="player-btn btn btn-large"><i class="icon-white icon-play icon-large"></i></a>
               <a ng-switch-when="play" ng-click="pause()" class="player-btn btn btn-large"><i class="icon-white icon-pause icon-large"></i></a>
               <a ng-switch-default ng-click="play()" class="player-btn btn btn-large"><i class="icon-white icon-play icon-large"></i></a>
-              <a ng-click="play_next()" class="player-btn btn btn-large"><i class="icon-white icon-fast-forward icon-large"></i></a>
           </span>
+          <a ng-click="play_next()" class="player-btn btn btn-large"><i class="icon-white icon-fast-forward icon-large"></i></a>
+
+          <a ng-show="!PLAYER_MUTE" ng-click="setVolume(0);PLAYER_MUTE=!PLAYER_MUTE" class="player-btn btn btn-large">
+              <i class="icon-white icon-volume-up icon-large"></i>
+              <div class="volume-container" style="display: none;"><div class="volume-range"><div class="volume-selector" style="height: 83px;"></div></div></div>
+          </a>
+          <a ng-show="PLAYER_MUTE" ng-click="setVolume(PLAYER_VOLUME);PLAYER_MUTE=!PLAYER_MUTE" class="player-btn btn btn-large">
+              <i class="icon-white icon-volume-off icon-large"></i>
+              <div class="volume-container" style="display: none;"><div class="volume-range"><div class="volume-selector" style="height: 83px;"></div></div></div>
+          </a>
+
           <button disabled class="btn song-detail">
               <div style="font-size:100%;color:#34495e">[[currently_playing.title]]</div>
               <br>

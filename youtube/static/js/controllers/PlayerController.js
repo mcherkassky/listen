@@ -44,6 +44,18 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     $scope.pause = function(){
         MusicPlayer.pause(ytplayer);
     };
+
+    //stop video
+    $scope.stop = function(){
+        MusicPlayer.stop(ytplayer);
+    };
+
+    //set volume
+    $scope.setVolume = function(volume){
+        console.log('hello')
+        MusicPlayer.setVolume(ytplayer, volume)
+    };
+
     $scope.play_next = function(){
         if($rootScope.NEXT_READY){
             $rootScope.SONG_INDEX += 1;

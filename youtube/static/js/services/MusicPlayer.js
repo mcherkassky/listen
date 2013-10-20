@@ -24,10 +24,15 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                 null, null, params, null, null);
 
             //load slider
-            $('#slider').slider({
-                min: 0,
-                max: $rootScope.PLAYER_LENGTH
-            });
+            $timeout(function(){
+                $('#slider').slider({
+                    min: 0,
+                    max: $rootScope.PLAYER_LENGTH
+                });
+            },10);
+
+
+
             $rootScope.$watch('PLAYER_TIME', function(){
                 if($(ytplayer).html() != ''){
                     $('#slider').slider('value',$rootScope.PLAYER_TIME);
@@ -37,7 +42,6 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                     }
                 }
             })
-
 
         },
         search: function(song){
@@ -54,14 +58,12 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             return youtube_url.promise;
         },
         play: function(player){
-
             $rootScope.PLAYER_STATUS = 'play';
             player.setVolume($rootScope.PLAYER_VOLUME);
             player.playVideo();
 
             $rootScope.PLAYER_TIME = Math.round(player.getCurrentTime());
             $rootScope.PLAYER_LENGTH = player.getDuration();
-            debugger;
             //poll time in seconds
             $rootScope.getTime = setInterval(function(){
                 $rootScope.$apply(function(){
@@ -75,8 +77,17 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             clearInterval($rootScope.getTime);
             $rootScope.getTime = null
         },
+        stop: function(player){
+            $rootScope.PLAYER_STATUS = 'stop';
+            player.pauseVideo();
+            player.seekTo(0);
+        },
         seek: function(player, time){
             player.seekTo(time)
+        },
+        setVolume: function(player, volume){
+            player.setVolume(volume);
         }
+
     }
 });
