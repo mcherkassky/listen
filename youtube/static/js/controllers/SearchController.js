@@ -62,8 +62,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
             searchTimeout = $timeout(function(){
                 if($scope.search_query==""){
                     $scope.loading=false;
-                    $scope.results=false;
-                    $scope.results = false;
+                    $scope.results=true;
+//                    $scope.results = false;
                 }
                 else{
                     $http.get('/search/' + searchText).success(function(data){

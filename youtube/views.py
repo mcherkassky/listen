@@ -79,7 +79,7 @@ def search(query):
 @app.route('/find/title/<title>/album/<album>/artist/<artist>/duration/<duration>', methods=['GET'])
 def find(title, album, artist, duration):
     artist = artist.split(' feat. ')[0].split(' ft. ')[0].strip()
-    title = re.sub(r'\([^)]*\)', '', title)
+    title = re.sub("(?s)\(.*?Explicit.*?\)", '', title, flags=re.I)
     try:
         videoFeed = getVideoFeed(' '.join([title, artist]))
     except:
