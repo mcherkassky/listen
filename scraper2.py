@@ -103,7 +103,7 @@ def scrape_album_page(url, artist):
         except:
             song_listeners = "0"
 
-        if int(song_listeners) < .05 * int(album_listeners):
+        if int(song_listeners) < .01 * int(album_listeners):
             continue
 
         try:
@@ -129,7 +129,7 @@ def scrape_album_page(url, artist):
 
 
 ##############################################
-artists = open_artists('unique_artists.txt')
+artists = open_artists('ua.txt')
 for artist in artists:
     url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
     landing = open_landing(url)

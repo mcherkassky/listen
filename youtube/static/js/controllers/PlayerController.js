@@ -25,7 +25,7 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
         if($(ytplayer).html() != ''){
             var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
-            if(time_left <= 3){
+            if(time_left <= 1){
                 $scope.play_next_auto()
             }
         }

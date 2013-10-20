@@ -42,7 +42,6 @@ musicModule.controller('SongCtrl', function($rootScope, $q, $scope, $http, $time
         $rootScope.PLAYER_TIME = 0;
 
         load_song_to_container(songs[index], "ytplayer");
-
         $rootScope.PLAYER_STATUS = 'loaded';
         $rootScope.currently_playing = songs[index];
 

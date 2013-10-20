@@ -77,6 +77,12 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                             $scope.music.songs = data['songs'];
                             $scope.music.albums = data['albums'];
                             $scope.music.artists = data['artists'];
+
+                            //selecatble song elements
+                            $('.selectable').multiSelect({
+                                unselectOn: 'body',
+                                keepSelection: false
+                            });
                         }
                         $scope.loading = false;
                         $scope.results = true;

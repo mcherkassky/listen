@@ -12,13 +12,12 @@ from unidecode import unidecode
 from models import Artist, Album, Song
 from youtube import app
 
-def make_response(songs):
+def make_response(songs, album):
     response = [{
             'title': song.title,
             'artist': song.artist,
-            'album': song.album,
-            'img': song.img,
-            'album_index': song.album_index,
+            'album': album.title,
+            'img': album.img,
             'duration': song.duration,
             'youtube_url': song.youtube_url,
             'album_id': str(song.album_id),
@@ -29,9 +28,8 @@ def make_response(songs):
 @app.route('/albums/<album_id>', methods=['GET'])
 def albums(album_id):
     album = Album.objects.get(id=album_id)
-    pdb.set_trace()
-    songs = Song.objects.filter(album_id=album.id).order_by('album_index')
-    return make_response(songs)
+    songs = [Song.objects.get(id=song_id) for song_id in album.songs]
+    return make_response(songs, album)
     #pdb.set_trace()
 
 # @app.route('/songs')
@@ -81,6 +79,7 @@ def search(query):
 @app.route('/find/title/<title>/album/<album>/artist/<artist>/duration/<duration>', methods=['GET'])
 def find(title, album, artist, duration):
     artist = artist.split(' feat. ')[0].split(' ft. ')[0].strip()
+    title = re.sub(r'\([^)]*\)', '', title)
     try:
         videoFeed = getVideoFeed(' '.join([title, artist]))
     except:

@@ -1,6 +1,6 @@
 'use strict';
 
-var musicModule = angular.module('musicModule',['ui.bootstrap','uiSlider','ngDragDrop'],function($interpolateProvider){
+var musicModule = angular.module('musicModule',['ui.bootstrap','ngDragDrop'],function($interpolateProvider){
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]')
 });

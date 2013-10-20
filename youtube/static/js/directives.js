@@ -77,7 +77,7 @@ musicModule.directive('dropdown', function($document, $timeout, $http) {
   });
 
 var formatURL = function(string){
-    output = string.replace('/',' ').replace('?',' ');
+    output = string.replace('/',' ').replace('?',' ').replace('#',' ');
     return output
 };
 

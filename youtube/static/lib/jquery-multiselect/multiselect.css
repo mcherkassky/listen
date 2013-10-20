@@ -1,0 +1,7 @@
+li {
+  -moz-user-select: none;
+}
+.selected {
+    background: #34495e;
+    color: white;
+}

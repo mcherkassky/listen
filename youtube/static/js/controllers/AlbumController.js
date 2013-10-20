@@ -11,12 +11,11 @@ musicModule.controller('AlbumCtrl', function($rootScope, $q, $scope, $http, $tim
     $scope.play_album_contents = function(album){
         var listener = $scope.$watch('music.songs', function(newVal, oldVal){
             if(newVal != oldVal){
-                $scope.load_videos($scope.music.up_next,0);
+//                $scope.load_videos($scope.music.up_next,0);
                 $('#songs-tab').trigger('click');
                 listener()
             }
         });
         $scope.get_album_contents(album.id);
-
     };
 });
