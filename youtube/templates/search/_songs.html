@@ -1,5 +1,5 @@
-<div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
-<table ng-controller="SongCtrl" ng-show='results' class='table table-condensed'>
+<div ng-cloak ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
+<table ng-cloak ng-controller="SongCtrl" ng-show='results' class='table table-condensed'>
     <thead>
         <tr>
             <td width='15px'>
@@ -20,7 +20,7 @@
         </tr>
     </thead>
     <tbody class="selectable">
-        <tr class="context-menu" ng-dblclick="load_videos(music.songs,$index);" ng-repeat="song in music.songs track by $index"
+        <tr ng-cloak class="context-menu" ng-dblclick="load_videos(music.songs,$index);" ng-repeat="song in music.songs track by $index"
             data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}"
             ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}"
             data-index=[[$index]]>

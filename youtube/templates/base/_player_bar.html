@@ -1,27 +1,27 @@
 <div style="background-color:#bdc3c7">
   <div ng-model="music.up_next" data-drop="true" jqyoui-droppable="{multiple:true,onDrop:'up_next'}" id="music-player" class='container'>
       <span ng-controller="PlayerCtrl">
-          <a ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
-          <span ng-switch on="PLAYER_STATUS">
+          <a ng-cloak ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
+          <span ng-cloak ng-switch on="PLAYER_STATUS">
               <a ng-switch-when="pause" ng-click="play()" class="player-btn btn btn-large"><i class="icon-white icon-play icon-large"></i></a>
               <a ng-switch-when="play" ng-click="pause()" class="player-btn btn btn-large"><i class="icon-white icon-pause icon-large"></i></a>
               <a ng-switch-default ng-click="play()" class="player-btn btn btn-large"><i class="icon-white icon-play icon-large"></i></a>
           </span>
-          <a ng-click="play_next()" class="player-btn btn btn-large"><i class="icon-white icon-fast-forward icon-large"></i></a>
+          <a ng-cloak ng-click="play_next()" class="player-btn btn btn-large"><i class="icon-white icon-fast-forward icon-large"></i></a>
 
-          <a ng-show="!PLAYER_MUTE" ng-click="setVolume(0);PLAYER_MUTE=!PLAYER_MUTE" class="player-btn btn btn-large">
+          <a ng-cloak ng-show="!PLAYER_MUTE" ng-click="setVolume(0);PLAYER_MUTE=!PLAYER_MUTE" class="player-btn btn btn-large">
               <i class="icon-white icon-volume-up icon-large"></i>
               <div class="volume-container" style="display: none;"><div class="volume-range"><div class="volume-selector" style="height: 83px;"></div></div></div>
           </a>
-          <a ng-show="PLAYER_MUTE" ng-click="setVolume(PLAYER_VOLUME);PLAYER_MUTE=!PLAYER_MUTE" class="player-btn btn btn-large">
+          <a ng-cloak ng-show="PLAYER_MUTE" ng-click="setVolume(PLAYER_VOLUME);PLAYER_MUTE=!PLAYER_MUTE" class="player-btn btn btn-large">
               <i class="icon-white icon-volume-off icon-large"></i>
               <div class="volume-container" style="display: none;"><div class="volume-range"><div class="volume-selector" style="height: 83px;"></div></div></div>
           </a>
 
           <button disabled class="btn song-detail">
-              <div style="font-size:100%;color:#34495e">[[currently_playing.title]]</div>
+              <div ng-cloak style="font-size:100%;color:#34495e">[[currently_playing.title]]</div>
               <br>
-              <div style="font-size:80%;color:#34495e"> [[currently_playing.artist]]</div>
+              <div ng-cloak style="font-size:80%;color:#34495e"> [[currently_playing.artist]]</div>
           </button>
       </span>
 
@@ -30,16 +30,16 @@
            data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="youtube_results"
            jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
               <div class="span3">
-                  <img alt="Thumbnail" src=[[video.img]] width=100>
+                  <img ng-cloak alt="Thumbnail" src=[[video.img]] width=100>
               </div>
               <div class="span9">
                   <div style="font-size:120%">
-                      <a target="_blank" href="http://www.youtube.com/watch?v=[[video.youtube_url]]">[[video.title]]</a>
+                      <a ng-cloak target="_blank" href="http://www.youtube.com/watch?v=[[video.youtube_url]]">[[video.title]]</a>
                   </div>
-                  <div>
+                  <div ng-cloak>
                       by <b>[[video.author]]</b> <span style='color:grey'>●</span> [[video.view_count]] views
                   </div>
-                  <div>
+                  <div ng-cloak>
                       [[video.description]]
                   </div>
               </div>
@@ -49,12 +49,11 @@
           <div class='pull-right row-fluid' style='position:relative;width:350px;margin:0;margin-right:40px;top:18px;'>
               <!--<slider ng-show="false" class='slider' floor="0" ceiling=[[$root.PLAYER_LENGTH]] step="1" ng-model='$root.PLAYER_TIME' translate="format_to_time" precision="2"></slider>-->
               <div class="span3">
-                  <span style="position:relative;top:-6px;font-size:90%;color:#ebedef"> [[format_to_time(PLAYER_TIME)]] / [[format_to_time(PLAYER_LENGTH)]]</span>
+                  <span style="position:relative;top:-6px;font-size:90%;color:#ebedef" ng-cloak> [[format_to_time(PLAYER_TIME)]] / [[format_to_time(PLAYER_LENGTH)]]</span>
               </div>
               <div class="span9">
                   <div id="slider" class="ui-slider slider"></div>
               </div>
-
           </div>
       </span>
 
