@@ -97,7 +97,6 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     };
     $scope.play_previous = function(){
-        debugger;
         if($rootScope.PLAYER_TIME > 5){
             $scope.seekTo(0)
         }
