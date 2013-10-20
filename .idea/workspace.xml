@@ -4,7 +4,7 @@
     <list default="true" id="7a3a4543-9fbc-4130-9480-0a8a67f9521f" name="Default" comment="" />
     <ignored path="YouTube.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/scraper.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382282901712" ignored="false" />
+    <file path="/scraper.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382283984761" ignored="false" />
     <file path="/run.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380306652752" ignored="false" />
     <file path="/settings.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382197900789" ignored="false" />
     <file path="$USER_HOME$/zefr/Code/nomenclature/nomenclature/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380249651134" ignored="false" />
@@ -145,7 +145,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/steps/utils.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381947863722" ignored="false" />
     <file path="/utils.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381947863282" ignored="false" />
     <file path="/jquery.contextMenu.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382140541657" ignored="false" />
-    <file path="/scraper2.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382200914477" ignored="false" />
+    <file path="/scraper2.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382283268189" ignored="false" />
     <file path="/SongController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382226104527" ignored="false" />
     <file path="/_songs.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382226032322" ignored="false" />
     <file path="/_albums.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382226857758" ignored="false" />
@@ -188,22 +188,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlbumController.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AlbumController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="26" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+            <state line="6" column="26" selection-start="295" selection-end="295" vertical-scroll-proportion="0.24568966">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scraper.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scraper.py">
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="53" selection-start="4672" selection-end="4672" vertical-scroll-proportion="0.24242425">
-              <folding>
-                <element signature="e#28#42#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,7 +209,7 @@
       <file leaf-file-name="scraper2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="35" selection-start="4728" selection-end="4728" vertical-scroll-proportion="0.0">
+            <state line="134" column="20" selection-start="4258" selection-end="4258" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,8 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/youtube/__init__.py" />
-        <option value="$PROJECT_DIR$/youtube/templates/index/index.html" />
         <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
         <option value="$PROJECT_DIR$/youtube/templates/search/_songs.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SongController.js" />
@@ -242,7 +238,9 @@
         <option value="$PROJECT_DIR$/youtube/templates/base/base.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
         <option value="$PROJECT_DIR$/youtube/views.py" />
+        <option value="$PROJECT_DIR$/scraper2.py" />
         <option value="$PROJECT_DIR$/scraper.py" />
+        <option value="$PROJECT_DIR$/unique_artists.txt" />
       </list>
     </option>
   </component>
@@ -429,7 +427,7 @@
       <recent name="$PROJECT_DIR$/youtube/static/lib/swfobject" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.scraper">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -603,8 +601,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.run" />
-        <item index="1" class="java.lang.String" itemvalue="Python.scraper" />
+        <item index="0" class="java.lang.String" itemvalue="Python.scraper" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run" />
         <item index="2" class="java.lang.String" itemvalue="Python.scraper" />
         <item index="3" class="java.lang.String" itemvalue="Python.scraper2" />
         <item index="4" class="java.lang.String" itemvalue="Python.models" />
@@ -622,7 +620,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -633,7 +631,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.2647619" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24770643" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24770643" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -704,38 +702,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="32" selection-start="168" selection-end="168" vertical-scroll-proportion="-0.6785714">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-7.464286">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#2;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#2;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#3;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#3;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#button#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="5" selection-start="7431" selection-end="7431" vertical-scroll-proportion="-11.730769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/lib/coverflow/coverflow.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="19" selection-start="541" selection-end="543" vertical-scroll-proportion="-1.1903615">
@@ -792,23 +758,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="35" selection-start="4728" selection-end="4728" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="18" selection-start="1193" selection-end="1193" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -822,12 +774,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scraper2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="20" selection-start="4258" selection-end="4258" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unique_artists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="92" selection-end="92" vertical-scroll-proportion="0.33702883">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="0" selection-end="11958" vertical-scroll-proportion="0.08189655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="53" selection-start="4672" selection-end="4672" vertical-scroll-proportion="0.24242425">
+        <state line="180" column="22" selection-start="5797" selection-end="5797" vertical-scroll-proportion="0.5529412">
           <folding>
             <element signature="e#28#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="295" selection-end="295" vertical-scroll-proportion="0.24568966">
+          <folding />
         </state>
       </provider>
     </entry>

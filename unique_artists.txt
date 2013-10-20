@@ -1,3 +1,978 @@
+Daft Punk
+Arctic Monkeys
+Lana Del Rey
+Coldplay
+Radiohead
+Avicii
+Miley Cyrus
+Lorde
+Katy Perry
+Muse
+Imagine Dragons
+Ellie Goulding
+Kanye West
+Red Hot Chili Peppers
+Drake
+Lady Gaga
+Rihanna
+Justin Timberlake
+The Beatles
+Florence + the Machine
+Kings of Leon
+The xx
+Nirvana
+Eminem
+Jay-Z
+The Killers
+Pink Floyd
+Linkin Park
+Metallica
+Arcade Fire
+Macklemore & Ryan Lewis
+Queen
+Calvin Harris
+David Bowie
+The Black Keys
+Foo Fighters
+The Rolling Stones
+OneRepublic
+MGMT
+Haim
+Two Door Cinema Club
+Mumford & Sons
+The Strokes
+Gorillaz
+Vampire Weekend
+Green Day
+Britney Spears
+Pearl Jam
+Bruno Mars
+Adele
+Maroon 5
+Queens of the Stone Age
+System of a Down
+M83
+Paramore
+Bastille
+Phoenix
+CHVRCHES
+Franz Ferdinand
+The National
+Depeche Mode
+David Guetta
+The Cure
+Bon Iver
+The Smiths
+Placebo
+Of Monsters and Men
+Led Zeppelin
+Fall Out Boy
+Taylor Swift
+Taylor Swift
+Moby
+Korn
+Bob Dylan
+Oasis
+The White Stripes
+Robin Thicke
+Alt-J
+Michael Jackson
+U2
+Nine Inch Nails
+P!nk
+Foster the People
+Massive Attack
+Panic! at the Disco
+Yeah Yeah Yeahs
+Guns N' Roses
+blink-182
+The Offspring
+Passion Pit
+The Doors
+Black Sabbath
+John Mayer
+Death Cab for Cutie
+Johnny Cash
+Pixies
+30 Seconds to Mars
+The Smashing Pumpkins
+Madonna
+Kendrick Lamar
+Icona Pop
+The Lumineers
+Disclosure
+Capital Cities
+AC/DC
+Foals
+Crystal Castles
+Iron Maiden
+Blur
+R.E.M.
+The Kooks
+The Naked and Famous
+Tame Impala
+Aerosmith
+Skrillex
+Avril Lavigne
+Beck
+Passenger
+Zedd
+Weezer
+Fleetwood Mac
+Snow Patrol
+Daughter
+AWOLNATION
+Empire of the Sun
+A$AP Rocky
+Rammstein
+Modest Mouse
+Marilyn Manson
+Marina & the Diamonds
+Joy Division
+Bonobo
+deadmau5
+Bloc Party
+The Shins
+Rise Against
+My Chemical Romance
+Slipknot
+Rage Against the Machine
+James Blake
+Birdy
+Christina Aguilera
+The Who
+Kasabian
+Amy Winehouse
+Ed Sheeran
+Evanescence
+Bon Jovi
+A Day to Remember
+Jack Johnson
+One Direction
+Avenged Sevenfold
+Lykke Li
+Nickelback
+Regina Spektor
+Bruce Springsteen
+Simon & Garfunkel
+Ke$ha
+The Prodigy
+fun.
+Danny Brown
+Limp Bizkit
+Kid Cudi
+Gotye
+Band of Horses
+Creedence Clearwater Revival
+Alice in Chains
+Frank Ocean
+Edward Sharpe & The Magnetic Zeros
+Fleet Foxes
+The Clash
+Incubus
+Elton John
+Grimes
+Swedish House Mafia
+Papa Roach
+Jimi Hendrix
+M.I.A.
+Armin van Buuren
+Demi Lovato
+The Script
+John Newman
+Iron & Wine
+Portishead
+Jessie J
+Pitbull
+Ylvis
+Interpol
+Keane
+Beastie Boys
+Three Days Grace
+Deftones
+Jason Mraz
+Metric
+Grizzly Bear
+Dire Straits
+Elvis Presley
+Disturbed
+Neil Young
+Black Eyed Peas
+Nicki Minaj
+Feist
+The Neighbourhood
+The Temper Trap
+Air
+The Beach Boys
+Justice
+Nightwish
+Outkast
+Chris Brown
+Bring Me the Horizon
+Alicia Keys
+Sum 41
+Belle and Sebastian
+The Cranberries
+Eric Clapton
+Selena Gomez
+Flo Rida
+Sleigh Bells
+The Police
+Beach House
+Beirut
+Pusha T
+The Velvet Underground
+Naughty Boy
+Pendulum
+will.i.am
+Cage the Elephant
+New Order
+Megadeth
+Kelly Clarkson
+Stevie Wonder
+LCD Soundsystem
+Sia
+The Chemical Brothers
+The Fray
+Editors
+Deep Purple
+MS MR
+The 1975
+Washed Out
+The Weeknd
+Major Lazer
+Ramones
+Dream Theater
+Hans Zimmer
+Tegan and Sara
+Ben Howard
+Grouplove
+Cat Power
+The Knife
+Bullet for My Valentine
+Sufjan Stevens
+Glee Cast
+3 Doors Down
+Snoop Dogg
+Bombay Bicycle Club
+Jimmy Eat World
+Talking Heads
+Scorpions
+Tool
+Chase & Status
+The Kinks
+Nina Simone
+Hot Chip
+The Vaccines
+Soundgarden
+Boards of Canada
+RJD2
+Frank Sinatra
+Tom Waits
+Ozzy Osbourne
+Parov Stelar
+Usher
+Train
+Darkside
+Dr. Dre
+Norah Jones
+Goldfrapp
+Mariah Carey
+No Doubt
+Bob Marley & The Wailers
+Breaking Benjamin
+Audioslave
+Lily Allen
+Nick Cave and the Bad Seeds
+Sting
+John Legend
+The Verve
+Martin Garrix
+Jake Bugg
+Shakira
+Marvin Gaye
+Bright Eyes
+In Flames
+Local Natives
+Pantera
+Miike Snow
+Lynyrd Skynyrd
+Elliott Smith
+Lil' Wayne
+Woodkid
+2Pac
+Justin Bieber
+Sara Bareilles
+Within Temptation
+Billy Joel
+Bob Marley
+Rudimental
+Noah and the Whale
+Kavinsky
+Sonic Youth
+Aphex Twin
+Stone Sour
+Portugal. The Man
+Kaiser Chiefs
+Judas Priest
+TV on the Radio
+Damien Rice
+Slayer
+Animal Collective
+The Postal Service
+Blondie
+The Notorious B.I.G.
+Nero
+Stromae
+White Lies
+Tyler, the Creator
+City and Colour
+Fatboy Slim
+The Jimi Hendrix Experience
+Robbie Williams
+Van Halen
+Alanis Morissette
+Goo Goo Dolls
+Angus & Julia Stone
+Phil Collins
+Santigold
+Kiss
+Skillet
+James Blunt
+Nas
+Crystal Fighters
+Owl City
+J. Cole
+Miles Davis
+Purity Ring
+Kings of Convenience
+Wiz Khalifa
+B.o.B
+The Wombats
+Yann Tiersen
+Jennifer Lopez
+The Flaming Lips
+Jamiroquai
+Billy Talent
+Journey
+Ratatat
+The Fratellis
+A Perfect Circle
+Mika
+Neutral Milk Hotel
+Mogwai
+Bat for Lashes
+Mazzy Star
+Kylie Minogue
+Nelly Furtado
+Counting Crows
+Biffy Clyro
+50 Cent
+Paul McCartney
+Ludovico Einaudi
+Garbage
+Seether
+Azealia Banks
+Phantogram
+Ray Charles
+Dido
+The Tallest Man on Earth
+All Time Low
+Wilco
+Jon Hopkins
+Van Morrison
+Hurts
+Jack White
+Fergie
+Carly Rae Jepsen
+Young the Giant
+Eagles
+Trivium
+The Wanted
+Tom Odell
+ABBA
+Eels
+Metronomy
+Robyn
+Broken Bells
+Toro y Moi
+The Cardigans
+Moderat
+Cults
+Cake
+Ludwig van Beethoven
+2 Chainz
+Apocalyptica
+Iggy Pop
+Olly Murs
+ZZ Top
+Five Finger Death Punch
+Santana
+Rush
+Pet Shop Boys
+of Montreal
+Leonard Cohen
+Alice Cooper
+Prince
+Agnes Obel
+Shinedown
+The Cinematic Orchestra
+Jeff Buckley
+Opeth
+The Decemberists
+James Brown
+Sublime
+Wolfgang Amadeus Mozart
+Stone Temple Pilots
+Duran Duran
+Brand New
+AlunaGeorge
+Genesis
+Flying Lotus
+PJ Harvey
+Travis
+Stereophonics
+John Lennon
+Aretha Franklin
+Explosions in the Sky
+Otis Redding
+Cold War Kids
+Tenacious D
+Louis Armstrong
+Bryan Adams
+Peter Bjorn and John
+Johann Sebastian Bach
+La Roux
+Best Coast
+The Pretty Reckless
+Four Tet
+Big Sean
+Electric Light Orchestra
+Devendra Banhart
+Morcheeba
+Fiona Apple
+Krewella
+The All-American Rejects
+Kodaline
+The Kills
+Lenny Kravitz
+The Civil Wars
+Cut Copy
+Good Charlotte
+Paul Simon
+Eddie Vedder
+Wolfmother
+Nelly
+Tears for Fears
+Bee Gees
+Wu-Tang Clan
+SBTRKT
+Simple Plan
+The Drums
+Yeasayer
+My Bloody Valentine
+Porcupine Tree
+Black Rebel Motorcycle Club
+The Hives
+Nick Drake
+Jefferson Airplane
+Alter Bridge
+Faith No More
+Ariana Grande
+Dropkick Murphys
+London Grammar
+The Roots
+Toto
+Lifehouse
+Knife Party
+Jet
+HIM
+Little Dragon
+Backstreet Boys
+Lou Reed
+Ciara
+Bloodhound Gang
+Killswitch Engage
+Bad Religion
+AFI
+Lupe Fiasco
+Deerhunter
+Christina Perri
+Mac Miller
+St. Lucia
+Burial
+Pretty Lights
+Enrique Iglesias
+a-ha
+Yellowcard
+Oneohtrix Point Never
+Zero 7
+Matt & Kim
+Earl Sweatshirt
+Alex Clare
+Spoon
+Cream
+DJ Shadow
+Iggy Azalea
+Whitney Houston
+Morrissey
+The Glitch Mob
+Jessie Ware
+Radical Face
+The Raconteurs
+Destiny's Child
+Walk the Moon
+Cat Stevens
+Thievery Corporation
+Neon Trees
+God Is An Astronaut
+A Tribe Called Quest
+Misfits
+The Stone Roses
+LMFAO
+Childish Gambino
+Neon Indian
+T.I.
+The Game
+Kate Bush
+Rob Zombie
+Pulp
+Gnarls Barkley
+Bill Withers
+Veronica Maggio
+Cypress Hill
+Hoobastank
+Laura Marling
+John Williams
+The Head and the Heart
+The Avett Brothers
+Infected Mushroom
+Gwen Stefani
+Ella Fitzgerald
+Manic Street Preachers
+Flume
+Scissor Sisters
+Children of Bodom
+Hollywood Undead
+Die Antwoord
+Jay-Z & Kanye West
+The Ting Tings
+Amon Amarth
+Volcano Choir
+Groove Armada
+Ennio Morricone
+Broken Social Scene
+P.O.D.
+The Lonely Island
+Janis Joplin
+Timbaland
+Sub Focus
+Gavin DeGraw
+Cher
+Sean Paul
+Enya
+Ingrid Michaelson
+Andrew Bird
+Kate Nash
+Stars
+Billy Idol
+Phillip Phillips
+Fever Ray
+Yo La Tengo
+Matchbox Twenty
+Kansas
+Youth Lagoon
+R. Kelly
+Volbeat
+James Vincent McMorrow
+Leona Lewis
+Earth, Wind & Fire
+Silversun Pickups
+Billie Holiday
+Ne-Yo
+Caribou
+Godsmack
+She & Him
+UNKLE
+Imogen Heap
+Tricky
+The Used
+Pink
+Enter Shikari
+Friendly Fires
+Tori Amos
+Eurythmics
+Dave Matthews Band
+Miguel
+Psy
+Charli XCX
+Chuck Berry
+Twin Shadow
+Ray Lamontagne
+Sade
+Rhye
+Kaskade
+Staind
+Lamb of God
+Tycho
+George Michael
+Mastodon
+Foreigner
+Serj Tankian
+Mayday Parade
+65daysofstatic
+Gold Panda
+The Libertines
+Supertramp
+King Krule
+Rod Stewart
+Ryan Adams
+The Antlers
+Starfucker
+Daughtry
+Anathema
+Asking Alexandria
+Flux Pavilion
+Sepultura
+Peter Gabriel
+Cyndi Lauper
+Klaxons
+OK Go
+The Dandy Warhols
+Brian Eno
+Katatonia
+First Aid Kit
+Tom Petty and The Heartbreakers
+The Animals
+Wild Nothing
+Creed
+James Morrison
+Boston
+Lostprophets
+Ice Cube
+Gossip
+Wale
+Benny Benassi
+Def Leppard
+Roxette
+Rick Ross
+Elbow
+Third Eye Blind
+Anberlin
+Tyga
+Plain White T's
+Howard Shore
+Alabama Shakes
+Mount Kimbie
+Tracy Chapman
+Al Green
+Gym Class Heroes
+Chromatics
+Dio
+C2C
+Whitesnake
+Emancipator
+Sky Ferreira
+Yes
+NOFX
+Etta James
+Taking Back Sunday
+Pavement
+The Whitest Boy Alive
+Blind Guardian
+Paolo Nutini
+Colbie Caillat
+Wavves
+Helloween
+CocoRosie
+The Maccabees
+Nouvelle Vague
+Drowning Pool
+The Mars Volta
+Lady Antebellum
+Natalia Kills
+Bush
+The Mamas & the Papas
+ScHoolboy Q
+Archive
+Dusty Springfield
+Casper
+INXS
+BANKS
+Sonata Arctica
+Antonio Vivaldi
+Baths
+Luke Bryan
+Ra Ra Riot
+3OH!3
+Joshua Radin
+Miles Kane
+You Me at Six
+Fitz and the Tantrums
+Thin Lizzy
+St. Vincent
+The Pussycat Dolls
+Parkway Drive
+John Coltrane
+Simple Minds
+Far East Movement
+Primal Scream
+Anthrax
+Death Grips
+Klangkarussell
+Basement Jaxx
+Escape the Fate
+Macklemore
+My Morning Jacket
+The Heavy
+Apparat
+The Last Shadow Puppets
+Faithless
+Ludacris
+Junip
+Taio Cruz
+Asaf Avidan
+The Gaslight Anthem
+KT Tunstall
+Frank Turner
+Camera Obscura
+Bibio
+Yuck
+The Jesus and Mary Chain
+Sheryl Crow
+Sex Pistols
+Clint Mansell
+T. Rex
+Django Django
+Joe Cocker
+Madeon
+Flight Facilities
+Machine Head
+The Temptations
+Benjamin Francis Leftwich
+Nat King Cole
+New Found Glory
+Sam Cooke
+Babyshambles
+Jethro Tull
+Lacuna Coil
+Heart
+Blue Foundation
+Dr. Dog
+Hall & Oates
+Neko Case
+Oh Land
+Lindsey Stirling
+Kraftwerk
+The Stooges
+Flyleaf
+TLC
+Manu Chao
+The Band
+Kurt Vile
+Spice Girls
+Atlas Genius
+Amon Tobin
+Flogging Molly
+Nicolas Jaar
+Nancy Sinatra
+Digitalism
+Rodriguez
+Fort Minor
+Martin Solveig
+Smash Mouth
+Thousand Foot Krutch
+Ben Harper
+Survivor
+Suede
+Example
+Kelly Rowland
+Joni Mitchell
+Anna Calvi
+Tom Petty
+Feed Me
+Juicy J
+Coheed and Cambria
+Red
+Chairlift
+Netsky
+Mos Def
+Static-X
+The Mountain Goats
+Carrie Underwood
+Dinosaur Jr.
+Rainbow
+Cee Lo Green
+Austra
+Lissie
+Sarah McLachlan
+Echo & the Bunnymen
+Duffy
+Anna Kendrick
+Cocteau Twins
+College
+Godspeed You! Black Emperor
+Ghost
+Frightened Rabbit
+Cher Lloyd
+Sabaton
+Guano Apes
+DJ Fresh
+Grateful Dead
+Roy Orbison
+The Dead Weather
+Ladytron
+America
+Atreyu
+Badfinger
+Okkervil River
+Rancid
+The Rapture
+Fugees
+Hardwell
+Dizzee Rascal
+Natasha Bedingfield
+Tennis
+Busta Rhymes
+Janet Jackson
+Hole
+The Throne
+Barenaked Ladies
+Siouxsie and the Banshees
+Frank Zappa
+Halestorm
+Electric Guest
+David Gray
+As I Lay Dying
+Common
+Los Hermanos
+The Jackson 5
+Aloe Blacc
+Selena Gomez & the Scene
+Epica
+Puddle of Mudd
+Chevelle
+Warpaint
+Phosphorescent
+Sleeping with Sirens
+Rilo Kiley
+The Magnetic Fields
+Nightmares on Wax
+Eluveitie
+Glasser
+Europe
+Tinie Tempah
+The Byrds
+Alkaline Trio
+Atmosphere
+Theory of a Deadman
+Bassnectar
+A Fine Frenzy
+Seal
+All That Remains
+Florida Georgia Line
+Sick Puppies
+Blake Shelton
+Thom Yorke
+The Subways
+Roxy Music
+Mudvayne
+Everything Everything
+Hooverphonic
+Death
+Ramin Djawadi
+Switchfoot
+Amy Macdonald
+Jamie Cullum
+John Frusciante
+Au Revoir Simone
+Lauryn Hill
+Cobra Starship
+DMX
+N*E*R*D
+Natalie Imbruglia
+Poets of the Fall
+Pierce the Veil
+Girls
+The Allman Brothers Band
+Gogol Bordello
+Gojira
+Akon
+Claude Debussy
+James Arthur
+San Cisco
+Alex Turner
+Sebastian Ingrosso
+Erykah Badu
+Chicago
+Celldweller
+Underworld
+Enigma
+King Crimson
+Diplo
+Dope
+Atoms for Peace
+t.A.T.u.
+Patti Smith
+Chromeo
+Kool & The Gang
+IAMX
+Gramatik
+Adam Lambert
+The Rasmus
+Arch Enemy
+Mayer Hawthorne
+Elvis Costello
+Supergrass
+Deltron 3030
+Mike Will Made-It
+Story of the Year
+Boyce Avenue
+Silverstein
+Manowar
+Unknown Mortal Orchestra
+Soilwork
+The Stranglers
+Buffalo Springfield
+Holy Ghost!
+The Devil Wears Prada
+Donna Summer
+Labrinth
+Gang Starr
+The Cars
+The Horrors
+The Bloody Beetroots
+Perfume
+Pyotr Ilyich Tchaikovsky
+Steve Miller Band
+Steppenwolf
+Skid Row
+Violent Femmes
+Real Estate
+Miami Horror
+Kyuss
+The Red Jumpsuit Apparatus
+Philip Glass
+The Saturdays
+Little Mix
+ATB
+Danny Elfman
+Matisyahu
+Electric Six
+Lionel Richie
+Silverchair
+Nujabes
+Them Crooked Vultures
+Dark Tranquillity
+Porter Robinson
+Beach Fossils
+Solange
+George Harrison
+A$AP Ferg
+Mindless Self Indulgence
+Angels & Airwaves
+Chet Baker
+Tim McGraw
 !!!
 !Bazz feat. Leverne
 #Poundsign#

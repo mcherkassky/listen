@@ -153,6 +153,7 @@ for artist in artists:
 
         artistdb = Artist(name=unidecode(artist.replace('\n', '')),
                           img=img,
+                          tags=tags,
                           similar=similar_artists,
                           plays=plays,
                           listeners=listeners)

@@ -124,6 +124,7 @@ def scrape_album_page(url, artist):
 
 
 def scrape_landing_page(url):
+
     landing = BeautifulSoup(urllib2.urlopen(url).read(), 'lxml')
     artist_list = landing.find('ul', {'class', 'artistList'}).findAll('li')
 
@@ -133,6 +134,10 @@ def scrape_landing_page(url):
 
             img = artist.find('span', {'class', 'image'}).find('img').get('src')
             name = artist.find('strong', {'class', 'name'}).string
+            f.write(name + '\n')
+
+            continue
+            tags = [tag.find('a').string for tag in landing.find('ul', {'class', 'tags'}).findAll('li')]
         except:
             continue
         print name
@@ -148,7 +153,6 @@ def scrape_landing_page(url):
         except:
             plays = ""
             listeners = ""
-        pdb.set_trace()
         artist_exist = Artist.objects().filter(name=unidecode(name))
         if len(artist_exist) > 0:
             continue
@@ -157,10 +161,12 @@ def scrape_landing_page(url):
                           img=img,
                           similar=similar_artists,
                           plays=plays,
+                          tags=tags,
                           listeners=listeners)
         artistdb.save()
 
         scrape_album_landing_page('http://www.lastfm.com' + link + '/+albums', artistdb)
+
 
 
 #scrape_landing_page(LASTFM_URL)
@@ -171,6 +177,9 @@ def scrape_landing_page(url):
 # artists = Artist.objects.all()
 # [artist.delete() for artist in artists]
 
-for i in xrange(1, 100):
+f = open('out.txt', 'w')
+for i in xrange(1, 101):
+    print i
     scrape_landing_page('http://www.last.fm/music?page=' + str(i))
+f.close()
 
