@@ -52,7 +52,6 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
 
     //set volume
     $scope.setVolume = function(volume){
-        console.log('hello')
         MusicPlayer.setVolume(ytplayer, volume)
     };
 
@@ -98,7 +97,11 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     };
     $scope.play_previous = function(){
-        if($rootScope.PREV_READY){
+        debugger;
+        if($rootScope.PLAYER_TIME > 5){
+            $scope.seekTo(0)
+        }
+        else if($rootScope.PREV_READY){
             $rootScope.SONG_INDEX -= 1;
             coverflow('albumflow').to($rootScope.SONG_INDEX);
             MusicPlayer.pause(ytplayer);
@@ -137,6 +140,61 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     };
     $scope.play_next_auto = function(){
+//        if($rootScope.NEXT_READY){
+//            $rootScope.SONG_INDEX += 1;
+//
+//            coverflow('albumflow').to($rootScope.SONG_INDEX);
+////            MusicPlayer.pause(ytplayer);
+//
+//            //some bomb ass logic
+//            $("#ytplayer").attr('id','tempplayer')
+//            $("#nextplayer").attr('id','ytplayer')
+//            $("#prevplayer").attr('id', 'nextplayer')
+//            $("#tempplayer").attr('id','prevplayer')
+//            $(nextplayer).html(''); //remove everything from next player
+//
+//            $rootScope.PREV_READY = true;
+//            $rootScope.NEXT_READY = false;
+//            $rootScope.getTime = null;
+//            MusicPlayer.play(ytplayer);
+////            MusicPlayer.seek(prevplayer,0);
+//
+//            var interval_times = 0;
+//            var volume_transition = setInterval(function(){
+//                MusicPlayer.setVolume(prevplayer, Math.max(0,100-interval_times));
+//                MusicPlayer.setVolume(ytplayer, Math.max(100,interval_times));
+//                interval_times += 1;
+//            },30);
+//
+//            var prev_player_duration = prevplayer.getDuration()
+//            var prev_player_time = setInterval(function(){
+//                if(prev_player_duration == prev_player_time){
+//                    MusicPlayer.pause(prevplayer);
+//                    MusicPlayer.seek(prevplayer,0);
+//                    clearInterval(prev_player_time);
+//                    clearInterval(volume_transition);
+//                }
+//            },50);
+//
+//            var temp_playing = $rootScope.currently_playing
+//            $rootScope.currently_playing = $rootScope.next_playing
+//            $rootScope.previous_playing = temp_playing
+//            $rootScope.next_playing = $rootScope.SONGS[$rootScope.SONG_INDEX + 1]
+//
+//            if($rootScope.SONG_INDEX + 1 < $rootScope.SONGS.length){
+//                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX + 1].youtube_url;
+//                if(youtube_url != undefined){
+//                    MusicPlayer.loadVideo(youtube_url, "nextplayer")
+//                }
+//                else{
+//                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
+//                    promise.then(function(url){
+//                        var youtube_url = url;
+//                        MusicPlayer.loadVideo(youtube_url, "nextplayer")
+//                    });
+//                }
+//            }
+//        }
         $scope.play_next()
     }
 });

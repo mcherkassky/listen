@@ -2,6 +2,7 @@ __author__ = 'mcherkassky'
 
 import pdb
 import json
+import re
 
 from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
@@ -78,6 +79,7 @@ def search(query):
 
 @app.route('/find/title/<title>/album/<album>/artist/<artist>/duration/<duration>', methods=['GET'])
 def find(title, album, artist, duration):
+    artist = artist.split(' feat. ')[0].split(' ft. ')[0].strip()
     try:
         videoFeed = getVideoFeed(' '.join([title, artist]))
     except:
