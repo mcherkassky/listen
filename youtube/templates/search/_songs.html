@@ -1,4 +1,31 @@
 <div ng-cloak ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
+
+<div ng-cloak ng-show="show_youtube_results">
+    <h4 style='text-align:center'> Can't Find What You're Looking For? Try These:</h4>
+    <br>
+    <div ng-click="load_videos([video],0)" class='context-menu yt-row row-fluid' ng-repeat="video in music.youtube_results"
+       data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="youtube_results"
+       jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+        <div>
+            <div class="span3">
+                  <img class='yt-thumbnail' ng-cloak alt="Thumbnail" src=[[video.img]] width='100' height='75'>
+            </div>
+            <div class="span9" style="margin-top:10px;padding-left:10px">
+                  <div style="font-size:120%">
+                      <a ng-cloak target="_blank" href="http://www.youtube.com/watch?v=[[video.youtube_url]]">[[video.title]]</a>
+                  </div>
+                  <div class='yt-author' ng-cloak>
+                      by <b>[[video.author]]</b> <span style='color:grey'>●</span> [[video.view_count]] views
+                  </div>
+                  <div class='yt-description' ng-cloak>
+                      [[video.description]]
+                  </div>
+            </div>
+        </div>
+
+      </div>
+</div>
+
 <table ng-cloak ng-controller="SongCtrl" ng-show='results' class='table table-condensed'>
     <thead>
         <tr>

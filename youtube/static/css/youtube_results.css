@@ -1,0 +1,27 @@
+.yt-row {
+    background-color:white;
+    margin:auto;
+    width:620px;
+    height:125px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px
+}
+
+.yt-thumbnail {
+    margin-left:10px;
+}
+
+.yt-row:hover{
+    background-color:#e1e4e7;
+    cursor:pointer;
+    cursor:hand;
+}
+
+.yt-author {
+    margin-top:7px;
+}
+
+.yt-description{
+    margin-top: 7px;
+}

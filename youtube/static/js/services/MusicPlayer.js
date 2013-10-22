@@ -23,13 +23,13 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                 "1", "1", "8",
                 null, null, params, null, null);
 
-            //load slider
-            $timeout(function(){
-                $('#slider').slider({
-                    min: 0,
-                    max: $rootScope.PLAYER_LENGTH
-                });
-            },10);
+//            //load slider
+//            $timeout(function(){
+//                $('#slider').slider({
+//                    min: 0,
+//                    max: $rootScope.PLAYER_LENGTH
+//                });
+//            },10);
 
 
 
@@ -64,6 +64,12 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
 
             $rootScope.PLAYER_TIME = Math.round(player.getCurrentTime());
             $rootScope.PLAYER_LENGTH = player.getDuration();
+
+            $('#slider').slider({
+                min: 0,
+                max: $rootScope.PLAYER_LENGTH
+            });
+
             //poll time in seconds
             $rootScope.getTime = setInterval(function(){
                 $rootScope.$apply(function(){

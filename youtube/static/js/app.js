@@ -30,7 +30,8 @@ musicModule.run(function($rootScope, MusicPlayer, $timeout){
         up_next:[],
         songs:[],
         albums:[],
-        artists:[]
+        artists:[],
+        youtube_results:[]
     };
 
 //    coverflow('albumflow').setup({

@@ -1,4 +1,8 @@
 musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $timeout, MusicPlayer){
+    $scope.test = function(element){
+        console.log(element)
+    };
+
     $scope.search_toggle = function(){
         $scope.search_toggle_bool = !$scope.search_toggle_bool;
         $scope.search_query = '';
@@ -7,6 +11,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 
     $scope.loading = false;
     $scope.results = false;
+    $scope.show_youtube_results = false;
     $rootScope.currently_playing = undefined;
 
     $scope.youtube_results = [];
@@ -54,6 +59,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 $scope.loading = true;
                 $scope.comments_show = false;
                 $scope.results = false;
+                $scope.show_youtube_results = false;
             }
 
             if (searchTimeout) $timeout.cancel(searchTimeout);
@@ -68,15 +74,24 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 else{
                     $http.get('/search/' + searchText).success(function(data){
                         if(data != undefined){
-//                            $rootScope.all_songs.playlist = data['songs'];
-//                            $rootScope.coverflow();
-//                            $('#albums').masonry('destroy')
                             if($('#albums').css('position') == 'relative'){
                                 $('#albums').masonry('destroy')
                             }
                             $scope.music.songs = data['songs'];
                             $scope.music.albums = data['albums'];
                             $scope.music.artists = data['artists'];
+
+                            if($scope.music.songs.length == 0){
+                                $http.get('/find/' + searchText).success(function(data){
+                                    $scope.music.youtube_results = data;
+                                })
+                                $scope.show_youtube_results = true;
+                            }
+                            else{
+                                $scope.show_youtube_results = false;
+                                $scope.results = true;
+                                tile_images('#albums');
+                            }
 
                             //selecatble song elements
                             $('.selectable').multiSelect({
@@ -85,8 +100,6 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                             });
                         }
                         $scope.loading = false;
-                        $scope.results = true;
-                        tile_images('#albums');
                         $scope.contextMenu()
                     })
                 }
