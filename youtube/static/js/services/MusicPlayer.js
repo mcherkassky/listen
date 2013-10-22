@@ -38,7 +38,7 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                     $('#slider').slider('value',$rootScope.PLAYER_TIME);
                     var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
                     if(time_left <= 3){
-                        $rootScope.play_next_auto()
+                        $rootScope.play_next()
                     }
                 }
             })

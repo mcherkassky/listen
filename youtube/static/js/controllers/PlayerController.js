@@ -22,21 +22,23 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
     });
 
     //player time watcher to auto play next song
-    $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
-        if($(ytplayer).html() != ''){
-            var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
-            if(time_left < 1){
-                $scope.play_next_auto()
-            }
-//            if($(nextplayer).html() != "" && time_left == 1){
+//    $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
+//        if($(ytplayer).html() != ''){
+//            var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
+//            console.log(time_left)
+//            if(time_left <= 3){
 //                debugger;
 //                $scope.play_next_auto()
 //            }
-//            if(time_left == 0){
-//                $scope.stop()
-//            }
-        }
-    });
+////            if($(nextplayer).html() != "" && time_left == 1){
+////                debugger;
+////                $scope.play_next_auto()
+////            }
+////            if(time_left == 0){
+////                $scope.stop()
+////            }
+//        }
+//    });
 
     //MUSIC CONTROLS//
     //play video
@@ -62,7 +64,7 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         MusicPlayer.setVolume(ytplayer, volume)
     };
 
-    $scope.play_next = function(){
+    $rootScope.play_next = function(){
         if($rootScope.NEXT_READY){
             $rootScope.SONG_INDEX += 1;
 
