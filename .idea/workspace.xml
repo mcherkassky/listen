@@ -43,7 +43,7 @@
     <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382408668785" ignored="false" />
     <file path="/_player.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380743406334" ignored="false" />
     <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382222793442" ignored="false" />
-    <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382236552337" ignored="false" />
+    <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382413014917" ignored="false" />
     <file path="/SearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382411932158" ignored="false" />
     <file path="/MusicPlayer.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382299089711" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/custom_input.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640049144" ignored="false" />
@@ -174,7 +174,7 @@
       <file leaf-file-name="MusicPlayer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="21" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
+            <state line="45" column="10" selection-start="1647" selection-end="1647" vertical-scroll-proportion="-4.4615383">
               <folding />
             </state>
           </provider>
@@ -193,6 +193,15 @@
         <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="66" selection-start="1554" selection-end="1554" vertical-scroll-proportion="-11.535714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="13" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.46875">
               <folding />
             </state>
           </provider>
@@ -236,10 +245,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_songs.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_songs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="40" selection-start="328" selection-end="328" vertical-scroll-proportion="0.2240566">
+            <state line="4" column="8" selection-start="287" selection-end="287" vertical-scroll-proportion="-2.7142856">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#1;n#!!top" expanded="true" />
@@ -270,7 +279,6 @@
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SongController.js" />
         <option value="$PROJECT_DIR$/youtube/static/js/directives.js" />
-        <option value="$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js" />
         <option value="$PROJECT_DIR$/youtube/views.py" />
         <option value="$PROJECT_DIR$/youtube/templates/base/_player_bar.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js" />
@@ -279,6 +287,7 @@
         <option value="$PROJECT_DIR$/youtube/static/css/youtube_results.css" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
         <option value="$PROJECT_DIR$/youtube/templates/search/_songs.html" />
+        <option value="$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js" />
       </list>
     </option>
   </component>
@@ -847,13 +856,6 @@
         <state line="3" column="17" selection-start="272" selection-end="272" vertical-scroll-proportion="-2.0357144" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="32" selection-start="3316" selection-end="3318" vertical-scroll-proportion="0.5614458">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="34" selection-start="529" selection-end="531" vertical-scroll-proportion="0.5045662" />
@@ -874,13 +876,6 @@
     <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="20" selection-start="3758" selection-end="3758" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="21" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -935,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="328" selection-end="328" vertical-scroll-proportion="0.2240566">
+        <state line="4" column="8" selection-start="287" selection-end="287" vertical-scroll-proportion="-2.7142856">
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#1;n#!!top" expanded="true" />
@@ -945,6 +940,20 @@
             <element signature="n#style#0;n#td#4;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="10" selection-start="1647" selection-end="1647" vertical-scroll-proportion="-4.4615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="13" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.46875">
+          <folding />
         </state>
       </provider>
     </entry>
