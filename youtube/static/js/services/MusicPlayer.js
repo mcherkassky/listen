@@ -34,13 +34,16 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
 
 
             $rootScope.$watch('PLAYER_TIME', function(){
-                if($(ytplayer).html() != ''){
-                    $('#slider').slider('value',$rootScope.PLAYER_TIME);
-                    var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
-                    if(time_left <= 3){
-                        $rootScope.play_next()
+                if(player_id == 'ytplayer'){
+                    if($(ytplayer).html() != ''){
+                        $('#slider').slider('value',$rootScope.PLAYER_TIME);
+                        var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
+                        if(time_left <= 3){
+                            $rootScope.play_next()
+                        }
                     }
                 }
+
             })
 
         },

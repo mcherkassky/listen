@@ -5,7 +5,7 @@ var musicModule = angular.module('musicModule',['ui.bootstrap','ngDragDrop'],fun
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope, MusicPlayer, $timeout){
+musicModule.run(function($rootScope, PlaylistFactory, MusicPlayer, $timeout){
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
     $rootScope.PLAYER_TIME = 0;
@@ -33,6 +33,9 @@ musicModule.run(function($rootScope, MusicPlayer, $timeout){
         artists:[],
         youtube_results:[]
     };
+
+    $rootScope.playlists = PlaylistFactory.query({user_id: 'hello'});
+
 
 //    coverflow('albumflow').setup({
 //        flash: "http://luwes.co/js-cover-flow/coverflow.swf",
