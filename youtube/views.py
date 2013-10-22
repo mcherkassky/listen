@@ -9,7 +9,7 @@ from youtube_tools import getVideoFeed, getVideoObjects
 from flask import render_template
 from mongoengine import *
 from unidecode import unidecode
-from models import Artist, Album, Song
+from models import Artist, Album, Song, Playlist
 from youtube import app
 
 def make_response(songs, album):
@@ -104,6 +104,16 @@ def youtube_find(query):
         videoFeed = getVideoFeed(unidecode(query))
 
     return json.dumps(videoFeed)
+
+@app.route('/user/<user_id>/playlist', methods=['GET'])
+def playlist(user_id):
+    playlists = Playlist.objects().all()
+
+    pdb.set_trace()
+
+@app.route('/user/<user_id>/playlist/<playlist_id>', methods=['GET'])
+def playlists(user_id, playlist_id):
+    pdb.set_trace()
 
 
 

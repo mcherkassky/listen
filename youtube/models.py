@@ -6,8 +6,7 @@ from youtube import db
 from mongoengine import *
 
 
-class Playlist(EmbeddedDocument):
-
+class Playlist(Document):
     user_id = ObjectIdField()
     name = StringField()
     song_ids = ListField(ObjectIdField)

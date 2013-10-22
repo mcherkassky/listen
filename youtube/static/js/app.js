@@ -1,11 +1,11 @@
 'use strict';
 
-var musicModule = angular.module('musicModule',['ui.bootstrap','ngDragDrop'],function($interpolateProvider){
+var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngDragDrop'],function($interpolateProvider){
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope, PlaylistFactory, MusicPlayer, $timeout){
+musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, $timeout){
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
     $rootScope.PLAYER_TIME = 0;
@@ -33,6 +33,7 @@ musicModule.run(function($rootScope, PlaylistFactory, MusicPlayer, $timeout){
         artists:[],
         youtube_results:[]
     };
+
 
     $rootScope.playlists = PlaylistFactory.query({user_id: 'hello'});
 
