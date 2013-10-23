@@ -7,11 +7,12 @@ from bson import ObjectId
 
 from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
-from flask import render_template, request
+from flask import Flask, url_for, request, session, redirect, render_template, g
 from mongoengine import *
 from unidecode import unidecode
-from models import Artist, Album, Song, Playlist
+from models import Artist, Album, Song, Playlist, User
 from youtube import app
+from auth import requires_auth
 
 def make_response(songs, album):
     response = [{
@@ -110,10 +111,11 @@ def youtube_find(query):
 @app.route('/user/<user_id>/playlist', methods=['GET', 'POST'])
 def playlist(user_id):
     if request.method == 'GET':
-        playlists = Playlist.objects().all()
+        playlists = Playlist.objects().filter(user_id=user_id)
         return playlists.to_json()
     if request.method == 'POST':
         playlist = Playlist()
+        playlist.user_id = user_id
         playlist.name = 'New Playlist'
         playlist.song_ids = []
         playlist.save()
@@ -141,6 +143,12 @@ def song_to_playlist(user_id, playlist_id):
 def song(song_id):
     song = Song.objects.get(id=song_id)
     return json.dumps(song.serialize)
+
+@requires_auth
+@app.route('/user', methods=['GET'])
+def user():
+    user = User.objects().first()
+    return user.to_json()
 
 
 

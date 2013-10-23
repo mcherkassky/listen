@@ -113,7 +113,6 @@ def index():
     # g.user = user
 
     # playlists = user.playlists
-
     return render_template('/index/index.html')
             # playlists=playlists)
 

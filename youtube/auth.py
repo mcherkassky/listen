@@ -1,7 +1,8 @@
 __author__ = 'mcherkassky'
 
 from functools import wraps
-from flask import request, Response
+from flask import request, Response, g, session
+from models import User
 
 
 def check_auth(username, password):
@@ -23,5 +24,11 @@ def requires_auth(f):
         auth = request.authorization
         if not auth or not check_auth(auth.username, auth.password):
             return authenticate()
+
+        User.objects.delete()
+        user = User()
+        user.name = auth.username
+        user.save()
+        g.user = user
         return f(*args, **kwargs)
     return decorated

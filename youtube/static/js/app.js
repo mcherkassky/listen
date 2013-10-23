@@ -5,7 +5,13 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, SongFactory,$timeout){
+musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, SongFactory,$timeout, $http){
+    //get current user
+    $http({
+        url: '/user',
+        method: 'GET'
+    }).success(function(data){$rootScope.user = data});
+
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
     $rootScope.PLAYER_TIME = 0;
@@ -93,14 +99,16 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
                         debugger;
                     }
                     else if(Object.keys(playlist_options).indexOf(key) >= 0){
-                        var playlist = PlaylistFactory.get({user_id:'hello', id:playlist_options[key].id}, function(){
-                            playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid})
+                        var playlist = PlaylistFactory.get({user_id:$rootScope.user._id.$oid, id:playlist_options[key].id}, function(){
+                            playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid});
                             playlist.song_ids.push(options.$trigger.data('id'));
-                            playlist.user_id = 'hello';
+                            playlist.user_id = $rootScope.user._id.$oid;
                             playlist.id = playlist._id.$oid
                             playlist.$save()
-
                             var song = SongFactory.get({song_id:options.$trigger.data('id')}, function(){
+                                if($rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs == undefined){
+                                    $rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs = []
+                                }
                                 $rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs.push(song)
                             });
                         })

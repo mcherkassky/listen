@@ -10,8 +10,8 @@ musicModule.controller('PlaylistCtrl', function($rootScope, $q, $scope, $http, $
         }
     );
 
-    $scope.new_playlist = function(user_id){
-        var playlist = {user_id: user_id};
+    $scope.new_playlist = function(){
+        var playlist = {user_id: $scope.user._id.$oid};
         playlist = PlaylistFactory.save(playlist);
 
         $rootScope.music.playlists.push(playlist)
