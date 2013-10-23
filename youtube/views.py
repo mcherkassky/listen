@@ -107,11 +107,17 @@ def youtube_find(query):
 
     return json.dumps(videoFeed)
 
-@app.route('/user/<user_id>/playlist', methods=['GET'])
+@app.route('/user/<user_id>/playlist', methods=['GET', 'POST'])
 def playlist(user_id):
-    playlists = Playlist.objects().all()
-    return playlists.to_json()
-    # pdb.set_trace()
+    if request.method == 'GET':
+        playlists = Playlist.objects().all()
+        return playlists.to_json()
+    if request.method == 'POST':
+        playlist = Playlist()
+        playlist.name = 'New Playlist'
+        playlist.song_ids = []
+        playlist.save()
+        return playlist.to_json()
 
 @app.route('/user/<user_id>/playlist/<playlist_id>', methods=['GET','POST'])
 def playlists(user_id, playlist_id):

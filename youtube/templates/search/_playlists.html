@@ -27,6 +27,7 @@
                 </a>
             </li>
         </ul>
+        <a ng-click="new_playlist('test')" class="btn btn-inverse">New Playlist</a>
     </div>
     <div class="span9">
         <div class="tab-content" style="margin: 0 auto;">
@@ -43,7 +44,7 @@
 
             </div>
             <div ng-repeat="playlist in music.playlists" class="tab-pane" id="playlist[[$index]]">
-                <table class='table table-striped table-hover table-condensed'>
+                <table class='table table-condensed'>
                     <thead>
                         <tr>
                             <td width='15px'>
@@ -63,9 +64,11 @@
 
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="selectable">
                         <!--<tr ng-click="load_videos(music.up_next,$index);$rootScope.is_up_next_playing = true;" ng-repeat="song in music.up_next track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">-->
-                        <tr ng-repeat="song in playlist.songs track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+                        <tr class="context-menu" ng-dblclick="load_videos(playlist.songs,$index);" ng-repeat="song in playlist.songs track by $index" data-drag="true"
+                            data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}"
+                            ng-model="playlist.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
                             <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
                             <td> [[song.title]] </td>
                             <td> [[format_to_time(song.duration)]] </td>

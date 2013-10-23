@@ -78,7 +78,7 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
     $rootScope.contextMenu = function(){
         var playlist_options = {};
         for(var i = 0; i < $rootScope.music.playlists.length; i ++){
-            playlist_options[$rootScope.music.playlists[i].name] = {name:$rootScope.music.playlists[i].name,
+            playlist_options[i] = {name:$rootScope.music.playlists[i].name,
                                                               id: $rootScope.music.playlists[i]._id.$oid}
         }
 
