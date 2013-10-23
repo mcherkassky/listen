@@ -9,3 +9,9 @@ musicModule.factory('PlaylistSongFactory', function($resource){
         edit: {method: 'PUT'}
     })
 });
+
+musicModule.factory('SongFactory', function($resource){
+    return $resource('song/:song_id', {song_id: '@song_id'}, {
+        edit: {method: 'PUT'}
+    })
+});

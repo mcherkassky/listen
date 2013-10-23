@@ -19,6 +19,15 @@ class Playlist(Document):
         self.song_ids.append(song.id)
         self.save()
 
+    @property
+    def serialize(self):
+        response = {
+            'user_id': str(self.user_id),
+            'name': self.name,
+            'song_ids': [str(oid) for oid in self.song_ids]
+        }
+        return response
+
 
 class User(Document):
 
@@ -125,3 +134,17 @@ class Song(Document):
     listeners = IntField()
 
     youtube_url = StringField()
+
+    @property
+    def serialize(self):
+        response = {
+            'artist_id': str(self.artist_id),
+            'album_id': str(self.album_id),
+            'title': self.title,
+            'album': self.album,
+            'img': self.img,
+            'artist': self.artist,
+            'duration': self.duration,
+            'youtube_url': self.youtube_url
+        }
+        return response

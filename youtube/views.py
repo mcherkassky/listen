@@ -128,8 +128,13 @@ def playlists(user_id, playlist_id):
 @app.route('/user/<user_id>/playlist/<playlist_id>/song', methods=['GET'])
 def song_to_playlist(user_id, playlist_id):
     playlist = Playlist.objects.get(id=playlist_id)
-    songs = Song.objects.filter(id__in=playlist.song_ids)
-    return songs.to_json()
+    songs = [Song.objects.get(id=song_id).serialize for song_id in playlist.song_ids]
+    return json.dumps(songs)
+
+@app.route('/song/<song_id>', methods=['GET'])
+def song(song_id):
+    song = Song.objects.get(id=song_id)
+    return json.dumps(song.serialize)
 
 
 
