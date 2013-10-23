@@ -3,10 +3,11 @@ __author__ = 'mcherkassky'
 import pdb
 import json
 import re
+from bson import ObjectId
 
 from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
-from flask import render_template
+from flask import render_template, request
 from mongoengine import *
 from unidecode import unidecode
 from models import Artist, Album, Song, Playlist
@@ -56,6 +57,7 @@ def search(query):
             'artist': song.artist,
             'album': song.album,
             'img': song.img,
+            'id': str(song.id),
             'album_index': song.album_index,
             'duration': song.duration,
             'youtube_url': song.youtube_url,
@@ -108,12 +110,26 @@ def youtube_find(query):
 @app.route('/user/<user_id>/playlist', methods=['GET'])
 def playlist(user_id):
     playlists = Playlist.objects().all()
+    return playlists.to_json()
+    # pdb.set_trace()
 
-    pdb.set_trace()
-
-@app.route('/user/<user_id>/playlist/<playlist_id>', methods=['GET'])
+@app.route('/user/<user_id>/playlist/<playlist_id>', methods=['GET','POST'])
 def playlists(user_id, playlist_id):
-    pdb.set_trace()
+    if request.method == 'GET':
+        playlist = Playlist.objects.get(id=playlist_id)
+        return playlist.to_json()
+    if request.method == 'POST':
+        data = request.json
+        playlist = Playlist.objects.get(id=data['id'])
+        playlist.song_ids = [ObjectId(song_id) for song_id in data['song_ids']]
+        playlist.save()
+        return 'success'
+
+@app.route('/user/<user_id>/playlist/<playlist_id>/song', methods=['GET'])
+def song_to_playlist(user_id, playlist_id):
+    playlist = Playlist.objects.get(id=playlist_id)
+    songs = Song.objects.filter(id__in=playlist.song_ids)
+    return songs.to_json()
 
 
 

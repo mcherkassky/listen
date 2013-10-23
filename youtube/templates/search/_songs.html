@@ -50,9 +50,9 @@
         <tr ng-cloak class="context-menu" ng-dblclick="load_videos(music.songs,$index);" ng-repeat="song in music.songs track by $index"
             data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}"
             ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}"
-            data-index=[[$index]]>
+            data-index=[[$index]] data-id=[[song.id]]>
             <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
-            <td> [[song.title]] </td>
+            <td> [[song.title]]</td>
             <td> [[format_to_time(song.duration)]] </td>
             <td> [[song.artist]] </td>
             <td ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>

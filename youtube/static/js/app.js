@@ -5,7 +5,7 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, $timeout){
+musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, $timeout){
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
     $rootScope.PLAYER_TIME = 0;
@@ -34,8 +34,20 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, $timeout){
         youtube_results:[]
     };
 
-
+    //get playlists and associated songs
     $rootScope.playlists = PlaylistFactory.query({user_id: 'hello'});
+    $rootScope.playlists.$promise.then(
+        function(){
+            for(var i = 0; i < $rootScope.playlists.length; i ++){
+                $rootScope.playlists[i].songs = PlaylistSongFactory.query({user_id:'hello',playlist_id:$rootScope.playlists[i]._id.$oid})
+            }
+        }
+    );
+//    for(var i = 0; i < $rootScope.playlists.length; i ++){
+//        var playlist = $rootScope.playlists[i];
+//        debugger;
+//        playlist.songs = PlaylistFactory.query({user_id:'hello',id:playlist.id})
+//    }
 
 
 //    coverflow('albumflow').setup({
@@ -102,6 +114,12 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, $timeout){
     };
 
     $rootScope.contextMenu = function(){
+        var playlist_options = {};
+        for(var i = 0; i < $rootScope.playlists.length; i ++){
+            playlist_options[$rootScope.playlists[i].name] = {name:$rootScope.playlists[i].name,
+                                                              id: $rootScope.playlists[i]._id.$oid}
+        }
+
         $(function(){
             $.contextMenu({
                 selector: '.context-menu',
@@ -112,6 +130,16 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, $timeout){
                     }
                     else if(key == "queue"){
                         debugger;
+                    }
+                    else if(Object.keys(playlist_options).indexOf(key) >= 0){
+                        var playlist = PlaylistFactory.get({user_id:'hello', id:playlist_options[key].id}, function(){
+                            playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid})
+                            playlist.song_ids.push(options.$trigger.data('id'));
+                            console.log(playlist)
+                            playlist.user_id = 'hello';
+                            playlist.id = playlist._id.$oid
+                            playlist.$save()
+                        })
                     }
 
 //
@@ -125,10 +153,7 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, $timeout){
                     "queue": {name: "Add To Queue"},
                     "paste": {
                         name:"Add To Playlist",
-                        items:{
-                            'p1': {name: "Playlist 1"},
-                            'p2': {name: "Playlist 2"}
-                        }
+                        items:playlist_options
                     }
                 }
             });

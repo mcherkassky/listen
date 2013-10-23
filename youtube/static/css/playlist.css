@@ -1,0 +1,10 @@
+.playlist-tab{
+    width:100%
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border-color: #e1e4e7;
+    border-bottom-color: #e1e4e7;
+    border-width: 0px;
+    color: #7f8c9a;
+}

@@ -5,13 +5,19 @@ import datetime
 from youtube import db
 from mongoengine import *
 
+from bson import ObjectId
+
 
 class Playlist(Document):
     user_id = ObjectIdField()
     name = StringField()
-    song_ids = ListField(ObjectIdField)
+    song_ids = ListField(ObjectIdField())
 
     tags = ListField(StringField)
+
+    def add_song(self, song):
+        self.song_ids.append(song.id)
+        self.save()
 
 
 class User(Document):
