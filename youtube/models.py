@@ -35,6 +35,9 @@ class User(Document):
     email = EmailField()
     playlist_ids = ListField(ObjectIdField())
 
+    username = StringField()
+    password = StringField()
+
 
     @property
     def playlists(self):
@@ -148,3 +151,17 @@ class Song(Document):
             'youtube_url': self.youtube_url
         }
         return response
+
+
+
+class Token(Document):
+    key = StringField()
+    used = BooleanField(default=False)
+
+
+class Global(Document):
+    n_tokens = IntField()
+
+
+
+

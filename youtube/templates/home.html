@@ -1,25 +1,59 @@
-<html>
+<html ng-app="Listen">
 
 <body>
 
 <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='lib/flat-ui/css/flat-ui.css') }}" rel="stylesheet">
+<script src="{{ url_for('static', filename='js/controllers/signupController.js') }}"></script>
 
 <br>
 <br>
 <br>
+
 <div class="text-center container">
-            <h1>
-                Listen.fm
-            </h1>
+    <h1> Listen.fm </h1>
+    <h4> All the music for free. Really.  </h4>
+    <!-- <a class="btn btn-large btn-info" href="{{ url_for('index') }}"> Login with Facebook </a> -->
+</div>
 
-            <h4>
-                All the music for free. Really.
-            </h4>
+<hr>
 
-            <br>
-            <a class="btn btn-large btn-info" href="{{ url_for('index') }}"> Login with Facebook </a>
+
+<div class="row-fluid">
+
+    <div class="offset1 span4" ng-controller="signupCtrl">
+        <h4> Sign up </h4>
+
+        <form ng-submit="signupUser()" ng-init='signupUrl="{{ url_for('signup') }}"'>
+            <input name="signupEmail" type="email" ng-model="signupEmail" 
+            placeholder="Email">
+
+            <button type="submit" class="btn btn-add-admin" 
+                value="add">Subscribe</button><br>
+            <span> [[ signupResponse ]] </span>
+
+        </form>
+
+    </div>
+
+    <div class="offset1 span4" ng-controller="loginCtrl">
+        <h4> Login </h4>
+
+        <form ng-submit="loginUser()" ng-init='loginUrl="{{ url_for('login') }}"'>
+            <input name="loginEmail" type="email" ng-model="loginEmail" placeholder="Email">
+            <input name="loginPassword" type="password" ng-model="loginPassword" 
+            placeholder="Password">
+
+            <button type="submit" class="btn btn-add-admin" 
+                value="add">Login</button><br>
+            <span> [[ signupResponse ]] </span>
+
+        </form>
+
+    </div>
+
 
 </div>
 
