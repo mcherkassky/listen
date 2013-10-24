@@ -17,6 +17,7 @@
     <link href="{{ url_for('static', filename='lib/coverflow/coverflow.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='lib/jquery-context-menu/jquery.contextMenu.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='lib/jquery-multiselect/multiselect.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/jcarousel/skin.css') }}" rel="stylesheet">
 
     <link href="{{ url_for('static', filename='css/search_results.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/dropdown.css') }}" rel="stylesheet">
@@ -112,7 +113,8 @@
     <script src="{{ url_for('static', filename='lib/coverflow/coverflow.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/masonry/masonry.pkgd.min.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/jquery-context-menu/jquery.contextMenu.js') }}"></script>
-   <script src="{{ url_for('static', filename='lib/jquery-multiselect/multiselect.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/jquery-multiselect/multiselect.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/jcarousel/jquery.jcarousel.js') }}"></script>
 
     <!--ANGULAR JS-->
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
@@ -122,10 +124,10 @@
     <script src="{{ url_for('static', filename='js/factories/PlaylistFactory.js') }}"></script>
     <script src="{{ url_for('static', filename='js/controllers/PlayerController.js') }}"></script>
     <script src="{{ url_for('static', filename='js/controllers/SearchController.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/controllers/YoutubeSearchController.js') }}"></script>
     <script src="{{ url_for('static', filename='js/controllers/SongController.js') }}"></script>
     <script src="{{ url_for('static', filename='js/controllers/AlbumController.js') }}"></script>
     <script src="{{ url_for('static', filename='js/controllers/PlaylistController.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/controllers/ArtistController.js') }}"></script>
     {% block scripts %}
     {% endblock %}
   </body>

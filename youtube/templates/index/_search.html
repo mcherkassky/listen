@@ -12,7 +12,7 @@
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab1" id="songs-tab" data-toggle="tab">Songs</a></li>
                 <li><a ng-click="refreshTiles('#albums')" href="#tab2" id="albums-tab" data-toggle="tab">Albums</a></li>
-                <li><a href="#tab3" id="artists-tab" data-toggle="tab">Artists</a></li>
+                <li><a ng-click="refreshCarousel('.carousel')" href="#tab3" id="artists-tab" data-toggle="tab">Artists</a></li>
                 <li><a href="#tab4" id="playlists-tab" data-toggle="tab">Playlists</a></li>
                 <li><a href="#tab5" id="radio-tab" data-toggle="tab">Radio</a></li>
             </ul>
@@ -25,7 +25,7 @@
                     {% include "/search/_albums.html" %}
                 </div>
                 <div class="tab-pane" id="tab3">
-                    <p>Feature in progress</p>
+                    {% include "/search/_artists.html" %}
                 </div>
                 <div class="tab-pane" id="tab4">
                     {% include "/search/_playlists.html" %}

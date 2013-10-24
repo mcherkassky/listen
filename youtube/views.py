@@ -49,7 +49,7 @@ def search(query):
 
     songs = list(Song.objects(Q(title__icontains=query) | Q(album__icontains=query) | Q(artist__icontains=query)).order_by('-listeners')[:20]) #fix this
     albums = list(Album.objects.order_by('-listeners').filter(Q(title__icontains=query) | Q(artist__icontains=query))[:25])
-    artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:25])
+    artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:5])
 
     #make response
     response = {
@@ -144,11 +144,19 @@ def song(song_id):
     song = Song.objects.get(id=song_id)
     return json.dumps(song.serialize)
 
-@requires_auth
 @app.route('/user', methods=['GET'])
 def user():
     user = User.objects().first()
     return user.to_json()
+
+@app.route('/artists/batch', methods=['POST'])
+def artists_batch():
+    data = request.json #artist ids
+    albums = []
+    for artist_id in data:
+        artist = Artist.objects.get(id=artist_id)
+        albums.append(artist.get_albums())
+    return json.dumps(albums)
 
 
 

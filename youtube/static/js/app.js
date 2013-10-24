@@ -5,12 +5,13 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, SongFactory,$timeout, $http){
+musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, UserFactory, SongFactory,$timeout, $http){
     //get current user
-    $http({
-        url: '/user',
-        method: 'GET'
-    }).success(function(data){$rootScope.user = data});
+    $rootScope.user = UserFactory.get({});
+//    $http({
+//        url: '/user',
+//        method: 'GET'
+//    }).success(function(data){$rootScope.user = data});
 
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
