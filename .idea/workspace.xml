@@ -40,7 +40,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/api/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381430846380" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382535737367" ignored="false" />
     <file path="/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468929745" ignored="false" />
-    <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382654730916" ignored="false" />
+    <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382673475090" ignored="false" />
     <file path="/_player.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380743406334" ignored="false" />
     <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382587745758" ignored="false" />
     <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382452499581" ignored="false" />
@@ -206,7 +206,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="32" selection-start="3434" selection-end="3434" vertical-scroll-proportion="0.23592493">
+            <state line="109" column="73" selection-start="4108" selection-end="4108" vertical-scroll-proportion="0.25976562">
               <folding />
             </state>
           </provider>
@@ -215,7 +215,7 @@
       <file leaf-file-name="SearchController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="52" selection-start="1742" selection-end="1742" vertical-scroll-proportion="-8.230769">
+            <state line="53" column="52" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -224,10 +224,8 @@
       <file leaf-file-name="_artists.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/search/_artists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="451" selection-end="451" vertical-scroll-proportion="-4.75">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="7" column="42" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -244,7 +242,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="57" selection-start="1163" selection-end="1163" vertical-scroll-proportion="-3.1666667">
+            <state line="18" column="57" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -253,7 +251,7 @@
       <file leaf-file-name="_search.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="63" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.857143">
+            <state line="14" column="63" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,10 +260,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="89" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#28#38#0" expanded="true" />
-              </folding>
+            <state line="51" column="0" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -273,10 +269,8 @@
       <file leaf-file-name="_albums.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="72" selection-start="475" selection-end="527" vertical-scroll-proportion="-4.071429">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="6" column="72" selection-start="475" selection-end="527" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -284,10 +278,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="115" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#28#43#0" expanded="true" />
-              </folding>
+            <state line="97" column="26" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -316,16 +308,16 @@
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/ArtistController.js" />
         <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
-        <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
         <option value="$PROJECT_DIR$/youtube/static/lib/jeditable/jeditable.min.js" />
+        <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1707" />
-    <option name="y" value="-329" />
-    <option name="width" value="1707" />
-    <option name="height" value="1440" />
+    <option name="x" value="-19" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -353,6 +345,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -537,7 +530,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -762,23 +754,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1707" y="-329" width="1707" height="1440" extended-state="0" />
-    <editor active="true" />
+    <frame x="-19" y="22" width="1280" height="774" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25993884" sideWeight="0.7352381" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16134858" sideWeight="0.8787879" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1636953" sideWeight="0.88073397" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.2647619" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.121212125" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.119266056" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25993884" sideWeight="0.7352381" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -854,25 +846,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/factories/PlaylistFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="3" selection-start="666" selection-end="666" vertical-scroll-proportion="0.33568904">
-          <folding />
-        </state>
+        <state line="20" column="3" selection-start="666" selection-end="666" vertical-scroll-proportion="0.33568904" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="115" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#28#43#0" expanded="true" />
-          </folding>
+        <state line="97" column="26" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="361" selection-end="361" vertical-scroll-proportion="-4.071429">
-          <folding />
-        </state>
+        <state line="6" column="14" selection-start="361" selection-end="361" vertical-scroll-proportion="-4.071429" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlaylistController.js">
@@ -884,33 +870,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/lib/jcarousel/jquery.jcarousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="72" selection-start="475" selection-end="527" vertical-scroll-proportion="-4.071429">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="6" column="72" selection-start="475" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="57" selection-start="1163" selection-end="1163" vertical-scroll-proportion="-3.1666667">
+        <state line="18" column="57" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/search/_artists.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="451" selection-end="451" vertical-scroll-proportion="-4.75">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="7" column="42" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -923,16 +903,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="89" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
+        <state line="51" column="0" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="63" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.857143">
+        <state line="14" column="63" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -946,21 +924,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="52" selection-start="1742" selection-end="1742" vertical-scroll-proportion="-8.230769">
+        <state line="53" column="52" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/lib/jeditable/jeditable.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="5252" selection-end="5252" vertical-scroll-proportion="0.4075067">
-          <folding />
-        </state>
+        <state line="24" column="35" selection-start="5252" selection-end="5252" vertical-scroll-proportion="0.4075067" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="32" selection-start="3434" selection-end="3434" vertical-scroll-proportion="0.23592493">
+        <state line="109" column="73" selection-start="4108" selection-end="4108" vertical-scroll-proportion="0.25976562">
           <folding />
         </state>
       </provider>

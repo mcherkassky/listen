@@ -103,8 +103,11 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
                     }
                     return{
                         callback: function(key, options) {
+
+                            var song_id = options.$trigger.data('id');
+                            var index = options.$trigger.data('index')
                             if(key == 'play'){
-                                $rootScope.load_videos($rootScope.music.songs,options.$trigger.data('index'));
+                                $rootScope.load_videos($rootScope.music.songs, index);
                             }
                             else if(key == "queue"){
                                 debugger;
@@ -112,11 +115,11 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
                             else if(Object.keys(playlist_options).indexOf(key) >= 0){
                                 var playlist = PlaylistFactory.get({user_id:$rootScope.user._id.$oid, id:playlist_options[key].id}, function(){
                                     playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid});
-                                    playlist.song_ids.push(options.$trigger.data('id'));
+                                    playlist.song_ids.push(song_id);
                                     playlist.user_id = $rootScope.user._id.$oid;
                                     playlist.id = playlist._id.$oid
                                     playlist.$save()
-                                    var song = SongFactory.get({song_id:options.$trigger.data('id')}, function(){
+                                    var song = SongFactory.get({song_id:song_id}, function(){
                                         if($rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs == undefined){
                                             $rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs = []
                                         }
