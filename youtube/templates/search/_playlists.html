@@ -32,7 +32,40 @@
     <div class="span9">
         <div class="tab-content" style="margin: 0 auto;">
             <div class="tab-pane active" id="next">
+                <table class='table table-condensed'>
+                    <thead>
+                        <tr>
+                            <td width='15px'>
+                            </td>
+                            <td width='200px'>
+                                Title
+                            </td>
+                            <td width='100px'>
+                                Time
+                            </td>
+                            <td width='150px'>
+                                Artist
+                            </td>
+                            <td width='200px' style="overflow: hidden">
+                                Album
+                            </td>
 
+                        </tr>
+                    </thead>
+                    <tbody class="selectable">
+                        <!--<tr ng-click="load_videos(music.up_next,$index);$rootScope.is_up_next_playing = true;" ng-repeat="song in music.up_next track by $index" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}" ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">-->
+                        <tr class="context-menu" ng-dblclick="load_videos(playlist.songs,$index);" ng-repeat="song in music.up_next track by $index" data-drag="true"
+                            data-jqyoui-options="{revert: 'invalid', helper:'clone', appendTo: 'body', zIndex:'200'}"
+                            ng-model="playlist.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}">
+                            <td style="width:12px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
+                            <td> [[song.title]] </td>
+                            <td> [[format_to_time(song.duration)]] </td>
+                            <td> [[song.artist]] </td>
+                            <td ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
+
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="tab-pane" id="rated">
 

@@ -2,9 +2,28 @@ musicModule.controller('ArtistCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.results = false;
 //    debugger;
 
+    $scope.get_album_contents = function(album_id){
+        $http({
+            method: 'GET',
+            url: '/albums/' + album_id
+        }).success(function(data){
+                $scope.music.songs = data;
+            })
+    };
+
+    $scope.play_album_contents = function(album){
+
+        var listener = $scope.$watch('music.songs', function(newVal, oldVal){
+            if(newVal != oldVal){
+//                $scope.load_videos($scope.music.up_next,0);
+                $('#songs-tab').trigger('click');
+                listener()
+            }
+        });
+        $scope.get_album_contents(album.id);
+    };
 
     $scope.$watch('music.artists', function(oldVal,newVal){
-
         if($scope.music.artists.length > 0){
             var artist_ids = $scope.music.artists.map(function(element){return element.id});
             $http({
@@ -21,7 +40,7 @@ musicModule.controller('ArtistCtrl', function($rootScope, $q, $scope, $http, $ti
                                 visible: 6,
                                 scroll: 6,
                                 itemFallbackDimension: 150
-                            })
+                            });
                             $scope.results = true;
                         },10)
                     });

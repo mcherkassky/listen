@@ -98,7 +98,7 @@ class Artist(Document):
     listeners = IntField()
 
     def get_albums(self):
-        albums = [album.serialize for album in Album.objects.order_by('-listeners').filter(artist_id = self.id)[:15]]
+        albums = [album.serialize for album in Album.objects.order_by('-listeners').filter(artist_id=self.id)[:15]]
         return albums
 
 
@@ -124,6 +124,7 @@ class Album(Document):
     @property
     def serialize(self):
         response = {
+            'id': str(self.id),
             'artist_id': str(self.artist_id),
             'title': self.title,
             'artist': self.artist,
