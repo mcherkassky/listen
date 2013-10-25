@@ -4,6 +4,7 @@ import pdb
 import json
 import re
 from bson import ObjectId
+from random import randrange
 
 from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
@@ -71,6 +72,8 @@ def search(query):
         } for song in songs],
         'albums': [{
             'title': album.title,
+            'height': str(150 + randrange(10)),
+            'width': str(randrange(100, 160)),
             'artist': album.artist,
             'img': album.img,
             'id': str(album.id)
@@ -164,6 +167,16 @@ def artists_batch():
         artist = Artist.objects.get(id=artist_id)
         albums.append(artist.get_albums())
     return json.dumps(albums)
+
+
+@app.route('/featured', methods=['GET'])
+def featured():
+    artists = Artist.get_popular()
+    albums = Album.get_popular()
+
+    popular = [artist.serialize for artist in artists] + [album.serialize for album in albums]
+
+    return 'success'
 
 
 

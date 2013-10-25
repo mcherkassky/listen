@@ -5,7 +5,7 @@
         <div>
             <ul class="carousel jcarousel-skin-tango">
                 <li ng-repeat="album in albums[$index]">
-                    <img ng-click='play_album_contents(album)' src=[[album.img]]>
+                    <img class="album-image" ng-click='play_album_contents(album)' height="200px" width="200px" src=[[album.img]]>
                 </li>
             </ul>
         </div>

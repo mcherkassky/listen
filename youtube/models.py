@@ -101,6 +101,21 @@ class Artist(Document):
         albums = [album.serialize for album in Album.objects.order_by('-listeners').filter(artist_id=self.id)[:15]]
         return albums
 
+    @classmethod
+    def get_popular(cls):
+        popular = cls.objects.order_by('-listeners')[:15]
+        return popular
+
+    @property
+    def serialize(self):
+        response = {
+            'id': str(self.id),
+            'name': self.name,
+            'img': self.img,
+            'listeners': self.listeners
+        }
+        return response
+
 
 class Album(Document):
     created_at = DateTimeField(default=datetime.datetime.now, required=True)
@@ -121,6 +136,11 @@ class Album(Document):
     plays = IntField()
     listeners = IntField()
 
+    @classmethod
+    def get_popular(cls):
+        popular = cls.objects.order_by('-listeners')[:15]
+        return popular
+
     @property
     def serialize(self):
         response = {
@@ -129,6 +149,7 @@ class Album(Document):
             'title': self.title,
             'artist': self.artist,
             'img': self.img,
+            'listeners': self.listeners
         }
         return response
 

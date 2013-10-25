@@ -1,24 +1,30 @@
 <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
 <div ng-controller="AlbumCtrl" ng-show='results' id="albums">
     <div class="item" ng-repeat="album in music.albums">
-        <div ng-click ="play_album_contents(album)" class="album-art-container" ontouchstart="this.classList.toggle('hover');">
+        <div ng-click ="play_album_contents(album)">
             <div class="album-art">
-                <div class="front">
-                    <img src=[[album.img]] height="150px" width="150px">
-                </div>
-                <div class="back" style="position:relative">
-                    <img src='/static/img/vinyl.png' height="150px" width="150px">
-                    <div class='album-detail' style='top:30px'>
-                        <div class='album-detail-title'>
-                            [[album.title]]
-                        </div>
+                <!--<div class="front">-->
+                    <img class="album-image" src=[[album.img]] height="200px" width="200px">
+                    <!--<img class="album-overlay" src="{{ url_for('static', filename='img/transparent.png') }}" height="200px" width="200px">-->
+                    <div ng-show="results" class="album-overlay">
+                        <div class='album-detail-title'>[[album.title]]</div>
+                        <div class='album-detail-artist'>[[album.artist]]</div>
                     </div>
-                    <div class='album-detail' style='top:100px'>
-                        <div class='album-detail-artist'>
-                            [[album.artist]]
-                        </div>
-                    </div>
-                </div>
+                <!--</div>-->
+
+                <!--<div class="back" style="position:relative">-->
+                    <!--<img src='/static/img/vinyl.png' height="200px" width="200px">-->
+                    <!--<div class='album-detail' style='top:30px'>-->
+                        <!--<div class='album-detail-title'>-->
+                            <!--[[album.title]]-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class='album-detail' style='top:100px'>-->
+                        <!--<div class='album-detail-artist'>-->
+                            <!--[[album.artist]]-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
     </div>

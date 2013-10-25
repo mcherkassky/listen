@@ -37,7 +37,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     var tile_images = function(container_id){
         $timeout(function(){
                 $(container_id).masonry({
-                    'gutter': 10
+                    'gutter': 20
                 });
         },10)
     };
@@ -45,7 +45,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.refreshTiles = function(container_id){
         $timeout(function(){
             $(container_id).masonry({
-                'gutter':10
+                'gutter':20
             })
         },10)
 
@@ -54,9 +54,9 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.refreshCarousel = function(container_id){
         $timeout(function(){
             $(container_id).jcarousel({
-                visible: 6,
-                scroll: 6,
-                itemFallbackDimension: 150
+                visible:4,
+                scroll: 4,
+                itemFallbackDimension: 200
             })
         },10)
     };

@@ -37,9 +37,8 @@ musicModule.controller('ArtistCtrl', function($rootScope, $q, $scope, $http, $ti
                     angular.element(document).ready(function () {
                         $timeout(function(){
                             $('.carousel').jcarousel({
-                                visible: 6,
-                                scroll: 6,
-                                itemFallbackDimension: 150
+                                scroll: 4,
+                                itemFallbackDimension: 200
                             });
                             $scope.results = true;
                         },10)

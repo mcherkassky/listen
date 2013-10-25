@@ -39,8 +39,17 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
         albums:[],
         artists:[],
         youtube_results:[],
-        playlists: []
+        playlists: [],
+        featured: []
     };
+
+    //get data for featured page
+    $http({
+        url: '/featured',
+        method: 'GET'
+    }).success(function(data){
+            $rootScope.music.featured = data
+        });
 
     var timeout;
     $rootScope.coverflow = function(){
