@@ -10,6 +10,7 @@ import logging
 import requests
 import db
 from models import User, Playlist
+from auth import login_required, load_user
 
 import registration
 
@@ -78,30 +79,6 @@ def facebook_authorized(resp):
 #     return redirect(url_for('home'))
 
 
-def load_user(user_id):
-    try:
-        user = User.objects.get(id=user_id)
-        return user
-    except:
-        return None
-
-
-def login_required(f):
-    """Decorator that requires admin to login.
-    """
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        try:
-            user_id = session['user_id']
-            user = load_user(user_id)
-            if user:
-                return f(*args, **kwargs)
-            else:
-                return redirect(url_for('home'))
-        except:
-            return redirect(url_for('home'))
-    return decorated_function
-
 
 
 
@@ -133,7 +110,6 @@ def facebook_required(f):
 # @facebook_required
 def index():
     return render_template('/index/index.html')
-            # playlists=playlists)
 
 
 
@@ -226,10 +202,9 @@ def login():
             abort(404)
 
         session['user_id'] = str(users[0].id)
+        return url_for('index')
     except:
         abort(404)
-
-
 
 
 @app.route('/createAccount', methods=["GET"])
@@ -253,12 +228,12 @@ def post_account():
     password = request.json.get('accountPassword')
     email = request.json.get('accountEmail')
     token = request.json.get('signupToken')
-    import pdb; pdb.set_trace()
 
     if email and password and token:
         print username, password
         user = User(
                 username=username,
+                email=email,
                 password=password)
         user.save()
 

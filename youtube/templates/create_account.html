@@ -1,0 +1,68 @@
+<html ng-app="Listen">
+
+<body>
+
+<link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='lib/flat-ui/css/flat-ui.css') }}" rel="stylesheet">
+<script src="{{ url_for('static', filename='js/controllers/signupController.js') }}"></script>
+
+<br>
+<br>
+<br>
+<div class="text-center container">
+            <h1>
+                Listen.fm
+            </h1>
+
+            <h4>
+                All the music for free. Really.
+            </h4>
+
+<!--             <br> -->
+<!--             <a class="btn btn-large btn-info" href="{{ url_for('index') }}"> Login with Facebook </a> -->
+
+</div>
+<hr>
+
+
+<div class="row-fluid">
+
+    <div class="offset4 span4" ng-controller="createAccountCtrl">
+
+        <h3>
+            Sign up
+        </h3>
+
+        <form ng-submit="createAccount()" 
+              ng-init='createAccountUrl="{{ url_for('post_account') }}"; 
+                       signupToken="{{ signup_token }}";
+                       accountEmail="{{ account_email }}"'>
+            <input name="loginEmail" type="text" ng-model="loginEmail" placeholder="Email">
+            <input name="loginPassword" type="password" ng-model="loginPassword" 
+            placeholder="Password">
+            <input ng-change="comparePasswords()" name="loginPasswordVerify" 
+            type="password" ng-model="loginPasswordVerify" placeholder="Verify Password">
+            <span> [[ passwordVerify ]] </span><br>
+
+            <button type="submit" class="btn btn-add-admin" 
+                value="add">Create Account</button><br>
+            <span> [[ signupResponse ]] </span>
+
+        </form>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

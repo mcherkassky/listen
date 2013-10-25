@@ -97,6 +97,10 @@ class Artist(Document):
     plays = IntField()
     listeners = IntField()
 
+    def get_albums(self):
+        albums = [album.serialize for album in Album.objects.order_by('-listeners').filter(artist_id = self.id)[:15]]
+        return albums
+
 
 class Album(Document):
     created_at = DateTimeField(default=datetime.datetime.now, required=True)
@@ -116,6 +120,16 @@ class Album(Document):
     #stats
     plays = IntField()
     listeners = IntField()
+
+    @property
+    def serialize(self):
+        response = {
+            'artist_id': str(self.artist_id),
+            'title': self.title,
+            'artist': self.artist,
+            'img': self.img,
+        }
+        return response
 
 
 class Song(Document):

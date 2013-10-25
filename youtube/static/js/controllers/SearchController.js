@@ -51,6 +51,16 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 
     };
 
+    $scope.refreshCarousel = function(container_id){
+        $timeout(function(){
+            $(container_id).jcarousel({
+                visible: 6,
+                scroll: 6,
+                itemFallbackDimension: 150
+            })
+        },10)
+    };
+
     //watching search bar
     var searchText = " ", searchTimeout;
     $scope.$watch('search_query', function(newVal, oldVal){

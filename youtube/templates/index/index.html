@@ -1,16 +1,12 @@
 {% extends "/base/base.html" %}
 
 {% block scripts %}
-    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
     <script src="{{ url_for('static', filename='lib/swfobject/swfobject.js') }}"></script>
-    <script src="{{ url_for('static', filename='lib/angular-slider/angular-slider.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='lib/angular-slider/angular-slider.min.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/angular-dragdrop/src/angular-dragdrop.min.js') }}"></script>
     <!--<script src="{{ url_for('static', filename='js/music_player.js') }}"></script>-->
 {% endblock %}
 
 {% block styles %}
-    <link href="{{ url_for('static', filename='lib/angular-slider/angular-slider.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/music_player.css') }}" rel="stylesheet">
 {% endblock %}
 

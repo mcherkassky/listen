@@ -15,3 +15,7 @@ musicModule.factory('SongFactory', function($resource){
         edit: {method: 'PUT'}
     })
 });
+
+musicModule.factory('UserFactory', function($resource){
+    return $resource('user',{})
+});

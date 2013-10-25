@@ -5,7 +5,14 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
     $interpolateProvider.endSymbol(']]')
 });
 
-musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, SongFactory,$timeout){
+musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, UserFactory, SongFactory,$timeout, $http){
+    //get current user
+    $rootScope.user = UserFactory.get({},function(){});
+//    $http({
+//        url: '/user',
+//        method: 'GET'
+//    }).success(function(data){$rootScope.user = data});
+
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
     $rootScope.PLAYER_TIME = 0;
@@ -76,46 +83,61 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
     };
 
     $rootScope.contextMenu = function(){
-        var playlist_options = {};
-        for(var i = 0; i < $rootScope.music.playlists.length; i ++){
-            playlist_options[i] = {name:$rootScope.music.playlists[i].name,
-                                                              id: $rootScope.music.playlists[i]._id.$oid}
-        }
+//        var cachedHandler = null;
+//        // disable
+//        cachedHandler = $('#demo2').data('events').contextmenu[0].handler;
+//        $('.context-menu').unbind('contextmenu', cachedHandler);
+        // enable
+
+
+//        debugger;
 
         $(function(){
             $.contextMenu({
                 selector: '.context-menu',
-                callback: function(key, options) {
-                    if(key == 'play'){
-                        $rootScope.load_videos($rootScope.music.songs,options.$trigger.data('index'));
+                build: function($trigger, e){
+                    var playlist_options = {};
+                    for(var i = 0; i < $rootScope.music.playlists.length; i ++){
+                        playlist_options[i] = {name:$rootScope.music.playlists[i].name,
+                                                                          id: $rootScope.music.playlists[i]._id.$oid}
                     }
-                    else if(key == "queue"){
-                        debugger;
-                    }
-                    else if(Object.keys(playlist_options).indexOf(key) >= 0){
-                        var playlist = PlaylistFactory.get({user_id:'hello', id:playlist_options[key].id}, function(){
-                            playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid})
-                            playlist.song_ids.push(options.$trigger.data('id'));
-                            playlist.user_id = 'hello';
-                            playlist.id = playlist._id.$oid
-                            playlist.$save()
+                    return{
+                        callback: function(key, options) {
+                            if(key == 'play'){
+                                $rootScope.load_videos($rootScope.music.songs,options.$trigger.data('index'));
+                            }
+                            else if(key == "queue"){
+                                debugger;
+                            }
+                            else if(Object.keys(playlist_options).indexOf(key) >= 0){
+                                var playlist = PlaylistFactory.get({user_id:$rootScope.user._id.$oid, id:playlist_options[key].id}, function(){
+                                    playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid});
+                                    playlist.song_ids.push(options.$trigger.data('id'));
+                                    playlist.user_id = $rootScope.user._id.$oid;
+                                    playlist.id = playlist._id.$oid
+                                    playlist.$save()
+                                    var song = SongFactory.get({song_id:options.$trigger.data('id')}, function(){
+                                        if($rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs == undefined){
+                                            $rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs = []
+                                        }
+                                        $rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs.push(song)
+                                    });
+                                })
+                            }
 
-                            var song = SongFactory.get({song_id:options.$trigger.data('id')}, function(){
-                                $rootScope.music.playlists[Object.keys(playlist_options).indexOf(key)].songs.push(song)
-                            });
-                        })
-                    }
-
-                },
-                items: {
-                    "play": {name: "Play", icon:'play'},
-                    "next": {name: "Play Up Next"},
-                    "queue": {name: "Add To Queue"},
-                    "playlist": {
-                        name:"Add To Playlist",
-                        items:playlist_options
+                        },
+                        items: {
+                            "play": {name: "Play", icon:'play'},
+                            "next": {name: "Play Up Next"},
+                            "queue": {name: "Add To Queue"},
+                            "playlist": {
+                                name:"Add To Playlist",
+                                items: playlist_options
+                            }
+                        }
                     }
                 }
+
             });
         });
     }

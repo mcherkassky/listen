@@ -7,11 +7,15 @@ from bson import ObjectId
 
 from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
-from flask import render_template, request
+from flask import Flask, url_for, request, session, redirect, render_template, g
+from flask import abort
 from mongoengine import *
 from unidecode import unidecode
-from models import Artist, Album, Song, Playlist
+from models import Artist, Album, Song, Playlist, User
 from youtube import app
+from auth import login_required, load_user, requires_auth
+
+
 
 def make_response(songs, album):
     response = [{
@@ -48,7 +52,7 @@ def search(query):
 
     songs = list(Song.objects(Q(title__icontains=query) | Q(album__icontains=query) | Q(artist__icontains=query)).order_by('-listeners')[:20]) #fix this
     albums = list(Album.objects.order_by('-listeners').filter(Q(title__icontains=query) | Q(artist__icontains=query))[:25])
-    artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:25])
+    artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:5])
 
     #make response
     response = {
@@ -110,10 +114,11 @@ def youtube_find(query):
 @app.route('/user/<user_id>/playlist', methods=['GET', 'POST'])
 def playlist(user_id):
     if request.method == 'GET':
-        playlists = Playlist.objects().all()
+        playlists = Playlist.objects().filter(user_id=user_id)
         return playlists.to_json()
     if request.method == 'POST':
         playlist = Playlist()
+        playlist.user_id = user_id
         playlist.name = 'New Playlist'
         playlist.song_ids = []
         playlist.save()
@@ -141,6 +146,23 @@ def song_to_playlist(user_id, playlist_id):
 def song(song_id):
     song = Song.objects.get(id=song_id)
     return json.dumps(song.serialize)
+
+@app.route('/user', methods=['GET'])
+def user():
+    user = load_user(session['user_id'])
+    if user:
+        return user.to_json()
+    else:
+        abort(404)
+
+@app.route('/artists/batch', methods=['POST'])
+def artists_batch():
+    data = request.json #artist ids
+    albums = []
+    for artist_id in data:
+        artist = Artist.objects.get(id=artist_id)
+        albums.append(artist.get_albums())
+    return json.dumps(albums)
 
 
 
