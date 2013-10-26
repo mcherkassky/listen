@@ -177,6 +177,7 @@ class Song(Document):
     @property
     def serialize(self):
         response = {
+            'id': str(self.id),
             'artist_id': str(self.artist_id),
             'album_id': str(self.album_id),
             'title': self.title,

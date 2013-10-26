@@ -191,7 +191,7 @@ def login():
 
     if not email or not password:
         abort(404)
-
+    pdb.set_trace()
     # authenticate email password
     try:
         users = User.objects.filter(email=email)

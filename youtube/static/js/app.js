@@ -122,7 +122,6 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
                     }
                     return{
                         callback: function(key, options) {
-
                             var song_id = options.$trigger.data('id');
                             var index = options.$trigger.data('index')
                             if(key == 'play'){
@@ -132,6 +131,7 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
                                 debugger;
                             }
                             else if(Object.keys(playlist_options).indexOf(key) >= 0){
+
                                 var playlist = PlaylistFactory.get({user_id:$rootScope.user._id.$oid, id:playlist_options[key].id}, function(){
                                     playlist.song_ids = playlist.song_ids.map(function(element){return element.$oid});
                                     playlist.song_ids.push(song_id);
