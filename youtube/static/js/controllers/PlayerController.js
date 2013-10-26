@@ -129,8 +129,6 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     };
     $rootScope.play_next_auto = function(){
-        debugger;
-
         if($rootScope.NEXT_READY){
             $rootScope.SONG_INDEX += 1;
 

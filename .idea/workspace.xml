@@ -237,7 +237,7 @@
       <file leaf-file-name="PlayerController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="17" selection-start="4583" selection-end="4583" vertical-scroll-proportion="0.27322406">
+            <state line="130" column="43" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.27322406">
               <folding />
             </state>
           </provider>
@@ -1101,7 +1101,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="17" selection-start="4583" selection-end="4583" vertical-scroll-proportion="0.27322406">
+        <state line="130" column="43" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.27322406">
           <folding />
         </state>
       </provider>
