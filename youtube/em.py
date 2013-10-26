@@ -6,7 +6,7 @@ GMAIL_PASSWORD = 'listener'
 
 
 def send_email(subject, message, from_addr=GMAIL_LOGIN, to_addr=GMAIL_LOGIN):
-    msg = MIMEText(message)
+    msg = MIMEText(message, 'html')
     msg['Subject'] = subject
     msg['From'] = from_addr
     msg['To'] = to_addr

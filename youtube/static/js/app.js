@@ -44,8 +44,8 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
 
 
     $rootScope.music = {
-        up_next:[],
-        songs:buildArray(25),
+        up_next:buildArray(20),
+        songs:buildArray(20),
         albums:[],
         artists:[],
         youtube_results:[],

@@ -7,9 +7,12 @@ def registration_key():
 
 
 def email_subscribed(user):
-    body = "Hey! Listen.fm is a free music app that gives you access to millions of song"
-    body += "We're launching soon!"
-    send_email("Lsten.fm, all the music.", body, user.email)
+    body = "<h4> Welcome to Listen.fm </h4>" \
+           "<br>" \
+           "<div>We are a next generation streaming service giving you access to millions of songs.</div>" \
+           "<br>" \
+           "<div> Check your email in the next couple of days for an access key.</div>"
+    send_email("Listen.fm, all the music.", body, user.email)
 
 
 def email_key(user):
@@ -20,9 +23,14 @@ def email_key(user):
     g.save()
     token.save()
 
-    body = "Hey! Create an account by clicking on the link below:"
-    body += "localhost:5000/createAccount?accountEmail={0}&signupToken={1}".format(user.email, token.key)
-    send_email("Lsten.fm, all the music.", body, user.email)
+    body = "<h4> Welcome to Listen.fm </h4>" \
+           "<br>" \
+           "We are a next generation streaming service giving you access to millions of songs.</div>" \
+           "<br>" \
+           "Create an account by clicking on the link below:" \
+           "<br>" \
+           "<a href='listenapp.herokuapp.com/createAccount?accountEmail={0}&signupToken={1}'.format(user.email, token.key) > Register for Listen.fm</a>"
+    send_email("Listen.fm, all the music.", body, user.email)
 
 
 def keys_available():
