@@ -8,6 +8,9 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]')
 });
+var getNumber = function(num) {
+        return new Array(num);
+};
 
 musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, UserFactory, SongFactory,$timeout, $http){
     //get current user
@@ -28,7 +31,7 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
     $rootScope.is_up_next_playing = undefined;
 
     $rootScope.format_to_time = function(value){
-        if(value){
+        if(value != undefined){
             var hours = Math.floor(value / 3600);
             var minutes = Math.floor(value % 3600 / 60);
             var seconds = Math.floor(value % 3600 % 60);
@@ -37,6 +40,8 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
         return ""
 
     };
+
+
 
     $rootScope.music = {
         up_next:[],
@@ -47,7 +52,6 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
         playlists: [],
         featured: []
     };
-    debugger;
 
     //get data for featured page
     $http({

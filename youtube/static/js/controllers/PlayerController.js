@@ -21,25 +21,6 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         }
     });
 
-    //player time watcher to auto play next song
-//    $scope.$watch('PLAYER_TIME', function(newVal, oldVal){
-//        if($(ytplayer).html() != ''){
-//            var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
-//            console.log(time_left)
-//            if(time_left <= 3){
-//                debugger;
-//                $scope.play_next_auto()
-//            }
-////            if($(nextplayer).html() != "" && time_left == 1){
-////                debugger;
-////                $scope.play_next_auto()
-////            }
-////            if(time_left == 0){
-////                $scope.stop()
-////            }
-//        }
-//    });
-
     //MUSIC CONTROLS//
     //play video
     $scope.play = function(){
@@ -119,7 +100,7 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             $("#prevplayer").attr('id','ytplayer')
             $("#nextplayer").attr('id', 'prevplayer')
             $("#tempplayer").attr('id','nextplayer')
-            $(prevplayer).html(''); //remove everything from previous player
+            $('#prevplayer').html(''); //remove everything from previous player
 
             $rootScope.PREV_READY = false;
             $rootScope.NEXT_READY = true;
@@ -147,62 +128,69 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
             }
         }
     };
-    $scope.play_next_auto = function(){
-//        if($rootScope.NEXT_READY){
-//            $rootScope.SONG_INDEX += 1;
-//
-//            coverflow('albumflow').to($rootScope.SONG_INDEX);
-////            MusicPlayer.pause(ytplayer);
-//
-//            //some bomb ass logic
-//            $("#ytplayer").attr('id','tempplayer')
-//            $("#nextplayer").attr('id','ytplayer')
-//            $("#prevplayer").attr('id', 'nextplayer')
-//            $("#tempplayer").attr('id','prevplayer')
-//            $(nextplayer).html(''); //remove everything from next player
-//
-//            $rootScope.PREV_READY = true;
-//            $rootScope.NEXT_READY = false;
-//            $rootScope.getTime = null;
-//            MusicPlayer.play(ytplayer);
-////            MusicPlayer.seek(prevplayer,0);
-//
-//            var interval_times = 0;
-//            var volume_transition = setInterval(function(){
-//                MusicPlayer.setVolume(prevplayer, Math.max(0,100-interval_times));
+    $rootScope.play_next_auto = function(){
+        debugger;
+
+        if($rootScope.NEXT_READY){
+            $rootScope.SONG_INDEX += 1;
+
+            coverflow('albumflow').to($rootScope.SONG_INDEX);
+//            MusicPlayer.pause(ytplayer);
+            clearInterval($rootScope.getTime);
+            //some bomb ass logic
+            $("#ytplayer").attr('id','tempplayer')
+            $("#nextplayer").attr('id','ytplayer')
+            $("#prevplayer").attr('id', 'nextplayer')
+            $("#tempplayer").attr('id','prevplayer')
+            $("#nextplayer").html(''); //remove everything from next player
+
+            $rootScope.PREV_READY = true;
+            $rootScope.NEXT_READY = false;
+            $rootScope.getTime = null;
+
+            MusicPlayer.play(ytplayer);
+//            MusicPlayer.seek(prevplayer,0);
+
+//            clearInterval($rootScope.getTime);
+            var interval_times = 0;
+            var volume_transition = setInterval(function(){
+                MusicPlayer.setVolume(prevplayer, Math.max(0,100-interval_times));
+
 //                MusicPlayer.setVolume(ytplayer, Math.max(100,interval_times));
-//                interval_times += 1;
-//            },30);
-//
-//            var prev_player_duration = prevplayer.getDuration()
-//            var prev_player_time = setInterval(function(){
-//                if(prev_player_duration == prev_player_time){
-//                    MusicPlayer.pause(prevplayer);
+                interval_times += 1;
+            },30);
+
+
+            var prev_player_duration = prevplayer.getDuration();
+            var prev_player_time = setInterval(function(){
+                if((prev_player_duration - prevplayer.getCurrentTime()) <= 0.5){
+                    MusicPlayer.stop(prevplayer);
+                    $rootScope.PLAYER_STATUS = 'play'; //override previous statement
 //                    MusicPlayer.seek(prevplayer,0);
-//                    clearInterval(prev_player_time);
-//                    clearInterval(volume_transition);
-//                }
-//            },50);
-//
-//            var temp_playing = $rootScope.currently_playing
-//            $rootScope.currently_playing = $rootScope.next_playing
-//            $rootScope.previous_playing = temp_playing
-//            $rootScope.next_playing = $rootScope.SONGS[$rootScope.SONG_INDEX + 1]
-//
-//            if($rootScope.SONG_INDEX + 1 < $rootScope.SONGS.length){
-//                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX + 1].youtube_url;
-//                if(youtube_url != undefined){
-//                    MusicPlayer.loadVideo(youtube_url, "nextplayer")
-//                }
-//                else{
-//                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
-//                    promise.then(function(url){
-//                        var youtube_url = url;
-//                        MusicPlayer.loadVideo(youtube_url, "nextplayer")
-//                    });
-//                }
-//            }
-//        }
-        $scope.play_next()
+                    clearInterval(prev_player_time);
+                    clearInterval(volume_transition);
+                }
+            },50);
+
+            var temp_playing = $rootScope.currently_playing
+            $rootScope.currently_playing = $rootScope.next_playing
+            $rootScope.previous_playing = temp_playing
+            $rootScope.next_playing = $rootScope.SONGS[$rootScope.SONG_INDEX + 1]
+
+            if($rootScope.SONG_INDEX + 1 < $rootScope.SONGS.length){
+                var youtube_url = $rootScope.SONGS[$rootScope.SONG_INDEX + 1].youtube_url;
+                if(youtube_url != undefined){
+                    MusicPlayer.loadVideo(youtube_url, "nextplayer")
+                }
+                else{
+                    var promise = MusicPlayer.search($rootScope.SONGS[$rootScope.SONG_INDEX + 1]);
+                    promise.then(function(url){
+                        var youtube_url = url;
+                        MusicPlayer.loadVideo(youtube_url, "nextplayer")
+                    });
+                }
+            }
+        }
+//        $scope.play_next()
     }
 });

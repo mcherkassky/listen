@@ -1,5 +1,4 @@
-<div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
-<div ng-controller="AlbumCtrl" ng-show='results' id="albums">
+<div class="results-table" ng-controller="AlbumCtrl" id="albums">
     <div class="item" ng-repeat="album in music.albums">
         <div ng-click ="play_album_contents(album)">
             <div class="album-art">

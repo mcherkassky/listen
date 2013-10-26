@@ -54,9 +54,9 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
     $scope.refreshCarousel = function(container_id){
         $timeout(function(){
             $(container_id).jcarousel({
-                visible:4,
-                scroll: 4,
-                itemFallbackDimension: 200
+//                visible:4,
+//                scroll: 4,
+//                itemFallbackDimension: 200
             })
         },10)
     };
@@ -72,6 +72,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                 $scope.show_youtube_results = false;
             }
 
+
             if (searchTimeout) $timeout.cancel(searchTimeout);
             searchText = newVal;
 
@@ -82,11 +83,19 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 //                    $scope.results = false;
                 }
                 else{
+                    $('.results-table').block({ message: '<h5>Loading</h5><br><img height=45 width=45 src="/static/img/ajax-loader.gif">' })
+
                     $http.get('/search/' + searchText).success(function(data){
                         if(data != undefined){
                             if($('#albums').css('position') == 'relative'){
                                 $('#albums').masonry('destroy')
                             }
+//                            if(data['songs'].length)
+//                            if(data['songs'].length < 25){
+//                                data['songs'] = data['songs'].concat(buildArray(20-data['songs'].length))
+//                            }
+
+
                             $scope.music.songs = data['songs'];
                             $scope.music.albums = data['albums'];
                             $scope.music.artists = data['artists'];
@@ -109,6 +118,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                                 keepSelection: false
                             });
                         }
+                        $('.results-table').unblock()
                         $scope.loading = false;
                         $scope.contextMenu()
                     })

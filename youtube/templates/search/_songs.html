@@ -1,5 +1,3 @@
-<div ng-cloak ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
-
 <div ng-cloak ng-show="show_youtube_results">
     <h4 style='text-align:center'> Can't Find What You're Looking For? Try These:</h4>
     <br>
@@ -26,8 +24,7 @@
       </div>
 </div>
 
-<table ng-cloak ng-controller="SongCtrl" class='table
-    table-striped table-condensed'>
+<table ng-cloak ng-controller="SongCtrl" class='table results-table table-striped table-condensed'>
     <thead>
         <tr>
             <td width='15px'>
@@ -57,7 +54,15 @@
             <td style="height:20px"> [[format_to_time(song.duration)]] </td>
             <td style="height:20px"> [[song.artist]] </td>
             <td style="height:20px" ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
-
+        </tr>
+    </tbody>
+    <tbody style="border-top:0">
+        <tr ng-cloak ng-repeat="element in padding">
+            <td style="width:12px;height:20px"></td>
+            <td style="height:20px"> </td>
+            <td style="height:20px"> </td>
+            <td style="height:20px"> </td>
+            <td style="height:20px"> </td>
         </tr>
     </tbody>
 </table>

@@ -37,9 +37,9 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
                 if(player_id == 'ytplayer'){
                     if($(ytplayer).html() != ''){
                         $('#slider').slider('value',$rootScope.PLAYER_TIME);
-                        var time_left = $rootScope.PLAYER_LENGTH - Math.round(ytplayer.getCurrentTime());
+                        var time_left = ytplayer.getDuration() - ytplayer.getCurrentTime();
                         if(time_left <= 3){
-                            $rootScope.play_next()
+                            $rootScope.play_next_auto()
                         }
                     }
                 }
@@ -61,6 +61,8 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             return youtube_url.promise;
         },
         play: function(player){
+            clearInterval($rootScope.getTime);
+
             $rootScope.PLAYER_STATUS = 'play';
             player.setVolume($rootScope.PLAYER_VOLUME);
             player.playVideo();
@@ -77,6 +79,7 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             $rootScope.getTime = setInterval(function(){
                 $rootScope.$apply(function(){
                     $rootScope.PLAYER_TIME = Math.round(player.getCurrentTime());
+                    console.log($rootScope.PLAYER_TIME)
                 });
             },1000);
         },
@@ -97,6 +100,5 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
         setVolume: function(player, volume){
             player.setVolume(volume);
         }
-
     }
 });

@@ -58,31 +58,9 @@ def search(query):
 
     #make response
     response = {
-        'songs': [{
-            'title': song.title,
-            'artist': song.artist,
-            'album': song.album,
-            'img': song.img,
-            'id': str(song.id),
-            'album_index': song.album_index,
-            'duration': song.duration,
-            'youtube_url': song.youtube_url,
-            'album_id': str(song.album_id),
-            'artist_id': str(song.artist_id)
-        } for song in songs],
-        'albums': [{
-            'title': album.title,
-            'height': str(150 + randrange(10)),
-            'width': str(randrange(100, 160)),
-            'artist': album.artist,
-            'img': album.img,
-            'id': str(album.id)
-        } for album in albums],
-        'artists': [{
-            'name': artist.name,
-            'img': artist.img,
-            'id': str(artist.id)
-        } for artist in artists]
+        'songs': [song.serialize for song in songs],
+        'albums': [album.serialize for album in albums],
+        'artists': [artist.serialize for artist in artists]
     }
     return json.dumps(response)
 

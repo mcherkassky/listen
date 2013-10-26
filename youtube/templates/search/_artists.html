@@ -1,11 +1,18 @@
 <div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
 <div ng-controller="ArtistCtrl" ng-show='results' id="artists">
-    <div class="item" ng-repeat="artist in music.artists">
-        [[artist.name]]
+    <div class="item stripe[[$index%2]]" ng-repeat="artist in music.artists">
+        <div style='padding-left:15px; padding-top:15px'>
+            [[artist.name]]
+        </div>
+
         <div>
             <ul class="carousel jcarousel-skin-tango">
                 <li ng-repeat="album in albums[$index]">
                     <img class="album-image" ng-click='play_album_contents(album)' height="200px" width="200px" src=[[album.img]]>
+                    <div class="album-overlay">
+                        <div class='album-detail-title'>[[album.title]]</div>
+                        <div class='album-detail-artist'>[[album.artist]]</div>
+                    </div>
                 </li>
             </ul>
         </div>
