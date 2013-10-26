@@ -1,6 +1,7 @@
 <div ng-controller="PlaylistCtrl" class='row-fluid'>
+
     <div class="span3">
-        <ul class="nav nav-tabs nav-stacked nav-justified">
+        <ul class="nav nav-list nav-tabs nav-stacked nav-justified">
             <li class="active playlist-tab">
                 <a href="#next" id="next-tab" data-toggle="tab">
                     <i class="icon-headphones"></i> Up Next
@@ -77,16 +78,16 @@
 
             </div>
             <div ng-repeat="playlist in music.playlists" class="tab-pane" id="playlist[[$index]]">
-                <table class='table table-condensed'>
+                <table class='table table-striped table-condensed'>
                     <thead>
-                        <tr>
+                        <tr style="border-bottom: 1px solid #e1e4e7">
                             <td width='15px'>
                             </td>
                             <td width='200px'>
-                                Title
+                                    Title
                             </td>
                             <td width='100px'>
-                                Time
+                                    Time
                             </td>
                             <td width='150px'>
                                 Artist

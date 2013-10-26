@@ -77,3 +77,12 @@
     left: 10px;
     /*background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");*/
 }
+
+.player-btn {
+    border-radius: 0px;
+}
+
+
+.table-striped tbody > tr:nth-child(even) > td, .table-striped tbody > tr.selected-row > td, .table-striped tbody > tr:nth-child(even) > th, .table-striped tbody > tr.selected-row > th {
+    background-color: #f1f4f7;
+}
