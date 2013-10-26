@@ -1,5 +1,9 @@
 'use strict';
 
+var buildArray = function(n){
+    return Array(n).join(1).split('').map(function(){return {}});
+};
+
 var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngDragDrop'],function($interpolateProvider){
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]')
@@ -8,10 +12,7 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
 musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, UserFactory, SongFactory,$timeout, $http){
     //get current user
     $rootScope.user = UserFactory.get({},function(){});
-//    $http({
-//        url: '/user',
-//        method: 'GET'
-//    }).success(function(data){$rootScope.user = data});
+
 
     $rootScope.PLAYER_STATUS = null;
     $rootScope.PLAYER_VOLUME = 100;
@@ -27,20 +28,25 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
     $rootScope.is_up_next_playing = undefined;
 
     $rootScope.format_to_time = function(value){
-        var hours = Math.floor(value / 3600);
-        var minutes = Math.floor(value % 3600 / 60);
-        var seconds = Math.floor(value % 3600 % 60);
-        return ((hours>0?hours+":":"")+(minutes>0?(hours>0&&minutes<10?"0":"")+minutes + ":":"0:")+(seconds<10?"0":"")+seconds);
+        if(value){
+            var hours = Math.floor(value / 3600);
+            var minutes = Math.floor(value % 3600 / 60);
+            var seconds = Math.floor(value % 3600 % 60);
+            return ((hours>0?hours+":":"")+(minutes>0?(hours>0&&minutes<10?"0":"")+minutes + ":":"0:")+(seconds<10?"0":"")+seconds);
+        }
+        return ""
+
     };
 
     $rootScope.music = {
         up_next:[],
-        songs:[],
+        songs:buildArray(25),
         albums:[],
         artists:[],
         youtube_results:[],
         playlists: []
     };
+    debugger;
 
     var timeout;
     $rootScope.coverflow = function(){
