@@ -78,7 +78,10 @@
           </div>
 
       </div>
-      {% include "/base/_player_bar.html" %}
+
+      <div class="container" style="margin: 0"> 
+          {% include "/base/_player_bar.html" %}
+      </div>
 
       {%block content%}{%endblock%}
     </div>
@@ -131,4 +134,9 @@
     {% block scripts %}
     {% endblock %}
   </body>
+
+
+
+
+
 </html>

@@ -1,7 +1,8 @@
 li {
   -moz-user-select: none;
 }
-.selected {
-    background: #34495e;
+
+.selected td { 
+    background-color: #34495e !important;
     color: white;
 }

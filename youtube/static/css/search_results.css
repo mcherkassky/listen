@@ -120,3 +120,24 @@
 .nav-tabs > li.active {
     z-index: 1;
 }
+
+
+.nav-pills li a {
+    background-color: #e1e4e7;
+    border: 0px solid #000;
+    color: #34495e;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
+    width: 100px;
+
+    color: #222;
+    border-radius: 20px !important;
+    padding: 7px 17px 7px 17px;
+}
+
+.nav-hr {
+    height: 2px;
+}
+
+.navbar-inverse .navbar-inner {
+    background: #022f3d;
+}

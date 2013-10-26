@@ -1,5 +1,6 @@
 <div style="background-color:#bdc3c7">
-  <div ng-model="music.up_next" data-drop="true" jqyoui-droppable="{multiple:true,onDrop:'up_next'}" id="music-player" class='container'>
+  <div ng-model="music.up_next" data-drop="true" jqyoui-droppable="{multiple:true,onDrop:'up_next'}" id="music-player" class='container'
+      style="width: 100%">
       <span ng-controller="PlayerCtrl">
           <a ng-cloak ng-click="play_previous()" class="player-btn btn btn-large"><i class="icon-white icon-fast-backward icon-large"></i></a>
           <span ng-cloak ng-switch on="PLAYER_STATUS">

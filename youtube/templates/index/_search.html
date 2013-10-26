@@ -9,13 +9,15 @@
 
     <div class='row-fluid'>
         <div class="tabbable"> <!-- Only required for left/right tabs -->
-            <ul class="nav nav-tabs">
+
+            <ul class="nav nav-pills">
                 <li class="active"><a href="#tab1" id="songs-tab" data-toggle="tab">Songs</a></li>
                 <li><a ng-click="refreshTiles('#albums')" href="#tab2" id="albums-tab" data-toggle="tab">Albums</a></li>
                 <li><a ng-click="refreshCarousel('.carousel')" href="#tab3" id="artists-tab" data-toggle="tab">Artists</a></li>
                 <li><a href="#tab4" id="playlists-tab" data-toggle="tab">Playlists</a></li>
                 <li><a href="#tab5" id="radio-tab" data-toggle="tab">Radio</a></li>
             </ul>
+            <hr class="nav-hr">
 
             <div class="tab-content" style="margin: 0 auto;">
                 <div class="tab-pane active" id="tab1">
