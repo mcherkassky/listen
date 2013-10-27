@@ -17,11 +17,19 @@ musicModule.service('MusicPlayer', function($rootScope, $timeout, $q, $http){
             };
 
             //set up embedded video
-            var params = { allowScriptAccess: "always" };
+            var params = { allowScriptAccess: "always", 'controls': 0 };
+
+
             swfobject.embedSWF( "http://www.youtube.com/v/" + youtube_id + "&enablejsapi=1&version=3&playerapiid=" + player_id,//ytplayer",
                 player_id,
-                "1", "1", "8",
+                "290", '210', "8",
                 null, null, params, null, null);
+
+            $('#ytplayer').parent().css("z-index",'1');
+            $('#prevplayer').parent().css("z-index",'-100');
+            $('#nextplayer').parent().css("z-index",'-100');
+
+
 
 //            //load slider
 //            $timeout(function(){
