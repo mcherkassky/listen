@@ -23,14 +23,17 @@ def email_key(user):
     g.save()
     token.save()
 
+    import settings
+
     body = "<h4> Welcome to Listen.fm </h4>" \
            "<br>" \
            "We are a next generation streaming service giving you access to millions of songs.</div>" \
            "<br>" \
            "Create an account by clicking on the link below:" \
            "<br>" \
-           "<a href='listenapp.herokuapp.com/createAccount?accountEmail={0}&signupToken={1}'.format(user.email, token.key) > Register for Listen.fm</a>"
-    send_email("Listen.fm, all the music.", body, user.email)
+           "http://{0}/createAccount?accountEmail={1}&signupToken={2}".format(settings.HOST, user.email, token.key)
+
+    send_email("Listen.fm, all the music.", body, to_addr=user.email)
 
 
 def keys_available():
@@ -39,7 +42,7 @@ def keys_available():
     try:
         g = Global.objects()
         g = g[0]
-        return g.n_tokens < 100
+        return g.n_tokens < 20
     except:
         g = Global(n_tokens=0)
         g.save()

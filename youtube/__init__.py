@@ -9,7 +9,7 @@ from functools import wraps
 import logging
 import requests
 import db
-from models import User, Playlist
+from models import User, Playlist, Token
 from auth import login_required, load_user
 
 import registration
@@ -166,9 +166,12 @@ def signup():
     if email is None:
         abort(404)
 
-    user = User(email=email)
-    user.save()
 
+    emails = User.objects.filter(email=email)
+    if any(emails):
+        return "Email already subscribed"
+
+    user = User(email=email)
 
     # send email whatever 
     if registration.keys_available():
@@ -191,7 +194,6 @@ def login():
 
     if not email or not password:
         abort(404)
-    pdb.set_trace()
     # authenticate email password
     try:
         users = User.objects.filter(email=email)
@@ -215,6 +217,11 @@ def create_account():
     # else render home page ('/home')
 
     token = request.args.get('signupToken')
+    db_token = Token.objects.filter(key=token)
+
+    if any(db_token) and db_token[0].used == True:
+        return redirect(url_for('index'))
+
     return render_template('/create_account.html',
             signup_token=token,
             account_email="marc.adam@zefr.com")
@@ -229,27 +236,33 @@ def post_account():
     email = request.json.get('accountEmail')
     token = request.json.get('signupToken')
 
+    tokens = Token.objects.filter(key=token)
+    if any(tokens) and tokens[0].used == True:
+        return url_for('index')
+
     if email and password and token:
         print username, password
         user = User(
                 username=username,
                 email=email,
                 password=password)
+
+        token = Token.objects.filter(key=token)[0]
+        token.used = True
+        token.save()
         user.save()
 
         session['user_id'] = str(user.id)
 
-        # login in the user
-        # g.user = user or whatever
     else:
         print "not all parameters have been set"
-        # redirect to main home page
 
     return url_for('index')
 
 
 @app.route('/logout', methods=["GET"])
 def logout():
+
     session['user_id'] = None
     print session['user_id']
     return redirect(url_for('index'))
