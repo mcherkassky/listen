@@ -88,6 +88,8 @@ class User(Document):
 
 class Artist(Document):
     created_at = DateTimeField(default=datetime.datetime.now, required=True)
+    unicode = StringField()
+    itunes_id = IntField()
     name = StringField()
     img = StringField()
     tags = ListField()
@@ -126,7 +128,8 @@ class Album(Document):
     title = StringField()
     artist = StringField()
     img = StringField()
-
+    unicode = StringField()
+    itunes_id = IntField()
     songs = ListField()
 
     tags = ListField()
@@ -165,7 +168,8 @@ class Song(Document):
     title = StringField()
     album = StringField()
     img = StringField()
-
+    unicode = StringField()
+    itunes_id = IntField()
     album_index = IntField()
     artist = StringField()
 

@@ -9,7 +9,7 @@
     <file path="/settings.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382197900789" ignored="false" />
     <file path="$USER_HOME$/zefr/Code/nomenclature/nomenclature/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380249651134" ignored="false" />
     <file path="/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382829782051" ignored="false" />
-    <file path="/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382831053017" ignored="false" />
+    <file path="/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382847929590" ignored="false" />
     <file path="/base.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382755383944" ignored="false" />
     <file path="/index.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382224014422" ignored="false" />
     <file path="/views.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382830611299" ignored="false" />
@@ -158,7 +158,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/auth/flask_zefr_auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382639087217" ignored="false" />
     <file path="/flask_zefr_auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382639050185" ignored="false" />
-    <file path="/a.dummy" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382829767742" ignored="false" />
+    <file path="/a.dummy" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382847780796" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/user.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="/PlaylistFactory.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382728186642" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/ad.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468901259" ignored="false" />
@@ -191,6 +191,7 @@
     <file path="/create_account.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382808870882" ignored="false" />
     <file path="/registration.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382809350674" ignored="false" />
     <file path="/em.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382809100096" ignored="false" />
+    <file path="/scraper3.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382890106968" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,37 +234,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicPlayer.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MusicPlayer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="26" selection-start="942" selection-end="942" vertical-scroll-proportion="0.48305085">
+            <state line="24" column="26" selection-start="942" selection-end="942" vertical-scroll-proportion="-3.1090908">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
+      <file leaf-file-name="scraper3.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraper3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="111" selection-start="4972" selection-end="4972" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="52" column="20" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-17.538462">
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="em.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/em.py">
+      <file leaf-file-name="unique_artists.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unique_artists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="24" selection-start="3202" selection-end="3351" vertical-scroll-proportion="-2.7142856">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -278,37 +272,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/registration.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
+            <state line="132" column="23" selection-start="2945" selection-end="2945" vertical-scroll-proportion="-5.8076925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_account.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/create_account.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="16" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
+            <state line="135" column="111" selection-start="4972" selection-end="4972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_songs.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="49" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
+            <state line="10" column="36" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/views.py">
+      <file leaf-file-name="db.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="28" selection-start="3671" selection-end="3671" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scraper2.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraper2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="98" selection-end="107" vertical-scroll-proportion="-2.590909">
               <folding />
             </state>
           </provider>
@@ -324,27 +329,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/youtube/templates/search/_artists.html" />
-        <option value="$PROJECT_DIR$/youtube/static/lib/jcarousel/skin.css" />
-        <option value="$PROJECT_DIR$/youtube/static/js/controllers/SongController.js" />
-        <option value="$PROJECT_DIR$/youtube/templates/search/_songs.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js" />
         <option value="$PROJECT_DIR$/youtube/templates/create_account.html" />
         <option value="$PROJECT_DIR$/youtube/em.py" />
         <option value="$PROJECT_DIR$/youtube/registration.py" />
         <option value="$PROJECT_DIR$/youtube/__init__.py" />
-        <option value="$PROJECT_DIR$/youtube/models.py" />
         <option value="$PROJECT_DIR$/youtube/views.py" />
         <option value="$PROJECT_DIR$/youtube/static/js/app.js" />
         <option value="$PROJECT_DIR$/youtube/templates/base/base.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js" />
         <option value="$PROJECT_DIR$/youtube/templates/base/_player_bar.html" />
+        <option value="$PROJECT_DIR$/python-itunes.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/youtube/models.py" />
+        <option value="$PROJECT_DIR$/scraper3.py" />
+        <option value="$PROJECT_DIR$/unique_artists.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
+    <option name="x" value="138" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -408,46 +413,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YouTube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youtube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YouTube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youtube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -475,14 +440,14 @@
       <recent name="$PROJECT_DIR$/youtube/static/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/youtube/static/img" />
       <recent name="$PROJECT_DIR$/youtube/static/lib/coverflow" />
       <recent name="$PROJECT_DIR$/youtube/static/lib" />
       <recent name="$PROJECT_DIR$/youtube/templates/index" />
-      <recent name="$PROJECT_DIR$/youtube/templates/base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.scraper3">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -501,25 +466,6 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="youtube_tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/youtube" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="YouTube" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/youtube/youtube_tools.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -575,6 +521,25 @@
       <module name="YouTube" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="scraper3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="YouTube" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper3.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -649,18 +614,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.run" />
-      <item index="1" class="java.lang.String" itemvalue="Python.youtube_tools" />
-      <item index="2" class="java.lang.String" itemvalue="Python.models" />
-      <item index="3" class="java.lang.String" itemvalue="Python.scraper2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.scraper" />
+      <item index="1" class="java.lang.String" itemvalue="Python.models" />
+      <item index="2" class="java.lang.String" itemvalue="Python.scraper2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scraper" />
+      <item index="4" class="java.lang.String" itemvalue="Python.scraper3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.run" />
-        <item index="1" class="java.lang.String" itemvalue="Python.scraper2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.scraper" />
+        <item index="0" class="java.lang.String" itemvalue="Python.scraper3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scraper2" />
         <item index="3" class="java.lang.String" itemvalue="Python.scraper" />
-        <item index="4" class="java.lang.String" itemvalue="Python.models" />
+        <item index="4" class="java.lang.String" itemvalue="Python.scraper" />
       </list>
     </recent_temporary>
   </component>
@@ -674,23 +639,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <frame x="138" y="22" width="1280" height="774" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25993884" sideWeight="0.7352381" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16936791" sideWeight="0.72324157" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.2647619" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2767584" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2767584" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25993884" sideWeight="0.7352381" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -757,71 +722,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_artists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="55" selection-start="333" selection-end="333" vertical-scroll-proportion="-2.0357144">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/lib/jcarousel/skin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="30" selection-start="3217" selection-end="3387" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SongController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="20" selection-start="2056" selection-end="2057" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="43" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/create_account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/registration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="41" selection-start="4509" selection-end="4542" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="5" selection-start="2903" selection-end="2904" vertical-scroll-proportion="0.33164558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="49" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
@@ -878,9 +778,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ua.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytunes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="583" column="17" selection-start="18472" selection-end="18485" vertical-scroll-proportion="11.6083555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="942" selection-end="942" vertical-scroll-proportion="0.48305085">
+        <state line="24" column="26" selection-start="942" selection-end="942" vertical-scroll-proportion="-3.1090908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="98" selection-end="107" vertical-scroll-proportion="-2.590909">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="41" selection-start="4509" selection-end="4542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="23" selection-start="2945" selection-end="2945" vertical-scroll-proportion="-5.8076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="20" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-17.538462">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unique_artists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
