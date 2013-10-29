@@ -17,7 +17,7 @@
     <file path="$PROJECT_DIR$/youtube/static/lib/font-awesome/less/font-awesome.less" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380337277269" ignored="false" />
     <file path="/music_player.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381690157828" ignored="false" />
     <file path="/music_search.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380392719909" ignored="false" />
-    <file path="/Dummy.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382707014780" ignored="false" />
+    <file path="/Dummy.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383052239970" ignored="false" />
     <file path="/youtube.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380427595699" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382453920320" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/steps/campaign_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
@@ -59,7 +59,7 @@
     <file path="/ad_groups.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380727426895" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_faker.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/terrain.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382622343247" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/view_ad_groups.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382622468540" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/view_ad_groups.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383052839230" ignored="false" />
     <file path="/view_ad_groups.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382478194457" ignored="false" />
     <file path="/DragController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381267818422" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/services/trending_dashboard.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381253428657" ignored="false" />
@@ -173,7 +173,7 @@
     <file path="/authorization_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382708072232" ignored="false" />
     <file path="/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382707839648" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/admin/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382541512706" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053491747" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/notification.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555676909" ignored="false" />
     <file path="/notification.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382554534981" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/application.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555676909" ignored="false" />
@@ -184,8 +184,8 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/mrjob.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382620993794" ignored="false" />
     <file path="/mrjob.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382620954593" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/README.md" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382622471178" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382721315081" ignored="false" />
-    <file path="/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713364969" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053625857" ignored="false" />
+    <file path="/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053625857" ignored="false" />
     <file path="/_featured.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382730177709" ignored="false" />
     <file path="/jquery.blockUI.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382757957504" ignored="false" />
     <file path="/create_account.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382808870882" ignored="false" />
@@ -331,8 +331,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="140" />
-    <option name="y" value="22" />
+    <option name="x" value="-1567" />
+    <option name="y" value="134" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
   </component>
@@ -687,8 +687,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1567" y="134" width="1280" height="774" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
