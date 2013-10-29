@@ -13,6 +13,18 @@ musicModule.controller('PlayerCtrl', function($rootScope, $scope, $timeout, Musi
         $scope.pause();
     });
 
+    $('#slider').mousedown(function(event){
+        if($rootScope.PLAYER_STATUS == 'play'){
+            $scope.pause();
+            $scope.seekTo($('#slider').slider('value'));
+            $scope.play();
+        }
+
+//        $scope.pause();
+//        $scope.seekTo($('#slider').slider('value'));
+//        $scope.play()
+    });
+
     $('#music-player').mouseup(function(event){
         if($rootScope.PLAYER_SEEK){
             $scope.seekTo($('#slider').slider('value'));
