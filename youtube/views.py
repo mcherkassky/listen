@@ -4,7 +4,7 @@ import pdb
 import json
 import re
 from bson import ObjectId
-from random import randrange
+from random import randrange, choice, shuffle
 
 from auth import requires_auth
 from youtube_tools import getVideoFeed, getVideoObjects
@@ -153,8 +153,12 @@ def featured():
     albums = Album.get_popular()
 
     popular = [artist.serialize for artist in artists] + [album.serialize for album in albums]
+    sizes = [250, 200, 225, 175, 275]
+    for p in popular:
+        p['size'] = choice(sizes)
+    shuffle(popular)
 
-    return 'success'
+    return json.dumps(popular)
 
 
 

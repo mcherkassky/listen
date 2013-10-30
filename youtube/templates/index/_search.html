@@ -11,17 +11,21 @@
         <div class="tabbable"> <!-- Only required for left/right tabs -->
 
             <ul class="nav nav-pills">
-                <li class="active"><a href="#tab1" id="songs-tab" data-toggle="tab">Songs</a></li>
-                <li><a ng-click="refreshTiles('#albums')" href="#tab2" id="albums-tab" data-toggle="tab">Albums</a></li>
+                <li class="active"><a ng-click="refreshTiles('#featured',10)" href="#tab6" id="featured-tab" data-toggle="tab">Featured</a></li>
+                <li><a href="#tab1" id="songs-tab" data-toggle="tab">Songs</a></li>
+                <li><a ng-click="refreshTiles('#albums',20)" href="#tab2" id="albums-tab" data-toggle="tab">Albums</a></li>
                 <li><a ng-click="refreshCarousel('.carousel')" href="#tab3" id="artists-tab" data-toggle="tab">Artists</a></li>
                 <li><a href="#tab4" id="playlists-tab" data-toggle="tab">Playlists</a></li>
                 <li><a href="#tab5" id="radio-tab" data-toggle="tab">Radio</a></li>
-                <li><a href="#tab6" id="featured-tab" data-toggle="tab">Featured</a></li>
+
             </ul>
             <hr class="nav-hr">
 
             <div class="tab-content" style="margin: 0 auto;">
-                <div class="tab-pane active" id="tab1">
+                <div class="tab-pane active" id="tab6">
+                    {% include "/search/_featured.html" %}
+                </div>
+                <div class="tab-pane" id="tab1">
                     {% include "/search/_songs.html" %}
                 </div>
                 <div class="tab-pane" id="tab2">
@@ -36,9 +40,7 @@
                 <div class="tab-pane" id="tab5">
                     <p>Feature in progress</p>
                 </div>
-                <div class="tab-pane" id="tab6">
-                    {% include "/search/_featured.html" %}
-                </div>
+
             </div>
         </div>
 

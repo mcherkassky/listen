@@ -42,10 +42,10 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         },10)
     };
     //need this don't delete
-    $scope.refreshTiles = function(container_id){
+    $scope.refreshTiles = function(container_id, gutter){
         $timeout(function(){
             $(container_id).masonry({
-                'gutter':20
+                'gutter':gutter
             })
         },10)
 
