@@ -50,16 +50,16 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
         },10)
 
     };
-
-    $scope.refreshCarousel = function(container_id){
-        $timeout(function(){
-            $(container_id).jcarousel({
-//                visible:4,
-//                scroll: 4,
-//                itemFallbackDimension: 200
-            })
-        },10)
-    };
+//
+//    $scope.refreshCarousel = function(container_id){
+//        $timeout(function(){
+//            $(container_id).jcarousel({
+////                visible:4,
+////                scroll: 4,
+////                itemFallbackDimension: 200
+//            })
+//        },10)
+//    };
 
     //watching search bar
     var searchText = " ", searchTimeout;
@@ -83,12 +83,15 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
 //                    $scope.results = false;
                 }
                 else{
-                    $('.results-table').block({ message: '<h5>Loading</h5><br><img height=45 width=45 src="/static/img/ajax-loader.gif">' })
+                    $('.results-table').block({ message: '<h5>Loading</h5><br><img height=45 width=45 src="/static/img/ajax-loader.gif">' });
 
                     $http.get('/search/' + searchText).success(function(data){
                         if(data != undefined){
                             if($('#albums').css('position') == 'relative'){
                                 $('#albums').masonry('destroy')
+                            }
+                            if($('#artists').css('position') == 'relative'){
+                                $('#artists').masonry('destroy')
                             }
 //                            if(data['songs'].length)
 //                            if(data['songs'].length < 25){
@@ -110,6 +113,7 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                                 $scope.show_youtube_results = false;
                                 $scope.results = true;
                                 tile_images('#albums');
+                                tile_images('#artists');
                             }
 
                             //selecatble song elements

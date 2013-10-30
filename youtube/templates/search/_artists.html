@@ -1,20 +1,25 @@
-<div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
-<div ng-controller="ArtistCtrl" ng-show='results' id="artists">
-    <div class="item stripe[[$index%2]]" ng-repeat="artist in music.artists">
-        <div style='padding-left:15px; padding-top:15px'>
-            [[artist.name]]
+<div class="results-table" ng-controller="ArtistCtrl" ng-show='results' id="artists">
+    <div style="width:550px;margin-bottom:20px" ng-repeat="artist in music.artists" class="item">
+        <div class="row">
+            <div class="span4">
+                <div class="album-art pull-right">
+                    <div>
+                        <img class="album-image" src=[[artist.img]] style="width:175px;height:175px">
+                    </div>
+                </div>
+            </div>
+            <div class="span8">
+                <div style="font-weight:600; font-size:120%; margin-bottom:10px;margin-top:5px">[[artist.name]]</div>
+                <div style="margin-bottom:40px">[[commas(artist.plays)]] plays ([[commas(artist.listeners)]] listeners)</div>
+
+                <ul class="tags">
+                    <span ng-repeat="tag in artist.tags">
+                        <li><a href="#" class="tag">[[tag]]</a></li>
+                    </span>
+
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <ul class="carousel jcarousel-skin-tango">
-                <li ng-repeat="album in albums[$index]">
-                    <img class="album-image" ng-click='play_album_contents(album)' height="200px" width="200px" src=[[album.img]]>
-                    <div class="album-overlay">
-                        <div class='album-detail-title'>[[album.title]]</div>
-                        <div class='album-detail-artist'>[[album.artist]]</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </div>
 </div>

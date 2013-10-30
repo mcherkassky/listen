@@ -114,7 +114,9 @@ class Artist(Document):
             'id': str(self.id),
             'name': self.name,
             'img': self.img,
-            'listeners': self.listeners
+            'listeners': self.listeners,
+            'plays': self.plays,
+            'tags': self.tags
         }
         return response
 

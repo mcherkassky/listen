@@ -1,4 +1,3 @@
-<div ng-show="loading" style="text-align:center; margin:10px"><img src="{{ url_for('static', filename='img/ajax-loader.gif') }}"></div>
 <div ng-controller="FeaturedCtrl" id="featured">
     <div class="item" style="margin-bottom:10px" ng-repeat="album in music.featured">
         <div>
@@ -7,11 +6,6 @@
                     <img class="album-image zoomimg" src=[[album.img]] height=[[album.size]] width=250px>
                 </div>
             </div>
-
-            <!--<div class="album-overlay">-->
-                <!--<div class='album-detail-title'>[[album.title]]</div>-->
-                <!--<div class='album-detail-artist'>[[album.artist]]</div>-->
-            <!--</div>-->
         </div>
     </div>
 </div>

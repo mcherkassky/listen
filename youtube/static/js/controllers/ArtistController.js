@@ -11,6 +11,10 @@ musicModule.controller('ArtistCtrl', function($rootScope, $q, $scope, $http, $ti
             })
     };
 
+    $scope.commas = function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
     $scope.play_album_contents = function(album){
 
         var listener = $scope.$watch('music.songs', function(newVal, oldVal){

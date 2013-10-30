@@ -9,8 +9,10 @@ var musicModule = angular.module('musicModule',['ngResource','ui.bootstrap','ngD
     $interpolateProvider.endSymbol(']]')
 });
 var getNumber = function(num) {
-        return new Array(num);
+    return new Array(num);
 };
+
+
 
 musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, UserFactory, SongFactory,$timeout, $http){
     //get current user
