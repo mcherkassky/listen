@@ -24,7 +24,12 @@
       </div>
 </div>
 
-<table ng-cloak ng-controller="SongCtrl" class='table results-table table-striped table-condensed'>
+<table ng-cloak ng-controller="SongCtrl" class='table results-table table-striped table-condensed' style="table-layout: fixed">
+    <col width="10">
+     <col width="200">
+     <col width="50">
+     <col width="50">
+     <col width="200">
     <thead>
         <tr>
             <td width='15px'>
@@ -50,10 +55,10 @@
             ng-model="music.songs" jqyoui-draggable="{index: [[$index]], placeholder: 'keep'}"
             data-index=[[$index]] data-id=[[song.id]]>
             <td style="width:12px;height:20px"><i ng-show='song==currently_playing' class="icon-play-circle"></i></td>
-            <td style="height:20px"> [[song.title]]</td>
-            <td style="height:20px"> [[format_to_time(song.duration)]] </td>
-            <td style="height:20px"> [[song.artist]] </td>
-            <td style="height:20px" ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
+            <td marquee style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; height:20px"> [[song.title]]</td>
+            <td marquee style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; height:20px"> [[format_to_time(song.duration)]] </td>
+            <td marquee style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; height:20px"> [[song.artist]] </td>
+            <td marquee style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; height:20px" ng-click="get_album_contents(song.album_id); $event.stopPropagation()"> [[song.album]]</td>
         </tr>
     </tbody>
     <tbody style="border-top:0">

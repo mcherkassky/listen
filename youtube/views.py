@@ -101,7 +101,7 @@ def playlist(user_id):
     if request.method == 'POST':
         playlist = Playlist()
         playlist.user_id = user_id
-        playlist.name = 'New Playlist'
+        playlist.name = request.json['name']
         playlist.song_ids = []
         playlist.save()
         return playlist.to_json()

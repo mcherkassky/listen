@@ -109,7 +109,9 @@ def facebook_required(f):
 # @requires_auth
 # @facebook_required
 def index():
-    return render_template('/index/index.html')
+
+    user = load_user(session['user_id'])
+    return render_template('/index/index.html', user=user)
 
 
 

@@ -8,3 +8,8 @@
     border-width: 0px;
     color: #7f8c9a;
 }
+
+.playlist-name {
+    width: 150px;
+    height: 30px;
+}
