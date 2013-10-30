@@ -155,11 +155,11 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/campaigns.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/authorization.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="/authorization.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382708285663" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383086194742" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/auth/flask_zefr_auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382639087217" ignored="false" />
     <file path="/flask_zefr_auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382639050185" ignored="false" />
     <file path="/a.dummy" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382847780796" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/user.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/user.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383086497591" ignored="false" />
     <file path="/PlaylistFactory.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382728186642" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/ad.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468901259" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/mixins.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468901259" ignored="false" />
@@ -171,7 +171,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/base/base.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/steps/authorization_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="/authorization_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382708072232" ignored="false" />
-    <file path="/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382707839648" ignored="false" />
+    <file path="/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383086156407" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/admin/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053491747" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/notification.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555676909" ignored="false" />
@@ -184,7 +184,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/mrjob.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382620993794" ignored="false" />
     <file path="/mrjob.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382620954593" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/README.md" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382622471178" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053625857" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383085924392" ignored="false" />
     <file path="/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053625857" ignored="false" />
     <file path="/_featured.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382730177709" ignored="false" />
     <file path="/jquery.blockUI.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382757957504" ignored="false" />
@@ -331,8 +331,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1567" />
-    <option name="y" value="134" />
+    <option name="x" value="993" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
   </component>
@@ -687,7 +687,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1567" y="134" width="1280" height="774" extended-state="0" />
+    <frame x="993" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
