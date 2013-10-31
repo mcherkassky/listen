@@ -15,6 +15,7 @@ from unidecode import unidecode
 from models import Artist, Album, Song, Playlist, User
 from youtube import app
 from auth import login_required, load_user, requires_auth
+import pytunes
 
 
 
@@ -55,6 +56,24 @@ def search(query):
     albums = list(Album.objects.order_by('-listeners').filter(Q(title__icontains=query) | Q(artist__icontains=query))[:25])
     artists = list(Artist.objects.order_by('-listeners').filter(name__icontains=query)[:10])
     artists = [artist for artist in artists if artist.get_albums()]
+
+    if len(songs) == 0:
+        itunes_songs = pytunes.search_track(query)[0:10]
+        songs = [{'id': '',
+            'artist_id': "",
+            'album_id':'',
+            'title': song.name,
+            'artist': song.get_artist().name,
+            'album': song.get_album().name,
+            'img': song.get_album().get_artwork()['100'],
+            'duration': int(round(song.duration))} for song in itunes_songs]
+        #make response
+        response = {
+            'songs': songs,
+            'albums': [album.serialize for album in albums],
+            'artists': [artist.serialize for artist in artists]
+        }
+        return json.dumps(response)
 
     #make response
     response = {

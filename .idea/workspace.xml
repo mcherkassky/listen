@@ -12,7 +12,7 @@
     <file path="/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383174805963" ignored="false" />
     <file path="/base.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383177616418" ignored="false" />
     <file path="/index.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382224014422" ignored="false" />
-    <file path="/views.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383100504277" ignored="false" />
+    <file path="/views.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383180255168" ignored="false" />
     <file path="/music_player.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380585626468" ignored="false" />
     <file path="$PROJECT_DIR$/youtube/static/lib/font-awesome/less/font-awesome.less" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380337277269" ignored="false" />
     <file path="/music_player.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381690157828" ignored="false" />
@@ -45,7 +45,7 @@
     <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383175468401" ignored="false" />
     <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383013423864" ignored="false" />
     <file path="/SearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383102325503" ignored="false" />
-    <file path="/MusicPlayer.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382841946557" ignored="false" />
+    <file path="/MusicPlayer.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383180508600" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/custom_input.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640049144" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/view.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383167705533" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/_top_secret_ads.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640494689" ignored="false" />
@@ -146,7 +146,7 @@
     <file path="/utils.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382455696997" ignored="false" />
     <file path="/jquery.contextMenu.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382140541657" ignored="false" />
     <file path="/scraper2.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382287367004" ignored="false" />
-    <file path="/SongController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382797065655" ignored="false" />
+    <file path="/SongController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383180690922" ignored="false" />
     <file path="/_songs.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382797146822" ignored="false" />
     <file path="/_albums.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382758290955" ignored="false" />
     <file path="/ua.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382287276083" ignored="false" />
@@ -235,45 +235,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_artists.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_artists.html">
+      <file leaf-file-name="MusicPlayer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="37" selection-start="3279" selection-end="3279" vertical-scroll-proportion="-6.9772725">
+            <state line="57" column="31" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
+      <file leaf-file-name="scraper3.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraper3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="27" selection-start="3572" selection-end="3572" vertical-scroll-proportion="-25.107143">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flat-ui.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/youtube/static/lib/flat-ui/css/flat-ui.css">
+      <file leaf-file-name="pytunes.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytunes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4709" column="11" selection-start="114214" selection-end="114214" vertical-scroll-proportion="0.49253732">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#66#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/youtube/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="41" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.56036866">
+              <folding>
+                <element signature="e#28#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -281,7 +280,7 @@
       <file leaf-file-name="_songs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="61" selection-start="1318" selection-end="1325" vertical-scroll-proportion="-9.148149">
+            <state line="47" column="59" selection-start="1864" selection-end="1864" vertical-scroll-proportion="-20.357143">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
@@ -295,46 +294,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_featured.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
+      <file leaf-file-name="SearchController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="34" selection-start="34" selection-end="47" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/ArtistController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+            <state line="31" column="30" selection-start="1177" selection-end="1188" vertical-scroll-proportion="-21.653847">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
+      <file leaf-file-name="SongController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SongController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="58" selection-start="647" selection-end="647" vertical-scroll-proportion="-10.857142">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="41" column="35" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-29.961538">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/views.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="90" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#28#38#0" expanded="true" />
-              </folding>
+            <state line="118" column="29" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,8 +331,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scraper3.py" />
-        <option value="$PROJECT_DIR$/unique_artists.txt" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/PlayerController.js" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/FeaturedController.js" />
@@ -359,12 +339,14 @@
         <option value="$PROJECT_DIR$/youtube/templates/search/_featured.html" />
         <option value="$PROJECT_DIR$/youtube/static/css/search_results.css" />
         <option value="$PROJECT_DIR$/youtube/models.py" />
-        <option value="$PROJECT_DIR$/youtube/views.py" />
         <option value="$PROJECT_DIR$/youtube/templates/search/_artists.html" />
         <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
         <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
         <option value="$PROJECT_DIR$/youtube/templates/base/base.html" />
         <option value="$PROJECT_DIR$/youtube/static/lib/flat-ui/css/flat-ui.css" />
+        <option value="$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js" />
+        <option value="$PROJECT_DIR$/youtube/static/js/controllers/SongController.js" />
+        <option value="$PROJECT_DIR$/youtube/views.py" />
       </list>
     </option>
   </component>
@@ -464,37 +446,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YouTube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youtube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flat-ui" />
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,18 +469,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flat-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -565,6 +509,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youtube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youtube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -796,7 +800,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1707" y="-329" width="1707" height="1440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -807,7 +811,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.2647619" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13712122" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13712122" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -878,34 +882,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="69" selection-start="729" selection-end="743" vertical-scroll-proportion="-3.4230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/css/music_bar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_playlists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="57" selection-start="1411" selection-end="1411" vertical-scroll-proportion="-22.392857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/css/search_results.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="29" selection-start="5136" selection-end="5136" vertical-scroll-proportion="0.8615665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
@@ -913,33 +889,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/models.py">
+    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="29" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="90" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.0">
+        <state line="16" column="58" selection-start="647" selection-end="647" vertical-scroll-proportion="0.28070176">
           <folding>
-            <element signature="e#28#38#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/ArtistController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="61" selection-start="1318" selection-end="1325" vertical-scroll-proportion="-9.148149">
+        <state line="13" column="33" selection-start="414" selection-end="414" vertical-scroll-proportion="0.22232223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="34" selection-end="47" vertical-scroll-proportion="-0.0">
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/lib/flat-ui/css/flat-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4709" column="11" selection-start="114214" selection-end="114214" vertical-scroll-proportion="0.49253732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="27" selection-start="3572" selection-end="3572" vertical-scroll-proportion="0.64912283">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,53 +953,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
+    <entry file="file://$PROJECT_DIR$/scraper3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="647" selection-end="647" vertical-scroll-proportion="-10.857142">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
+    <entry file="file://$PROJECT_DIR$/pytunes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="34" selection-start="34" selection-end="47" vertical-scroll-proportion="-0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#66#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/ArtistController.js">
+    <entry file="file://$PROJECT_DIR$/youtube/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+        <state line="118" column="29" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="31" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SongController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="35" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-29.961538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="37" selection-start="3279" selection-end="3279" vertical-scroll-proportion="-6.9772725">
+        <state line="31" column="30" selection-start="1177" selection-end="1188" vertical-scroll-proportion="-21.653847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="27" selection-start="3572" selection-end="3572" vertical-scroll-proportion="-25.107143">
+        <state line="47" column="59" selection-start="1864" selection-end="1864" vertical-scroll-proportion="-20.357143">
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/lib/flat-ui/css/flat-ui.css">
+    <entry file="file://$PROJECT_DIR$/youtube/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4709" column="11" selection-start="114214" selection-end="114214" vertical-scroll-proportion="0.49253732">
-          <folding />
+        <state line="86" column="41" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.56036866">
+          <folding>
+            <element signature="e#28#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
