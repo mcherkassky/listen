@@ -20,5 +20,5 @@ MONGO_PASSWORD = "listener"
 FACEBOOK_APP_ID = os.environ.get('FACEBOOK_APP_ID', "529423813793656")
 FACEBOOK_SECRET_KEY = os.environ.get('FACEBOOK_APP_SECRET', "e3535cd1ebc8d29b712fc853b670ff9e")
 
-HOST = os.environ.get("HOST", "localhost:5000")
+HOST = 'http://listenapp.herokuapp.com' #os.environ.get("HOST", "localhost:5000")
 
