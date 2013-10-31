@@ -13,7 +13,6 @@ var getNumber = function(num) {
 };
 
 
-
 musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongFactory, UserFactory, SongFactory,$timeout, $http){
     //get current user
     $rootScope.user = UserFactory.get({},function(){});
@@ -163,3 +162,4 @@ musicModule.run(function($rootScope, MusicPlayer, PlaylistFactory, PlaylistSongF
 
 
 });
+

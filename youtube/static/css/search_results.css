@@ -241,3 +241,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .tag:hover::after {
    border-left-color: #16a085;
 }
+
+.selectable tr:hover > td{
+    background-color: #34495E !important;
+    color: #fff !important;
+}
+
+

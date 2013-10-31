@@ -34,11 +34,21 @@
           </div>
 
           <button disabled class="btn song-detail">
-              <div ng-cloak style="font-size:100%;color:#34495e">[[currently_playing.title]]</div>
               <br>
-              <div ng-cloak style="font-size:80%;color:#34495e"> [[currently_playing.artist]]</div>
+              <ul style="list-style-type: none">
+                  <li style="overflow: hidden; line-height: 1">
+                      <a marquee ng-cloak style="font-size:100%;color:#34495e; 
+                          white-space:nowrap">[[currently_playing.title]]</a>
+                  </li>
+                  <li style="overflow: hidden; line-height: 1">
+                  <a marquee ng-cloak style="font-size:80%;color:#34495e; white-space: nowrap"> 
+                      [[currently_playing.artist]]</a>
+                  </li>
+              </ul>
           </button>
       </span>
+
+
 
       <div dropdown class="pull-right">
           <div class='yt-thumbnail row-fluid' ng-repeat="video in youtube_results" data-drag="true"

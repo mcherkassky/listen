@@ -27,13 +27,26 @@
                     <i class="icon-music"></i></i> [[playlist.name]]
                 </a>
             </li>
+            <li class="playlist-tab" ng-switch="creatingPlaylist">
+                    <a ng-switch-when="false" ng-click="new_playlist()" class="btn-inverse">New Playlist</a>
+                    <a ng-switch-when="true">
+                        <input class="playlist-name" ng-model="n" type="text" 
+                        style="width: 140px; height: 15px; margin-bottom: 0px"> </input>
+                        <button ng-click="create_playlist(n)" type="button" 
+                                class="btn btn-inverse"
+                                style="line-height: 0px; height: 35px; border-radius: 3px;"> create </button>
+                    </a>
+            </li>
+
         </ul>
-        <a ng-click="new_playlist()" class="btn btn-inverse">New Playlist</a>
+
+
     </div>
+
     <div class="span9">
-        <div class="tab-content" style="margin: 0 auto;">
+        <div class="tab-content" style="padding-top: 0px; margin: 0 auto;">
             <div class="tab-pane active" id="next">
-                <table class='table table-condensed'>
+                <table class='table table-striped table-condensed'>
                     <thead>
                         <tr>
                             <td width='15px'>

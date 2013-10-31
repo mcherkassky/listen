@@ -86,3 +86,7 @@
 .table-striped tbody > tr:nth-child(even) > td, .table-striped tbody > tr.selected-row > td, .table-striped tbody > tr:nth-child(even) > th, .table-striped tbody > tr.selected-row > th {
     background-color: #f1f4f7;
 }
+
+.context-menu tr:hover { 
+    pointer: cursor;
+}

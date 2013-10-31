@@ -2,9 +2,41 @@
     width:100%
 }
 
+.playlist-tab a {
+    background-color: #2980B9;
+    color: #ffffff !important;
+    border: 0px solid !important;
+}
+
+
+.playlist-tab a:hover {
+    background-color: #34495E !important;
+    color: #ffffff !important;
+    border: 0px solid !important;
+}
+
+.nav-tabs li.active {
+    background-color: #34495E !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:hover {
+    border-color: #e1e4e7;
+    border-bottom-color: #e1e4e7;
+    border-width: 0px;
+    background-color: #34495E !important;
+    /* color: #7f8c9a; */
+}
+
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     border-color: #e1e4e7;
     border-bottom-color: #e1e4e7;
     border-width: 0px;
-    color: #7f8c9a;
+    background-color: #34495E !important;
+    /* color: #7f8c9a; */
+}
+
+.playlist-name {
+    width: 150px;
+    height: 30px;
 }
