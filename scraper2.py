@@ -32,6 +32,7 @@ def open_landing(url, counter=1):
         open_landing(url, counter)
 
 
+
 def scrape_album_landing_page(url, artist):
     while True:
         # try:
@@ -129,15 +130,47 @@ def scrape_album_page(url, artist):
 
 
 ##############################################
-artists = open_artists('ua.txt')
-for artist in artists:
+# artists = open_artists('ua.txt')
+# for artist in artists:
+#     url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
+#     landing = open_landing(url)
+#
+#     if landing is None:
+#         continue
+#     try:
+#         img = landing.find('div', {'class', 'resource-images'}).find('a').get('src')
+#         tags = [tag.find('a').string for tag in landing.find('ul', {'class', 'tags'}).findAll('li')]
+#
+#         plays = landing.find('li', {'class', 'scrobbles'}).find('b').text.replace(',','')
+#         listeners = landing.find('li', {'class', 'listeners'}).find('b').text.replace(',','')
+#
+#         similar_artists = [a.get("href").replace('/music/','').replace('+',' ') for a in landing.find('ul', {'class', 'r'}).findAll('a')]
+#
+#         print(artist.replace('\n',''))
+#
+#         artist_exist = Artist.objects().filter(name=unidecode(artist.replace('\n', '')))
+#         if len(artist_exist) > 0:
+#             continue
+#
+#         artistdb = Artist(name=unidecode(artist.replace('\n', '')),
+#                           img=img,
+#                           tags=tags,
+#                           similar=similar_artists,
+#                           plays=plays,
+#                           listeners=listeners)
+#         artistdb.save()
+#         scrape_album_landing_page(url + '/+albums', artistdb)
+#     except:
+#         print "artist failed"
+
+def lastfm_scraper(artist):
     url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
     landing = open_landing(url)
 
     if landing is None:
-        continue
+        return None
     try:
-        img = landing.find('div', {'class', 'resource-images'}).find('a').get('src')
+        img = landing.find('div', {'class', 'resource-images'}).find('a').find('img').get('src')
         tags = [tag.find('a').string for tag in landing.find('ul', {'class', 'tags'}).findAll('li')]
 
         plays = landing.find('li', {'class', 'scrobbles'}).find('b').text.replace(',','')
@@ -149,9 +182,10 @@ for artist in artists:
 
         artist_exist = Artist.objects().filter(name=unidecode(artist.replace('\n', '')))
         if len(artist_exist) > 0:
-            continue
+            return None
 
-        artistdb = Artist(name=unidecode(artist.replace('\n', '')),
+        artistdb = Artist(name=artist.replace('\n', ''),
+                          unicode=unidecode(artist.replace('\n', '')),
                           img=img,
                           tags=tags,
                           similar=similar_artists,

@@ -16,6 +16,8 @@ from models import Artist, Album, Song, Playlist, User
 from youtube import app
 from auth import login_required, load_user, requires_auth
 import pytunes
+import threading
+from scraper2 import lastfm_scraper
 
 
 
@@ -59,6 +61,9 @@ def search(query):
 
     if len(songs) == 0:
         itunes_songs = pytunes.search_track(query)[0:10]
+        lastfm_thread = threading.Thread(target=lastfm_scraper, args=(itunes_songs[0].get_artist().name,))
+        lastfm_thread.start()
+
         songs = [{'id': '',
             'artist_id': "",
             'album_id':'',
