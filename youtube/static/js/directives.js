@@ -14,9 +14,11 @@ musicModule.directive('timeify', function($timeout,$http){
 
 musicModule.directive('marquee',function($timeout){
     return function(scope, element){
+
         $timeout(function(){
             element.hover(startMarquee, stopMarquee);
         }, 2000)
+
     }
 });
 

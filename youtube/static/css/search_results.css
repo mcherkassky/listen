@@ -183,3 +183,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .navbar-inverse .navbar-inner {
     background: #022f3d;
 }
+
+.selectable tr:hover > td{
+    background-color: #34495E !important;
+    color: #fff !important;
+}
+
