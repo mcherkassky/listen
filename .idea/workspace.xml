@@ -148,7 +148,7 @@
     <file path="/scraper2.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383254246797" ignored="false" />
     <file path="/SongController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383180690922" ignored="false" />
     <file path="/_songs.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382797146822" ignored="false" />
-    <file path="/_albums.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382758290955" ignored="false" />
+    <file path="/_albums.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383255121500" ignored="false" />
     <file path="/ua.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382287276083" ignored="false" />
     <file path="/multiselect.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382297011751" ignored="false" />
     <file path="/youtube_results.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382411350936" ignored="false" />
@@ -226,20 +226,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_player_bar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/base/_player_bar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="78" selection-start="3017" selection-end="3017" vertical-scroll-proportion="-3.5138888">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#button#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#button#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#button#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -289,15 +275,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/facebook.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="em.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/em.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -309,20 +286,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js">
+      <file leaf-file-name="scraper2.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraper2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="45" selection-start="4879" selection-end="4879" vertical-scroll-proportion="-92.07692">
+            <state line="172" column="96" selection-start="5745" selection-end="5745" vertical-scroll-proportion="-12.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scraper2.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scraper2.py">
+      <file leaf-file-name="_featured.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="96" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.34628192">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_songs.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="112" selection-start="2709" selection-end="2709" vertical-scroll-proportion="-18.857143">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_albums.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="42" selection-start="254" selection-end="254" vertical-scroll-proportion="0.08453838">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -337,7 +342,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/youtube/static/js/controllers/ArtistController.js" />
         <option value="$PROJECT_DIR$/youtube/templates/search/_featured.html" />
         <option value="$PROJECT_DIR$/youtube/static/css/search_results.css" />
         <option value="$PROJECT_DIR$/youtube/templates/search/_artists.html" />
@@ -353,6 +357,7 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/youtube/views.py" />
         <option value="$PROJECT_DIR$/scraper2.py" />
+        <option value="$PROJECT_DIR$/youtube/templates/search/_albums.html" />
       </list>
     </option>
   </component>
@@ -832,35 +837,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="31" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/SongController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="35" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-29.961538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="59" selection-start="2002" selection-end="2002" vertical-scroll-proportion="-20.357143">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="15" selection-start="105" selection-end="105" vertical-scroll-proportion="-2.7142856">
@@ -962,8 +938,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="96" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.34628192">
+        <state line="172" column="96" selection-start="5745" selection-end="5745" vertical-scroll-proportion="-12.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="112" selection-start="2709" selection-end="2709" vertical-scroll-proportion="-18.857143">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="254" selection-end="254" vertical-scroll-proportion="0.08453838">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
