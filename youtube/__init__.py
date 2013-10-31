@@ -213,7 +213,6 @@ def login():
 
 @app.route('/createAccount', methods=["GET"])
 def create_account():
-
     # query string get token key
     # if key is okay render page
     # else render home page ('/home')
@@ -226,7 +225,7 @@ def create_account():
 
     return render_template('/create_account.html',
             signup_token=token,
-            account_email="marc.adam@zefr.com")
+            account_email=Token.objects.get(key=token).email)
 
 
 @app.route('/createAccount', methods=["POST"])

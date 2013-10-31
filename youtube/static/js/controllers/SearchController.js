@@ -124,7 +124,8 @@ musicModule.controller('SearchCtrl', function($rootScope, $q, $scope, $http, $ti
                         }
                         $('.results-table').unblock()
                         $scope.loading = false;
-                        $scope.contextMenu()
+                        $scope.contextMenu();
+//                        $('#songs-tab').click()
                     })
                 }
             },1000);

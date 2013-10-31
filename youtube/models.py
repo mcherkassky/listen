@@ -200,6 +200,7 @@ class Song(Document):
 class Token(Document):
     key = StringField()
     used = BooleanField(default=False)
+    email = StringField()
 
 
 class Global(Document):
