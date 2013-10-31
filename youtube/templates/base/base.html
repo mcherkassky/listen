@@ -83,7 +83,10 @@
           {% include "/base/_player_bar.html" %}
       </div>
 
-      {%block content%}{%endblock%}
+      <div style="z-index:1">
+          {%block content%}{%endblock%}
+      </div>
+
     </div>
 
     <br>

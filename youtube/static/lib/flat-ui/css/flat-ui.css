@@ -4681,6 +4681,7 @@ input.search-query {
   color: #34495e;
 }
 .dropdown-menu {
+  top:-300px;
   background-color: #f3f4f5;
   border: none;
   display: block;
@@ -4706,6 +4707,7 @@ input.search-query {
   margin-top: 2px;
 }
 .open > .dropdown-menu {
+  top:45px;
   margin-top: 18px;
   opacity: 1;
   visibility: visible;
