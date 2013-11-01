@@ -9,7 +9,7 @@ def check_auth(username, password):
     """This function is called to check if a username /
     password combination is valid.
     """
-    return username == 'michael' and password == 'cherkassky'
+    return username == 'dity' and password == 'awesomeness'
 
 def authenticate():
     """Sends a 401 response that enables basic auth"""
@@ -25,11 +25,6 @@ def requires_auth(f):
         if not auth or not check_auth(auth.username, auth.password):
             return authenticate()
 
-        User.objects.delete()
-        user = User()
-        user.name = auth.username
-        user.save()
-        g.user = user
         return f(*args, **kwargs)
     return decorated
 

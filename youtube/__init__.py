@@ -106,15 +106,14 @@ def facebook_required(f):
 
 @app.route('/')
 @login_required
-# @requires_auth
+@requires_auth
 # @facebook_required
 def index():
-
     user = load_user(session['user_id'])
     return render_template('/index/index.html', user=user)
 
 
-
+@requires_auth
 @app.route('/home')
 def home():
     return render_template('home.html')
