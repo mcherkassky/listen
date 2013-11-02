@@ -159,6 +159,43 @@ class Album(Document):
         return response
 
 
+class AudioSummary(EmbeddedDocument):
+    """Echo Nest audio summary object, stuff we get back 
+    when we query the features on the track.
+    """
+
+    echo_nest_id = StringField()
+    time_signature = FloatField()
+    tempo = FloatField()
+    energy = FloatField()
+    liveness = FloatField()
+    speechiness = FloatField()
+    acousticness = FloatField()
+    danceability = FloatField()
+    key = FloatField()
+    duration = FloatField()
+    loudness = FloatField()
+    valence = FloatField()
+    mode = FloatField()
+
+    @classmethod
+    def build_from_echo_response(self, result_song):
+        audio_summary = AudioSummary()
+        audio_summary.echo_nest_id=result_song.id
+        audio_summary.tempo=result_song.audio_summary['tempo']
+        audio_summary.energy=result_song.audio_summary['energy']
+        audio_summary.liveness=result_song.audio_summary['liveness']
+        audio_summary.speechiness=result_song.audio_summary['speechiness']
+        audio_summary.acousticness=result_song.audio_summary['acousticness']
+        audio_summary.danceability=result_song.audio_summary['danceability']
+        audio_summary.key=result_song.audio_summary['key']
+        audio_summary.duration=result_song.audio_summary['duration']
+        audio_summary.loudness=result_song.audio_summary['loudness']
+        audio_summary.valence=result_song.audio_summary['valence']
+        audio_summary.mode=result_song.audio_summary['mode']
+        return audio_summary
+
+
 class Song(Document):
     created_at = DateTimeField(default=datetime.datetime.now, required=True)
 
@@ -181,20 +218,8 @@ class Song(Document):
     youtube_url = StringField()
     tag = StringField()
 
-    echo_nest_id = StringField()
-    time_signature = FloatField()
-    tempo = FloatField()
-    energy = FloatField()
-    liveness = FloatField()
-    speechiness = FloatField()
-    acousticness = FloatField()
-    danceability = FloatField()
-    key = FloatField()
-    duration = FloatField()
-    loudness = FloatField()
-    valence = FloatField()
-    mode = FloatField()
-
+    audio_summary = EmbeddedDocumentField(AudioSummary)
+    echo_nest_updated = BooleanField(default=False)
 
 
 

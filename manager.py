@@ -45,6 +45,32 @@ def artists():
 
 
 @manager.command
+def update_database():
+    from youtube.models import *
+    from settings import *
+    from StringIO import StringIO
+    import json
+    import requests 
+
+    from pyechonest import config, song as echo_song
+    config.ECHO_NEST_API_KEY = ECHONEST_API_KEY
+
+    songs = Song.objects()
+    for song in songs:
+        try:
+            rkp_results = echo_song.search(artist=song.artist, title=song.title)
+            result_song = rkp_results[0]
+            audio_summary = AudioSummary.build_from_echo_response(result_song)
+            song.audio_summary = audio_summary
+            song.echo_nest_updated = True
+            song.save()
+        except:
+            pass
+
+
+
+
+@manager.command
 def make_echo_nest():
     from settings import *
     from youtube.models import Song
