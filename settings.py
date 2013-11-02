@@ -10,9 +10,14 @@ MONGODB_SETTINGS = {
 # MONGO_HOST = "widmore.mongohq.com"
 # MONGO_DATABASE_NAME = "listen2"
 # MONGO_PORT = 10000
+
+# MONGO_HOST = "paulo.mongohq.com"
+# MONGO_DATABASE_NAME = "listen"
+# MONGO_PORT = 10035
+
 MONGO_HOST = "paulo.mongohq.com"
-MONGO_DATABASE_NAME = "listen"
-MONGO_PORT = 10035
+MONGO_DATABASE_NAME = "echo-listen"
+MONGO_PORT = 10078
 
 MONGO_USERNAME = "listen"
 MONGO_PASSWORD = "listener"

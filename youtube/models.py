@@ -178,6 +178,18 @@ class Song(Document):
     duration = IntField()
     listeners = IntField()
 
+    #echonest
+    tag = StringField()
+    tempo = FloatField()
+    energy = FloatField()
+    liveness = FloatField()
+    speechiness = FloatField()
+    acousticness = FloatField()
+    danceability = FloatField()
+    loudness = FloatField()
+    valence = FloatField()
+
+
     youtube_url = StringField()
 
     @property
