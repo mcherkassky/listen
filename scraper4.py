@@ -10,6 +10,7 @@ from youtube.models import Artist, Album, Song, Echo
 from bs4 import BeautifulSoup
 LASTFM_URL = 'http://www.last.fm/music/'
 from mongoengine import Q
+
 from pyechonest import config
 from pyechonest import song as pysong
 
@@ -34,7 +35,6 @@ def open_landing(url, counter=1):
             return None
         counter += 1
         open_landing(url, counter)
-
 
 
 def scrape_album_landing_page(url, artist):
@@ -82,8 +82,9 @@ def scrape_album_page(url, artist):
     except:
         album_listeners = ""
 
-    album = Album(title=unidecode(album_title),
-                  artist=unidecode(artist.name),
+    album = Album(unicode=unidecode(album_title),
+                  title = album_title,
+                  artist=artist.name,
                   artist_id=artist.id,
                   songs=[],
                   img=album_img,
@@ -125,20 +126,22 @@ def scrape_album_page(url, artist):
 
         except:
             echo_data = None
+
         try:
             song = Song.objects().get(Q(title=unidecode(song_title)) & Q(artist=artist.name) & Q(duration=song_duration))
             album = Album.objects.get(id=album.id)
             album.songs.append(song.id)
             album.save()
         except:
-            song = Song(title=unidecode(song_title),
-                        artist=unidecode(artist.name),
+            song = Song(title=song_title,
+                        unicode = unidecode(song_title),
+                        artist=artist.name,
                         artist_id=artist.id,
-                        album=unidecode(album.title),
+                        album=album.title,
                         album_id=album.id,
                         img=album_img,
                         album_index=i,
-                        duration=int(round(audio_features['duration'])),
+                        duration=song_duration,
                         listeners=song_listeners,
                         echo=echo_data)
             song.save()
@@ -146,6 +149,7 @@ def scrape_album_page(url, artist):
             album.songs.append(song.id)
             album.save()
     return 'success'
+
 
 def lastfm_scraper(artist):
     url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
@@ -181,37 +185,37 @@ def lastfm_scraper(artist):
         print "artist failed"
 
 ##############################################
-# artists = open_artists('ua.txt')
-# for artist in artists:
-#     url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
-#     landing = open_landing(url)
-#
-#     if landing is None:
-#         continue
-#     try:
-#         img = landing.find('div', {'class', 'resource-images'}).find('a').get('src')
-#         tags = [tag.find('a').string for tag in landing.find('ul', {'class', 'tags'}).findAll('li')]
-#
-#         plays = landing.find('li', {'class', 'scrobbles'}).find('b').text.replace(',','')
-#         listeners = landing.find('li', {'class', 'listeners'}).find('b').text.replace(',','')
-#
-#         similar_artists = [a.get("href").replace('/music/','').replace('+',' ') for a in landing.find('ul', {'class', 'r'}).findAll('a')]
-#
-#         print(artist.replace('\n',''))
-#
-#         artist_exist = Artist.objects().filter(name=unidecode(artist.replace('\n', '')))
-#         if len(artist_exist) > 0:
-#             continue
-#
-#         artistdb = Artist(name=unidecode(artist.replace('\n', '')),
-#                           img=img,
-#                           tags=tags,
-#                           similar=similar_artists,
-#                           plays=plays,
-#                           listeners=listeners)
-#         artistdb.save()
-#         scrape_album_landing_page(url + '/+albums', artistdb)
-#     except:
-#         print "artist failed"
+artists = open_artists('ua.txt')
+pdb.set_trace()
+for artist in artists:
+    url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
+    landing = open_landing(url)
 
+    if landing is None:
+        continue
+    try:
+        img = landing.find('div', {'class', 'resource-images'}).find('a').find('img').get('src')       
+        tags = [tag.find('a').string for tag in landing.find('ul', {'class', 'tags'}).findAll('li')]
 
+        plays = landing.find('li', {'class', 'scrobbles'}).find('b').text.replace(',','')
+        listeners = landing.find('li', {'class', 'listeners'}).find('b').text.replace(',','')
+
+        similar_artists = [a.get("href").replace('/music/','').replace('+',' ') for a in landing.find('ul', {'class', 'r'}).findAll('a')]
+
+        print(artist.replace('\n',''))
+
+        artist_exist = Artist.objects().filter(name=artist.replace('\n', ''))
+        if len(artist_exist) > 0:
+            continue
+
+        artistdb = Artist(name = artist.replace('\n', ''),
+                          unicode=unidecode(artist.replace('\n', '')),
+                          img=img,
+                          tags=tags,
+                          similar=similar_artists,
+                          plays=plays,
+                          listeners=listeners)
+        artistdb.save()
+        scrape_album_landing_page(url + '/+albums', artistdb)
+    except:
+        print "artist failed"
