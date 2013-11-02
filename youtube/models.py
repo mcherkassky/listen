@@ -179,6 +179,24 @@ class Song(Document):
     listeners = IntField()
 
     youtube_url = StringField()
+    tag = StringField()
+
+    echo_nest_id = StringField()
+    time_signature = FloatField()
+    tempo = FloatField()
+    energy = FloatField()
+    liveness = FloatField()
+    speechiness = FloatField()
+    acousticness = FloatField()
+    danceability = FloatField()
+    key = FloatField()
+    duration = FloatField()
+    loudness = FloatField()
+    valence = FloatField()
+    mode = FloatField()
+
+
+
 
     @property
     def serialize(self):

@@ -225,8 +225,7 @@ def create_account():
         return redirect(url_for('index'))
 
     return render_template('/create_account.html',
-            signup_token=token,
-            account_email="marc.adam@zefr.com")
+            signup_token=token)
 
 
 @app.route('/createAccount', methods=["POST"])
