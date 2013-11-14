@@ -24,6 +24,5 @@ oauth2==1.5.211
 poster==0.8.1
 pyechonest==8.0.1
 pymongo==2.6.2
-python-itunes==1.0
 requests==2.0.0
 wsgiref==0.1.2
