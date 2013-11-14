@@ -290,7 +290,7 @@
       <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="491" selection-end="496" vertical-scroll-proportion="0.5913978">
+            <state line="27" column="15" selection-start="461" selection-end="461" vertical-scroll-proportion="0.6908602">
               <folding />
             </state>
           </provider>
@@ -345,7 +345,6 @@
         <option value="$PROJECT_DIR$/youtube/auth.py" />
         <option value="$PROJECT_DIR$/youtube/__init__.py" />
         <option value="$PROJECT_DIR$/youtube/neural.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/scraper2.py" />
         <option value="$PROJECT_DIR$/unique_artists.txt" />
         <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
@@ -358,6 +357,7 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/scraper3.py" />
         <option value="$PROJECT_DIR$/neural.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -854,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="491" selection-end="496" vertical-scroll-proportion="0.5913978">
+        <state line="27" column="15" selection-start="461" selection-end="461" vertical-scroll-proportion="0.6908602">
           <folding />
         </state>
       </provider>
