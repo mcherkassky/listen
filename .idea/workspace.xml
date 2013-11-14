@@ -243,7 +243,7 @@
       <file leaf-file-name="AlbumController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="346" selection-end="365" vertical-scroll-proportion="-7.3076925">
+            <state line="10" column="30" selection-start="346" selection-end="365" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -252,7 +252,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="701" selection-end="701" vertical-scroll-proportion="-5.576923">
+            <state line="26" column="25" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -270,7 +270,7 @@
       <file leaf-file-name="scraper2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="23" selection-start="4148" selection-end="4154" vertical-scroll-proportion="-7.230769">
+            <state line="130" column="23" selection-start="4148" selection-end="4154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -288,7 +288,7 @@
       <file leaf-file-name="scraper3.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scraper3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="36" selection-start="3769" selection-end="3769" vertical-scroll-proportion="-0.27019498">
+            <state line="122" column="38" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.49610388">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -317,7 +317,7 @@
       <file leaf-file-name="_albums.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="48" selection-start="171" selection-end="171" vertical-scroll-proportion="-1.3571428">
+            <state line="2" column="48" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -362,8 +362,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="30" />
+    <option name="x" value="98" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
   </component>
@@ -460,7 +460,7 @@
       <recent name="$PROJECT_DIR$/youtube/templates/index" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scraper3">
+  <component name="RunManager" selected="Python.run">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -634,8 +634,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.scraper3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.run" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run" />
+        <item index="1" class="java.lang.String" itemvalue="Python.scraper3" />
         <item index="2" class="java.lang.String" itemvalue="Python.scraper4" />
         <item index="3" class="java.lang.String" itemvalue="Python.scraper2" />
         <item index="4" class="java.lang.String" itemvalue="Python.neural" />
@@ -672,18 +672,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="30" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <frame x="98" y="22" width="1280" height="774" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18395463" sideWeight="0.68654436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1871961" sideWeight="0.68654436" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.2647619" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31345567" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31345567" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -815,7 +815,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="48" selection-start="171" selection-end="171" vertical-scroll-proportion="-1.3571428">
+        <state line="2" column="48" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -829,28 +829,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="346" selection-end="365" vertical-scroll-proportion="-7.3076925">
+        <state line="10" column="30" selection-start="346" selection-end="365" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="701" selection-end="701" vertical-scroll-proportion="-5.576923">
+        <state line="26" column="25" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="23" selection-start="4148" selection-end="4154" vertical-scroll-proportion="-7.230769">
+        <state line="130" column="23" selection-start="4148" selection-end="4154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="36" selection-start="3769" selection-end="3769" vertical-scroll-proportion="-0.27019498">
+        <state line="122" column="38" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.49610388">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
