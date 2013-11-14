@@ -7,7 +7,7 @@ from mongoengine import *
 
 from bson import ObjectId
 
-class Echo(EmbeddedDocument):
+class Echo(Document):
     #echonest
     tempo = FloatField()
     energy = FloatField()
@@ -17,6 +17,9 @@ class Echo(EmbeddedDocument):
     danceability = FloatField()
     loudness = FloatField()
     valence = FloatField()
+
+    song_id = ObjectIdField()
+
 
 class Playlist(Document):
     user_id = ObjectIdField()
@@ -190,7 +193,48 @@ class Song(Document):
 
     youtube_url = StringField()
 
-    echo = EmbeddedDocumentField(Echo)
+    # echo = EmbeddedDocumentField(Echo)
+
+    def similar(self, discovery):
+        try:
+            echo = Echo.objects.get(song_id=self.id)
+            tempo_range = (echo.tempo - discovery, echo.tempo + discovery)
+            liveness_range = (echo.liveness - discovery, echo.liveness + discovery)
+            speechiness_range = (echo.speechiness - discovery, echo.speechiness + discovery)
+            acousticness_range = (echo.acousticness - discovery, echo.acousticness + discovery)
+            danceability_range = (echo.danceability - discovery, echo.danceability + discovery)
+            loudness_range = (echo.loudness - discovery, echo.loudness + discovery)
+            valence_range = (echo.valence - discovery, echo.valence + discovery)
+
+            echo_similar = Echo.objects.filter(
+                Q(tempo__gte=tempo_range[0]) & Q(tempo__lte=tempo_range[1]) &
+                Q(liveness__gte=liveness_range[0]) & Q(liveness__lte=liveness_range[1]) &
+                Q(speechiness__gte=speechiness_range[0]) & Q(speechiness__lte=speechiness_range[1]) &
+                Q(acousticness__gte=acousticness_range[0]) & Q(acousticness__lte=acousticness_range[1]) &
+                Q(danceability__gte=danceability_range[0]) & Q(danceability__lte=danceability_range[1]) &
+                Q(loudness__gte=loudness_range[0]) & Q(loudness__lte=loudness_range[1]) &
+                Q(valence__gte=valence_range[0]) & Q(valence__lte=valence_range[1])
+            )
+
+            results = [Song.objects.get(id=echo.song_id) for echo in echo_similar]
+
+            return results
+
+        except:
+            return None
+        if self.echo is None:
+            return None
+        else:
+            echo = self.echo
+
+            energy = FloatField()
+            liveness = FloatField()
+            speechiness = FloatField()
+            acousticness = FloatField()
+            danceability = FloatField()
+            loudness = FloatField()
+            valence = FloatField()
+
 
     @property
     def serialize(self):

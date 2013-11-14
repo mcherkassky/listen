@@ -15,9 +15,13 @@ MONGODB_SETTINGS = {
 # MONGO_DATABASE_NAME = "listen"
 # MONGO_PORT = 10035
 
+# MONGO_HOST = "paulo.mongohq.com"
+# MONGO_DATABASE_NAME = "listen_copy"
+# MONGO_PORT = 10097
+
 MONGO_HOST = "paulo.mongohq.com"
-MONGO_DATABASE_NAME = "listen_copy"
-MONGO_PORT = 10097
+MONGO_DATABASE_NAME = "music"
+MONGO_PORT = 10030
 
 MONGO_USERNAME = "listen"
 MONGO_PASSWORD = "listener"

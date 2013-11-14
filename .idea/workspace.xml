@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/scraper.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382283984761" ignored="false" />
     <file path="/run.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380306652752" ignored="false" />
-    <file path="/settings.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383365925145" ignored="false" />
+    <file path="/settings.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384141279972" ignored="false" />
     <file path="$USER_HOME$/zefr/Code/nomenclature/nomenclature/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380249651134" ignored="false" />
-    <file path="/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383279006856" ignored="false" />
-    <file path="/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383365060912" ignored="false" />
+    <file path="/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383852110208" ignored="false" />
+    <file path="/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383447360103" ignored="false" />
     <file path="/base.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383185631637" ignored="false" />
     <file path="/index.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382224014422" ignored="false" />
     <file path="/views.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383253757889" ignored="false" />
@@ -17,7 +17,7 @@
     <file path="$PROJECT_DIR$/youtube/static/lib/font-awesome/less/font-awesome.less" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380337277269" ignored="false" />
     <file path="/music_player.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381690157828" ignored="false" />
     <file path="/music_search.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380392719909" ignored="false" />
-    <file path="/Dummy.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383225356265" ignored="false" />
+    <file path="/Dummy.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384353485833" ignored="false" />
     <file path="/youtube.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380427595699" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382453920320" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/steps/campaign_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
@@ -32,22 +32,22 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/view_top_secret.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640087491" ignored="false" />
     <file path="/view_top_secret.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380638781884" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383232504656" ignored="false" />
-    <file path="/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383243451308" ignored="false" />
+    <file path="/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383604726592" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/steps/adgroup_detail_page_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="/adgroup_detail_page_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468995143" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555123433" ignored="false" />
-    <file path="/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555106277" ignored="false" />
+    <file path="/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383676134192" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/api/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383243290853" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382535737367" ignored="false" />
     <file path="/adgroup_detail_page.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468929745" ignored="false" />
-    <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383326731526" ignored="false" />
+    <file path="/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383682127092" ignored="false" />
     <file path="/_player.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380743406334" ignored="false" />
-    <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383175468401" ignored="false" />
+    <file path="/_search.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383425094654" ignored="false" />
     <file path="/PlayerController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383013423864" ignored="false" />
     <file path="/SearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383185718679" ignored="false" />
     <file path="/MusicPlayer.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383180508600" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/campaigns/view/custom_input.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640049144" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/view.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383327089718" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/view.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383680329159" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/_top_secret_ads.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640494689" ignored="false" />
     <file path="/_top_secret_ads.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380640118520" ignored="false" />
     <file path="/custom_input.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1380638042445" ignored="false" />
@@ -66,8 +66,8 @@
     <file path="/trending_dashboard.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381253428279" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/output.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381245716479" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/migration.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381261531296" ignored="false" />
-    <file path="/manage.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381260312425" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/manage.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383138972404" ignored="false" />
+    <file path="/manage.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383758300862" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/manage.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384353487143" ignored="false" />
     <file path="/data_faker.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382709336031" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/angular/detail_graph/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381264199946" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/angular/detail_graph/directives.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381264287514" ignored="false" />
@@ -82,10 +82,10 @@
     <file path="$PROJECT_DIR$/youtube/static/lib/jquery-ui-1.10.3.custom/development-bundle/demos/index.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381267442365" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/utils.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381336561686" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/run_server.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381321699262" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/requirements.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381321518196" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/requirements.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384353487143" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/settings.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381327104182" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/analytics/directives.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381349850336" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/analytics/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383330813605" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/analytics/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383682127763" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/analytics/factories/AdGroup.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381322968577" ignored="false" />
     <file path="/AdGroup.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381322966217" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/analytics/factories/Campaign.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381349314557" ignored="false" />
@@ -114,7 +114,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/user.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381952920102" ignored="false" />
     <file path="/user.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382712337470" ignored="false" />
     <file path="/application.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381421970461" ignored="false" />
-    <file path="/view.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383326366862" ignored="false" />
+    <file path="/view.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383680329159" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/css/users/account.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381428775966" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/users/_users.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381429352334" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/users/_accounts.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381429341352" ignored="false" />
@@ -124,7 +124,7 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/api/admin.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
     <file path="/admin.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382707875404" ignored="false" />
     <file path="/YoutubeSearchController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381600502519" ignored="false" />
-    <file path="/youtube_tools.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382057698997" ignored="false" />
+    <file path="/youtube_tools.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383868809287" ignored="false" />
     <file path="/dropdown.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381604853719" ignored="false" />
     <file path="/coverflow.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381678402608" ignored="false" />
     <file path="/music_bar.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1381968367130" ignored="false" />
@@ -148,7 +148,7 @@
     <file path="/scraper2.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383366778339" ignored="false" />
     <file path="/SongController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383180690922" ignored="false" />
     <file path="/_songs.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382797146822" ignored="false" />
-    <file path="/_albums.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383255121500" ignored="false" />
+    <file path="/_albums.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383508433893" ignored="false" />
     <file path="/ua.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382287276083" ignored="false" />
     <file path="/multiselect.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382297011751" ignored="false" />
     <file path="/youtube_results.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382411350936" ignored="false" />
@@ -158,13 +158,13 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383142588300" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/auth/flask_zefr_auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382639087217" ignored="false" />
     <file path="/flask_zefr_auth.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382639050185" ignored="false" />
-    <file path="/a.dummy" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383187245534" ignored="false" />
+    <file path="/a.dummy" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384180762292" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/user.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383139799914" ignored="false" />
     <file path="/PlaylistFactory.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382728186642" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/ad.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468901259" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/mixins.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382468901259" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383243492626" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/campaign.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383604726592" ignored="false" />
     <file path="/_playlists.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382721829760" ignored="false" />
     <file path="/playlist.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382484418010" ignored="false" />
     <file path="/PlaylistController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382574335377" ignored="false" />
@@ -173,7 +173,7 @@
     <file path="/authorization_steps.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382708072232" ignored="false" />
     <file path="/account.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383141836707" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/admin/app.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382713133946" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383139799914" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/factories.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384353487143" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/features/notification.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555676909" ignored="false" />
     <file path="/notification.feature" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382554534981" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/views/application.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382555676909" ignored="false" />
@@ -184,17 +184,17 @@
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/mrjob.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382620993794" ignored="false" />
     <file path="/mrjob.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382620954593" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/tests/README.md" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382622471178" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383317772672" ignored="false" />
-    <file path="/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383053625857" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383676155111" ignored="false" />
+    <file path="/data_factory.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383676024272" ignored="false" />
     <file path="/_featured.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383103796289" ignored="false" />
     <file path="/jquery.blockUI.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382757957504" ignored="false" />
     <file path="/create_account.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382808870882" ignored="false" />
     <file path="/registration.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382809350674" ignored="false" />
     <file path="/em.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382809100096" ignored="false" />
-    <file path="/scraper3.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1382890106968" ignored="false" />
+    <file path="/scraper3.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1384405278187" ignored="false" />
     <file path="/FeaturedController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383103082308" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/analytics/_dashboard.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383142877646" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/_dashboard.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383315173975" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/_dashboard.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383683413020" ignored="false" />
     <file path="/_dashboard.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383315172640" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/js/accounts/view/account.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383143733989" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/accounts/view/_dashboard.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383143963827" ignored="false" />
@@ -202,15 +202,25 @@
     <file path="/analytics_charts.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383154991344" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/struct.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383243397436" ignored="false" />
     <file path="/struct.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383243392123" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/criterion.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383227010335" ignored="false" />
-    <file path="/criterion.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383227005683" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/models/criterion.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383661625876" ignored="false" />
+    <file path="/criterion.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383584013042" ignored="false" />
     <file path="/flat-ui.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383178218802" ignored="false" />
-    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/_analytics_charts.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383247407926" ignored="false" />
-    <file path="/_analytics_charts.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383245793038" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/templates/campaigns/view/_analytics_charts.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383680695544" ignored="false" />
+    <file path="/_analytics_charts.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383680694874" ignored="false" />
     <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/css/accounts/view/dashboard.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383315153493" ignored="false" />
     <file path="/dashboard.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383315135507" ignored="false" />
     <file path="/neural.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383365218989" ignored="false" />
-    <file path="/scraper4.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383367551722" ignored="false" />
+    <file path="/scraper4.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383427231471" ignored="false" />
+    <file path="/_radio.html" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383435972142" ignored="false" />
+    <file path="/RadioController.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383446889246" ignored="false" />
+    <file path="/requirements.txt" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383604863306" ignored="false" />
+    <file path="/Chart.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383665901345" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/lib/chart/Chart.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383666634529" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/lib/justgage/gauge.js" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383670036357" ignored="false" />
+    <file path="$PROJECT_DIR$/../spotlight.zefr.com/zefr/spotlight/static/css/campaigns/view/campaign_charts.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383683256478" ignored="false" />
+    <file path="/campaign_charts.css" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383683236285" ignored="false" />
+    <file path="$PROJECT_DIR$/../inception/inception/dal/__init__.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383852110610" ignored="false" />
+    <file path="$USER_HOME$/zefr/Code/sentiment/sentiment/youtube_tools.py" changelist="7a3a4543-9fbc-4130-9480-0a8a67f9521f" time="1383868809287" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,41 +240,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scraper2.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scraper2.py">
+      <file leaf-file-name="AlbumController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="31" selection-start="6270" selection-end="7630" vertical-scroll-proportion="-8.807693">
-              <folding>
-                <element signature="e#28#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scraper4.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scraper4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="38" selection-start="4731" selection-end="4731" vertical-scroll-proportion="0.65091866">
-              <folding>
-                <element signature="e#28#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
+            <state line="10" column="30" selection-start="346" selection-end="365" vertical-scroll-proportion="-7.3076925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_featured.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="26" column="25" selection-start="701" selection-end="701" vertical-scroll-proportion="-5.576923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_search.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="46" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scraper2.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraper2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="130" column="23" selection-start="4148" selection-end="4154" vertical-scroll-proportion="-7.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="174" column="10" selection-start="3856" selection-end="3866" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scraper3.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scraper3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="36" selection-start="3769" selection-end="3769" vertical-scroll-proportion="-0.27019498">
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="youtube_tools.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/youtube_tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="60" selection-start="637" selection-end="689" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pylast.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pylast.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="17" selection-start="5872" selection-end="5881" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_albums.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="48" selection-start="171" selection-end="171" vertical-scroll-proportion="-1.3571428">
               <folding />
             </state>
           </provider>
@@ -273,7 +326,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -289,28 +342,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/youtube/static/js/services/MusicPlayer.js" />
-        <option value="$PROJECT_DIR$/youtube/static/js/controllers/SongController.js" />
-        <option value="$PROJECT_DIR$/youtube/templates/base/base.html" />
-        <option value="$PROJECT_DIR$/youtube/static/js/controllers/SearchController.js" />
-        <option value="$PROJECT_DIR$/youtube/templates/base/_player_bar.html" />
-        <option value="$PROJECT_DIR$/youtube/views.py" />
-        <option value="$PROJECT_DIR$/youtube/templates/search/_albums.html" />
         <option value="$PROJECT_DIR$/youtube/auth.py" />
         <option value="$PROJECT_DIR$/youtube/__init__.py" />
         <option value="$PROJECT_DIR$/youtube/neural.py" />
-        <option value="$PROJECT_DIR$/youtube/models.py" />
         <option value="$PROJECT_DIR$/neural.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/scraper2.py" />
+        <option value="$PROJECT_DIR$/unique_artists.txt" />
+        <option value="$PROJECT_DIR$/youtube/templates/index/_search.html" />
         <option value="$PROJECT_DIR$/scraper4.py" />
+        <option value="$PROJECT_DIR$/youtube/templates/search/_radio.html" />
+        <option value="$PROJECT_DIR$/youtube/static/js/controllers/RadioController.js" />
+        <option value="$PROJECT_DIR$/youtube/models.py" />
+        <option value="$PROJECT_DIR$/youtube/templates/search/_albums.html" />
+        <option value="$PROJECT_DIR$/youtube/static/css/search_results.css" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/scraper3.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="50" />
-    <option name="y" value="22" />
+    <option name="x" value="3" />
+    <option name="y" value="30" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
   </component>
@@ -340,6 +393,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,13 +428,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spotlight.zefr.com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -407,7 +460,7 @@
       <recent name="$PROJECT_DIR$/youtube/templates/index" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scraper4">
+  <component name="RunManager" selected="Python.scraper3">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -581,11 +634,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.scraper4" />
-        <item index="1" class="java.lang.String" itemvalue="Python.scraper2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.neural" />
-        <item index="3" class="java.lang.String" itemvalue="Python.run" />
-        <item index="4" class="java.lang.String" itemvalue="Python.scraper3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.scraper3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scraper4" />
+        <item index="3" class="java.lang.String" itemvalue="Python.scraper2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.neural" />
       </list>
     </recent_temporary>
   </component>
@@ -619,23 +672,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="3" y="30" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1280303" sideWeight="0.7352381" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17179903" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18395463" sideWeight="0.68654436" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.2647619" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31345567" sideWeight="0.8104762" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1280303" sideWeight="0.7352381" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -702,138 +755,104 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_songs.html">
+    <entry file="file://$PROJECT_DIR$/youtube/templates/index/_search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="112" selection-start="2709" selection-end="2709" vertical-scroll-proportion="-18.857143">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#1;n#table#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="40" column="46" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_radio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="254" selection-end="254" vertical-scroll-proportion="-2.7142856">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="4" column="6" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/RadioController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="3" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/templates/search/_featured.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/auth.py">
+    <entry file="file://$PROJECT_DIR$/youtube/static/css/search_results.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="233" column="1" selection-start="5024" selection-end="5024" vertical-scroll-proportion="6.523729" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/__init__.py">
+    <entry file="file://$PROJECT_DIR$/unique_artists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="22" selection-start="3052" selection-end="3052" vertical-scroll-proportion="0.48037383">
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="156" column="17" selection-start="1891" selection-end="1891" vertical-scroll-proportion="5.023729" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/scraper4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.75">
-          <folding />
-        </state>
+        <state line="149" column="16" selection-start="4764" selection-end="4824" vertical-scroll-proportion="0.34574467" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="170" selection-end="394" vertical-scroll-proportion="0.0">
+        <state line="174" column="10" selection-start="3856" selection-end="3866" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper3.py">
+    <entry file="file://$PROJECT_DIR$/pylast.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/registration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="91" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-19.23077">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#28#119#0" expanded="true" />
-          </folding>
+        <state line="188" column="17" selection-start="5872" selection-end="5881" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/templates/search/_albums.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="48" selection-start="171" selection-end="171" vertical-scroll-proportion="-1.3571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/youtube_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="60" selection-start="637" selection-end="689" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/static/js/controllers/AlbumController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="346" selection-end="365" vertical-scroll-proportion="-7.3076925">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="62" selection-start="2200" selection-end="2214" vertical-scroll-proportion="-12.192307">
-          <folding>
-            <element signature="e#28#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="425" selection-end="433" vertical-scroll-proportion="0.42131978">
+        <state line="26" column="25" selection-start="701" selection-end="701" vertical-scroll-proportion="-5.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="31" selection-start="6270" selection-end="7630" vertical-scroll-proportion="-8.807693">
-          <folding>
-            <element signature="e#28#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ua.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="130" column="23" selection-start="4148" selection-end="4154" vertical-scroll-proportion="-7.230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper4.py">
+    <entry file="file://$PROJECT_DIR$/scraper3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="38" selection-start="4731" selection-end="4731" vertical-scroll-proportion="0.65091866">
+        <state line="121" column="36" selection-start="3769" selection-end="3769" vertical-scroll-proportion="-0.27019498">
           <folding>
-            <element signature="e#28#42#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

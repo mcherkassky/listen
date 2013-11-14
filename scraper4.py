@@ -121,11 +121,12 @@ def scrape_album_page(url, artist):
                 acousticness=audio_features['acousticness'],
                 danceability=audio_features['danceability'],
                 loudness=(audio_features['loudness'] + 100.0)/100.0,
-                valence=audio_features['valence']
+                valence=audio_features['valence'],
             )
 
+
         except:
-            echo_data = None
+            pass
 
         try:
             song = Song.objects().get(Q(title=unidecode(song_title)) & Q(artist=artist.name) & Q(duration=song_duration))
@@ -134,7 +135,7 @@ def scrape_album_page(url, artist):
             album.save()
         except:
             song = Song(title=song_title,
-                        unicode = unidecode(song_title),
+                        unicode=unidecode(song_title),
                         artist=artist.name,
                         artist_id=artist.id,
                         album=album.title,
@@ -143,8 +144,13 @@ def scrape_album_page(url, artist):
                         album_index=i,
                         duration=song_duration,
                         listeners=song_listeners,
-                        echo=echo_data)
+                        )
             song.save()
+            try:
+                echo_data.song_id = song.id
+                echo_data.save()
+            except:
+                pass
             album = Album.objects.get(id=album.id)
             album.songs.append(song.id)
             album.save()
@@ -185,8 +191,8 @@ def lastfm_scraper(artist):
         print "artist failed"
 
 ##############################################
-artists = open_artists('ua.txt')
-pdb.set_trace()
+artists = open_artists('unique_artists.txt')
+# pdb.set_trace()
 for artist in artists:
     url = LASTFM_URL + artist.replace(' ', '+').replace('\n','')
     landing = open_landing(url)
