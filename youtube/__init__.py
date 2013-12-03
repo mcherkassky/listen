@@ -106,7 +106,6 @@ def facebook_required(f):
 
 @app.route('/')
 @login_required
-@requires_auth
 # @facebook_required
 def index():
     user = load_user(session['user_id'])
